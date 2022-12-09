@@ -4,11 +4,11 @@ import { Button } from './Button'
 export const Form = () => {
   return (
     <div className='bg-formulario bg-cover bg-no-repeat py-24 relative bg z-0'>
-        <div className='absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10' style={{background: "rgba(36, 42, 56, 0.5)"}}></div>
+        <div className='absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10' style={{background: "rgba(36, 42, 56, 0.7)"}}></div>
         <div className=' grid grid-cols-12 gap-10'>
             <div className="col-span-6 text-center justify-center flex flex-col z-10">
-                <h3 className='text-white'>Te invitamos a visitarnos o escribirnos</h3>
-                <p className='text-white'>¡Será un placer atenderte!</p>
+                <h3 className='text-white text-3xl font-playfair tracking-wider'>Te invitamos a visitarnos o escribirnos</h3>
+                <p className='text-white font-playfair text-xl tracking-wider'>¡Será un placer atenderte!</p>
             </div>
             <div className="col-span-6 z-10">
                 <form className='flex flex-col max-w-2xl'>
