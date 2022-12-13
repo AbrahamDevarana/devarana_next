@@ -21,6 +21,7 @@ module.exports = {
             'devarana-hazelnut' : '#eadfd4',
             'devarana-pearl' : '#f9f9f7',
             'devarana-graph' : '#656a76',
+            'devarana-graph-darker' : '#484B65',
             'devarana-pollito' : '#ffdea4',
             'devarana-salmon' : '#fabcab'
         },
@@ -32,6 +33,8 @@ module.exports = {
           },  
         backgroundImage: {
             'formulario': "url('/assets/images/global/Formulario.webp')",
+            'credenza': "url('/assets/images/home/Credenza.webp')",
+            'fotoSalonIngles': "url('/assets/images/home/FotoSalonIngles.webp')",
         },
       },
     },
