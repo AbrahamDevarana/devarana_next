@@ -11,7 +11,7 @@ h1{
 
 .menu__container {
     height: 100vh;
-    left: -520px;
+    left: -11520px;
 }
 
 
@@ -108,10 +108,6 @@ h1{
     position: relative;
     outline: 2px solid transparent;
     outline-offset: 2px;
-
-    
-    /* background-color: #656A76; */
-    /* color: white; */
 }
 
 .buttonEffectInverted::before{
@@ -148,3 +144,52 @@ h1{
     transform: scale(1,1);
 }
 
+.swiper-button-prev, .swiper-button-next {
+    background: #fff;
+    padding: 25px;
+    border-radius: 100%;
+}
+
+
+.swiper-button-prev::after{
+    content: url("../public/assets/svg/LeftArrow.svg")!important;
+    font-size: 35px!important;
+    display:flex;
+    
+}
+.swiper-button-next::after{
+    content: url("../public/assets/svg/RightArrow.svg")!important;
+    font-size: 35px!important; 
+    display:flex;   
+}
+
+.swiper-button-prev{
+    left: 0px!important;
+}
+.swiper-button-next{
+    right: 0px!important;
+}
+
+.valoresSwiper .swiper-slide.swiper-slide-next{
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.swiper-wrapper{
+    height: 100%;
+    align-items: center;
+}
+
+.valoresSwiper{
+    margin: 0 50px!important;
+    padding: 0 50px!important;
+}
+
+
+/* abajo de  1024px */
+@media (max-width: 1024px) {
+    .valoresSwiper{
+        margin: 5px!important;
+        padding: 0!important;
+    }
+}

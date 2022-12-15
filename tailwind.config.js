@@ -19,7 +19,7 @@ module.exports = {
             'devarana-pink' : '#d64767',
             'devarana-midnight' : '#242a38',
             'devarana-hazelnut' : '#eadfd4',
-            'devarana-pearl' : '#f9f9f7',
+            'devarana-pearl' : '#E5E5E5',
             'devarana-graph' : '#656a76',
             'devarana-graph-darker' : '#484B65',
             'devarana-pollito' : '#ffdea4',
@@ -29,7 +29,7 @@ module.exports = {
         transitionProperty: {
           'height': 'height',
           'backgroundImage':'backgroundImage',
-          'top':'top'
+          'top' : 'top'
           },  
         backgroundImage: {
             'formulario': "url('/assets/images/global/Formulario.webp')",

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import CorreoSvg from '../svg/correo'
 import { DevaranaInlineSvg } from '../svg/devaranaInline'
-import Flor3 from '../svg/Flor3'
+import Flor3 from '../svg/flor3'
 import { MenuSvg } from '../svg/menu'
 import MenuPolygonSvg from '../svg/menuPolygon'
 import WhatsappSvg from '../svg/whatsapp'
@@ -41,7 +41,7 @@ export const Menu = () => {
     
     return (
     <>
-        <div className='fixed h-[60px] w-full items-center flex lg:justify-between lg:px-36 px-10 z-50'>
+        <div className='fixed h-[60px] w-full items-center flex lg:justify-between lg:px-36 px-10 z-50 max-w-full'>
             <button onClick={onClickMenu} className='h-full px-2 z-[1001]'><MenuSvg className='stroke-white' /></button>
             <DevaranaInlineSvg className='fill-white lg:w-[200px] w-[130px] mx-auto' />
             <div className='lg:flex gap-10 hidden'>
