@@ -1,7 +1,6 @@
-
-
 export interface SvgProps {
     className?: string;
+    onClick?: any
 }
 
 export interface VacanteModalProps {

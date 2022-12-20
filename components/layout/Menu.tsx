@@ -9,6 +9,7 @@ import WhatsappSvg from '../svg/whatsapp'
 import Flor3 from '../svg/flor3'
 export const Menu = () => {
     
+
     const onClickMenu = () => {
         const menu = document.getElementById('menu')
         menu?.classList.toggle('menu__active')
@@ -43,7 +44,9 @@ export const Menu = () => {
     <>
         <div className='fixed h-[60px] w-full items-center flex lg:justify-between lg:px-36 px-10 z-50 max-w-full'>
             <button onClick={onClickMenu} className='h-full px-2 z-[1001]'><MenuSvg className='stroke-white' /></button>
-            <DevaranaInlineSvg className='fill-white lg:w-[200px] w-[130px] mx-auto' />
+            <Link href="/">
+                <DevaranaInlineSvg className='fill-white lg:w-[200px] w-[130px] mx-auto' />
+            </Link>
             <div className='lg:flex gap-10 hidden'>
                 <CorreoSvg className='fill-white w-[25px]' />
                 <WhatsappSvg className='fill-white w-[25px]' />
@@ -62,35 +65,39 @@ export const Menu = () => {
                         <div className='flex flex-col gap-10 z-20'>
                             <div>
                                 <div className='flex gap-2 align-middle items-center justify-center cursor-pointer' onClick={onClickShow}>
-                                    <p className='text-center text-white font-playfair text-3xl'>Empresa</p> 
-                                    <MenuPolygonSvg className='fill-white translate-y-1 transition-all duration-500'/>
+                                    <Link href="/empresa" onClick={ onClickMenu }><p className='text-center text-white font-playfair text-3xl' >Empresa</p> </Link>
+                                    <MenuPolygonSvg className='fill-white translate-y-1 transition-all duration-500'  />
                                 </div> 
 
                                 <div className='menu__opt h-44 overflow-hidden transition-all duration-500 text-center'>
-                                    <Link href='/empresa'>
+                                    <Link href='/empresa/responsabilidad-social' onClick={onClickMenu}>
                                         <p className='text-white font-light pt-8 pb-4'>Responsabilidad Social</p>
                                     </Link>
-                                    <Link href='/empresa'>
+                                    <Link href='/empresa/great-place-to-work' onClick={onClickMenu}>
                                         <p className='text-white font-light py-4'>¿Qué nos convierte en GPTW?</p>
                                     </Link>
-                                    <Link href='/empresa'>
+                                    <Link href='/empresa/certificados-y-premios' onClick={onClickMenu}>
                                         <p className='text-white font-light pt-4'>Certificados y Premios</p>
                                     </Link>
                                 </div>
                             </div> 
                             <div>
                                 <div className='flex gap-2 align-middle items-center justify-center cursor-pointer' onClick={onClickShow}>
-                                    <p className='text-center text-white font-playfair text-3xl'>Carrera</p> 
+                                    <Link href='/carrera' onClick={ onClickMenu }>
+                                        <p className='text-center text-white font-playfair text-3xl' >Carrera</p> 
+                                    </Link>
                                     <MenuPolygonSvg className='fill-white translate-y-1'/> 
                                 </div>
                                 <div className='menu__opt overflow-hidden transition-all duration-500 text-center'>
-                                    <Link href='/empresa'>
+                                    <Link href='/vacantes' onClick={onClickMenu}>
                                         <p className='text-white font-light pt-8 pb-4'>Vacantes</p>
                                     </Link>
                                 </div>
                             </div>
                             <div className=''>
-                                <p className='text-center text-white font-playfair text-3xl'>Contacto</p>
+                                <Link href='/contacto' onClick={onClickMenu}>
+                                    <p className='text-center text-white font-playfair text-3xl'>Contacto</p>
+                                </Link>
                             </div>
                         </div>
                     </div>
