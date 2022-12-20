@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "yarn tailwind && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "tailwind": "tailwindcss -o styles/build.css --minify"
+    "tailwind": "tailwindcss -o styles/build.css --minify",
+    "local": "yarn tailwind && next build"
   },
   "dependencies": {
     "@types/node": "18.11.9",
