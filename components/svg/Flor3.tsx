@@ -276,4 +276,6 @@ const Flor3 = ({className}:SvgProps) => (
     </g>
   </svg>
 );
+
+
 export default Flor3;

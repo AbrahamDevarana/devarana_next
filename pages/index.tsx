@@ -26,7 +26,9 @@ export default function Home() {
         <div id="initialBanner">
             <div className='h-screen w-full relative object-contain'>
                 <Image src={fachada} className='object-cover w-full' fill alt='Devarana Home' />
-				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0' />
+				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
+                    
+                </div>
             </div>
         </div>
         <div className='grid grid-cols-2 max-w-full overflow-hidden'>
