@@ -154,13 +154,13 @@ h1{
 
 
 .swiper-button-prev::after{
-    content: url("../public/assets/svg/LeftArrow.svg")!important;
+    content: url("/assets/svg/LeftArrow.svg")!important;
     font-size: 35px!important;
     display:flex;
     
 }
 .swiper-button-next::after{
-    content: url("../public/assets/svg/RightArrow.svg")!important;
+    content: url("/assets/svg/RightArrow.svg")!important;
     font-size: 35px!important; 
     display:flex;   
 }
