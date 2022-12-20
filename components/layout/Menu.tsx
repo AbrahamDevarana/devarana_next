@@ -2,10 +2,11 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import CorreoSvg from '../svg/correo'
 import { DevaranaInlineSvg } from '../svg/devaranaInline'
-import Flor3 from '../svg/flor3'
+
 import { MenuSvg } from '../svg/menu'
 import MenuPolygonSvg from '../svg/menuPolygon'
 import WhatsappSvg from '../svg/whatsapp'
+import Flor3 from '../../components/svg/flor3'
 
 export const Menu = () => {
     
