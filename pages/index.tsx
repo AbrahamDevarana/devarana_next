@@ -12,7 +12,7 @@ import torreTerra from '../public/assets/images/home/TorreTerra.webp'
 import torreAqua from '../public/assets/images/home/TorreAqua.webp'
 import torreFuego from '../public/assets/images/home/TorreFuego.webp'
 import Flor5 from '../components/svg/flor5'
-// import FlorTres from '../components/svg/flor3'
+import Flor3 from '../components/svg/flor3'
 
 export default function Home() {
   return (
@@ -69,7 +69,7 @@ export default function Home() {
                 <Flor5 className='fill-devarana-hazelnut w-full opacity-30 rotate-[25deg] -translate-x-28' />
             </div>
             <div className='absolute right-0 -z-10 bottom-5'>
-                {/* <FlorTres className='fill-devarana-hazelnut w-full opacity-30 -rotate-[25deg] translate-y-36 translate-x-28' /> */}
+                <Flor3 className='fill-devarana-hazelnut w-full opacity-30 -rotate-[25deg] translate-y-36 translate-x-28' />
             </div>
             
 			
@@ -118,7 +118,7 @@ export default function Home() {
                 <Flor5 className='fill-devarana-hazelnut w-full opacity-30 rotate-[25deg] -translate-x-28' />
             </div>
             <div className='absolute right-0 -z-10 bottom-5'>
-                {/* <FlorTres className='fill-devarana-hazelnut w-full opacity-30 -rotate-[25deg] translate-y-36 translate-x-28' /> */}
+                <Flor3 className='fill-devarana-hazelnut w-full opacity-30 -rotate-[25deg] translate-y-36 translate-x-28' />
             </div>
 
             <div className='lg:px-[245px] px-14'>
