@@ -34,14 +34,22 @@ export default function Home() {
         <div className='grid grid-cols-2 max-w-full overflow-hidden'>
             <div className='col-span-1 relative pt-1 pr-0.5'>
                 <Image src={credenza} className='object-cover w-full' height={600} width={1000} placeholder="blur" alt="Credenza"/> 
-				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0' />
-
-
-				
+				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0'>
+                    <div className="flex flex-col items-center justify-end pb-12 h-full">
+                        <h2 className='font-playfair text-4xl text-white pb-5'>DEVARANA <span className='text-4xl font-mulish'>Home</span></h2> 
+                        <Button type='button' textColor='white' colorType='whiteInverted' > MUY PRONTO </Button>
+                    </div>
+                  
+                </div>				
             </div>
             <div className='col-span-1 relative pt-1 pl-0.5'>
                 <Image src={fotoSalon} className='object-cover w-full' height={600} width={1000} placeholder="blur" alt="Salon Ingles"/>
-				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0' />
+				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0' >
+                    <div className="flex flex-col items-center justify-end pb-12 h-full">
+                        <h2 className='font-playfair text-4xl text-white pb-5'>Nuestro equipo</h2> 
+                        <Button type='button' textColor='white' colorType='whiteInverted' > SABER MÁS </Button>
+                    </div>
+                </div>
             </div>
         </div>
 
