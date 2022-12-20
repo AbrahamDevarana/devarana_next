@@ -7,7 +7,7 @@ import Arquitectos from '../public/assets/images/carrera/Arquitectos.webp'
 import { SliderTestimonios } from '../components/carrera/SliderTestimonios'
 import Colaboradores from '../public/assets/images/carrera/Colaboradores.webp'
 import Flor5 from '../components/svg/flor5'
-import Flor3 from '../components/svg/flor3'
+import FlorTres from '../components/svg/flor3'
 import { Form } from '../components/Form'
 import { BannerRedes } from '../components/layout/BannerRedes'
 
@@ -25,7 +25,7 @@ export default function Carrera() {
 
             <div className="relative overflow-hidden">
                 <div className='absolute right-0 -z-10 top-20 bottom-0'>
-                    <Flor3 className='fill-devarana-hazelnut w-full opacity-50 -rotate-[45deg] translate-x-16'/>
+                    <FlorTres className='fill-devarana-hazelnut w-full opacity-50 -rotate-[45deg] translate-x-16'/>
                 </div>
                 <div className='px-64 py-24'>
                     <div className="grid grid-cols-12 gap-20">

@@ -1,6 +1,6 @@
 
 import { SvgProps } from "../../interfaces";
-const Flor3 = ({className}:SvgProps) => (
+const FlorTres = ({className}:SvgProps) => (
   <svg
     id="Capa_2"
     xmlns="http://www.w3.org/2000/svg"
@@ -276,4 +276,4 @@ const Flor3 = ({className}:SvgProps) => (
     </g>
   </svg>
 );
-export default Flor3;
+export default FlorTres;

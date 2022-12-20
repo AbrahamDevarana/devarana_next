@@ -6,7 +6,7 @@ import { Form } from "../../components/Form";
 import { BannerRedes } from "../../components/layout/BannerRedes";
 import Flor2 from "../../components/svg/flor2";
 import Flor5 from "../../components/svg/flor5";
-import Flor3 from "../../components/svg/flor3";
+import FlorTres from "../../components/svg/flor3";
 import ServicioLegendarioSVG from "../../components/svg/servicioLegendario";
 
 export default function ResponsabilidadSocial() {
@@ -54,7 +54,7 @@ export default function ResponsabilidadSocial() {
                         <p className="text-devarana-graph lg:text-xl text-xs"> Hemos asumido el compromiso de implementar un modelo de Gestión de Calidad con la finalidad de impulsar la satisfacción de nuestro equipo de trabajo, clientes y socios de negocio. </p>
                     </div>
                     <div className='absolute right-0 -z-10 bottom-0'>
-                        <Flor3 className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg] scale-[2] translate-x-36 translate-y-32 lg:block hidden'/>
+                        <FlorTres className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg] scale-[2] translate-x-36 translate-y-32 lg:block hidden'/>
                     </div>
                 </div>
 
