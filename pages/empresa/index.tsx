@@ -1,22 +1,19 @@
 import Image from "next/image";
-import { Seo } from "../components/layout/Seo";
-import Flor1 from "../components/svg/flor1";
-import { SliderValores } from "../components/empresa/SliderValores";
-import { SliderProyectos } from "../components/empresa/SliderProyectos";
+import { Seo } from "../../components/layout/Seo";
+import Flor1 from "../../components/svg/flor1";
+import { SliderValores } from "../../components/empresa/SliderValores";
+import { SliderProyectos } from "../../components/empresa/SliderProyectos";
 
 
-import PrimerEntrega from "../public/assets/images/empresa/PrimerEntrega.webp";
-import TorresReserva from "../public/assets/images/empresa/TorresReserva.webp";
-import Flor5 from "../components/svg/flor5";
-import Reforestacion from "../public/assets/images/empresa/Reforestacion.webp";
-import ViajeAniversario from "../public/assets/images/empresa/ViajeAniversario.webp";
-import Certificados from "../public/assets/images/empresa/Certificados.webp";
-import { Card } from "../components/empresa/Card/Card";
-import { BannerRedes } from "../components/layout/BannerRedes";
-import { Form } from "../components/Form";
+import PrimerEntrega from "../../public/assets/images/empresa/PrimerEntrega.webp";
+import TorresReserva from "../../public/assets/images/empresa/TorresReserva.webp";
+import Flor5 from "../../components/svg/flor5";
+import Reforestacion from "../../public/assets/images/empresa/Reforestacion.webp";
+import ViajeAniversario from "../../public/assets/images/empresa/ViajeAniversario.webp";
+import Certificados from "../../public/assets/images/empresa/Certificados.webp";
+import { BannerRedes } from "../../components/layout/BannerRedes";
+import { Form } from "../../components/Form";
 
-// Suspense
-import { Suspense } from "react";
 
 export default function Empresa() {
     
@@ -81,24 +78,23 @@ export default function Empresa() {
             </div>
 
             <div className="bg-devarana-hazelnut">
-                 <div className="mx-auto w-full py-24 max-w-6xl px-10">
+                 <div className="mx-auto w-full py-24 max-w-6xl lg:px-10 px-5">
                     <h3 className="text-devarana-graph-darker text-6xl text-center">Testimonio de Clientes</h3>
                     <hr className="border-devarana-graph border-opacity-40 w-full my-10"/>
                     <div className="max-w-3xl w-full mx-auto flex items-center">
-                        <p className="text-[150px] text-devarana-blue" >“</p>
-                        <p className="text-center text-devarana-graph px-10"> Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                        <p className="lg:text-[150px] text-[80px] text-devarana-blue -translate-y-12" >“</p>
+                        <p className="text-center text-devarana-graph lg:px-10 px-2"> Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur
                             duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor
                             cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. </p>
-                        <sub className="text-[150px] text-devarana-blue px-5 items-end flex">”</sub>
+                        <sub className="lg:text-[150px] text-[80px] text-devarana-blue px-5 items-end flex translate-y-14">”</sub>
                     </div>
-                    <p className=" text-2xl text-devarana-blue text-center"> John Doe </p>
+                    <p className="text-2xl text-devarana-blue text-center"> John Doe </p>
                     <hr className="border-devarana-graph border-opacity-40 w-full my-10"/>
                  </div>
             </div>
 
             <div className="p-24">
                 <div className="grid lg:grid-cols-3 gap-24">
-
                       <div className="col-span-1 border border-devarana-graph rounded-b border-opacity-40 relative group overflow-hidden max-h-[700px]">
                         <Image src={Reforestacion} className='object-cover object-center w-full h-[450px] group-hover:h-[700px] transition-all duration-1000 group-hover:scale-110' height={500} width={585} placeholder="blur" alt="Reforestacion"/>
                         <div className="p-10 bg-white group-hover:bg-devarana-midnight group-hover:bg-opacity-30 h-[250px] group-hover:h-full group-hover:-translate-y-full duration-1000 transition-all">

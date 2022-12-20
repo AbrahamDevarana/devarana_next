@@ -3,7 +3,7 @@ import { Button } from './Button'
 
 export const Form = () => {
   return (
-    <div className='bg-formulario bg-cover bg-no-repeat py-24 relative bg z-0 overflow-hidden'>
+    <div className='bg-formulario bg-cover bg-no-repeat py-24 relative mb-24 z-0 overflow-hidden'>
         <div className='absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10' style={{background: "rgba(36, 42, 56, 0.7)"}}></div>
         <div className='grid grid-cols-12 lg:gap-10 gap-y-10'>
             <div className="col-span-12 lg:col-span-6 text-center justify-center flex flex-col z-10 lg:px-0 px-8">

@@ -97,7 +97,7 @@ export default function Home() {
 
 		<div className='bg-devarana-blue h-[300px] text-devarana-pink relative' />
 
-        <div className='relative overflow-hidden'>
+        <div className='relative overflow-hidden pb-24'>
             <div className='py-[100px]'>
                 <h2 className='text-center font-playfair text-devarana-graph-darker lg:text-6xl text-xl'>Proyecto Actual</h2>
                 <hr className='border-devarana-pink lg:w-72 w-32 lg:mb-[50px] mb-[45px] mt-[35px] mx-auto'/>

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Button } from '../Button';
+import 'swiper/css';
 
 import HighGardens from '../svg/high-gardens';
 

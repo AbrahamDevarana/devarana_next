@@ -52,7 +52,7 @@ export const Menu = () => {
 
             {/* Prevent scroll */}
 
-            <div id='menu' className='menu__container top-0 fixed w-full lg:max-w-[515px] bg-devarana-blue  lg:bg-opacity-90  z-[1000] transition-all duration-200'>
+            <div id='menu' className='menu__container top-0 fixed w-full lg:max-w-[515px] bg-devarana-blue  lg:bg-opacity-90 z-[1000] transition-all duration-700 ease-in-out'>
                 <div className='relative h-screen'>
                     <div className='absolute left-0 -z-10 top-0 bottom-0'>
                         <Flor3 className='fill-white w-full opacity-10 rotate-[25deg] translate-y-36 -translate-x-28' />

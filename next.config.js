@@ -5,11 +5,10 @@ const nextConfig = {
   images: {
     // 1 month
         minimumCacheTTL: 2592000,
+        domains: ['picsum.photos']       
     },
     env: {
         // ... PRODUCTION ? DEVELOPMENT ?
-        
-
     },
 }
 
