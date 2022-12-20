@@ -1,6 +1,4 @@
-import * as React from "react";
 import { SvgProps } from "../../interfaces";
-
 
 const Flor3 = ({className}:SvgProps) => (
   <svg
