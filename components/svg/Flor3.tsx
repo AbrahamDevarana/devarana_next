@@ -1,5 +1,5 @@
-import { SvgProps } from "../../interfaces";
 
+import { SvgProps } from "../../interfaces";
 const Flor3 = ({className}:SvgProps) => (
   <svg
     id="Capa_2"
@@ -276,6 +276,4 @@ const Flor3 = ({className}:SvgProps) => (
     </g>
   </svg>
 );
-
-
 export default Flor3;
