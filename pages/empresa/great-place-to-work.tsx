@@ -6,7 +6,7 @@ import AvancedeEstrategia from "../../public/assets/images/empresa/02-que-nos-co
 import { Form } from "../../components/Form";
 import { BannerRedes } from "../../components/layout/BannerRedes";
 import Flor5 from "../../components/svg/flor5";
-import FlorTres from "../../components/svg/flor3";
+// import FlorTres from "../../components/svg/flor3";
 import Flor1 from "../../components/svg/flor1";
 import AniversarioSVG from "../../components/svg/aniversario";
 
@@ -20,7 +20,7 @@ export default function GreatPlaceToWork() {
                 <p className="text-center max-w-screen-xl w-full px-10 mx-auto text-xs lg:text-3xl font-light text-devarana-graph">Para nosotros, construir una cultura de trabajo sólida, con base en la pasión, el compromiso, la excelencia y la innovación es clave en nuestro éxito profesional. Cada acción que hacemos nos distingue y nos lleva a ser diseñadores de lo extraordinario.</p>
 
                 <div className='absolute right-0 z-10 top-20'>
-                    <FlorTres  className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg] scale-150 translate-x-28 translate-y-36 lg:block hidden'/>
+                    {/* <FlorTres  className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg] scale-150 translate-x-28 translate-y-36 lg:block hidden'/> */}
                 </div>
                 
 

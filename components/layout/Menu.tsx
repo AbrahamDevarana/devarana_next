@@ -6,7 +6,7 @@ import { DevaranaInlineSvg } from '../svg/devaranaInline'
 import { MenuSvg } from '../svg/menu'
 import MenuPolygonSvg from '../svg/menuPolygon'
 import WhatsappSvg from '../svg/whatsapp'
-import FlorTres from '../svg/flor3'
+import Flor2 from '../svg/flor2'
 export const Menu = () => {
     
     const onClickMenu = () => {
@@ -55,7 +55,7 @@ export const Menu = () => {
             <div id='menu' className='menu__container top-0 fixed w-full lg:max-w-[515px] bg-devarana-blue  lg:bg-opacity-90 z-[1000] transition-all duration-700 ease-in-out'>
                 <div className='relative h-screen'>
                     <div className='absolute left-0 -z-10 top-0 bottom-0'>
-                        <FlorTres className='fill-white w-full opacity-10 rotate-[25deg] translate-y-36 -translate-x-28' />
+                        <Flor2 className='fill-white w-full opacity-10 rotate-[25deg] translate-y-36 -translate-x-28' />
                     </div>
 
                     <div className='flex justify-center items-center h-screen'>
