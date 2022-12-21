@@ -1,56 +1,63 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css';
-
 
 import { CardVacantes } from './CardVacantes';
-import { Autoplay } from 'swiper';
 import { VacanteModalProps } from '../../interfaces';
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export const SliderVacantes = ({setShowModal, setModalContent}:VacanteModalProps) => {
+
+    const settings = {
+        centerMode: true,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 100,
+        speed: 3000,
+        cssEase: "linear",
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ],
+
+    }
+
+
   return (
     <>
-        <Swiper
-			spaceBetween={80}
-			slidesPerView={4}
-		 	 autoplay={{
-				delay: 100,
-				disableOnInteraction: false,
-			}}
-			loop={true}
-			freeMode={true}
-			modules={[Autoplay]}
-			className="testimoniosSwiper"
-			breakpoints={{
-				320: {
-					slidesPerView: 1,	
-				},
-				640: {
-					slidesPerView: 2,	
-				},
-				768: {
-					slidesPerView: 3,
-				},
-				1024: {
-					slidesPerView: 4,
-				}}
-			}
-        >
-            <SwiperSlide>
-                <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />
-            </SwiperSlide>                 
-            <SwiperSlide>
-                <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />
-            </SwiperSlide>                 
-            <SwiperSlide>
-                <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />
-            </SwiperSlide>                 
-            <SwiperSlide>
-                <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />
-            </SwiperSlide>                 
-            <SwiperSlide>
-                <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />
-            </SwiperSlide>                 
-        </Swiper>
+        <Slider {...settings}>
+            <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />                 
+            <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />                 
+            <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />                 
+            <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />                 
+            <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />                 
+        </Slider>
     </>
+
+    // <CardVacantes setShowModal={setShowModal} setModalContent={setModalContent} />
   )
 }

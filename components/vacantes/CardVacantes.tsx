@@ -12,8 +12,7 @@ export const CardVacantes = ({setShowModal, setModalContent}:VacanteModalProps) 
     
     return (
         <>
-        
-            <div className='rounded-3xl relative'>
+            <div className='rounded-3xl relative m-5'>
                 <Image src={Construccion} alt="Construccion" className='rounded-3xl w-full' />
                 <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0 rounded-3xl'>
                     <div className="flex flex-col items-start pl-10 justify-end pb-12 h-full">

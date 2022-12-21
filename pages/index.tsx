@@ -25,7 +25,7 @@ export default function Home() {
             keywords="Home page"
         />
 
-        <div id="initialBanner">
+        <div id="initialBanner" className='overflow-hidden'>
             <div className='h-screen w-full relative object-contain'>
                 <Image src={fachada} className='object-cover w-full' fill alt='Devarana Home' />
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>

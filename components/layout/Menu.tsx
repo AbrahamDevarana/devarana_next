@@ -10,9 +10,6 @@ import Flor3 from '../svg/flor3'
 export const Menu = () => {
 
 
-    
-    
-
     const onClickMenu = () => {
         const menu = document.getElementById('menu')
         menu?.classList.toggle('menu__active')
@@ -31,7 +28,6 @@ export const Menu = () => {
         const element = e.currentTarget
         const elementParent = element.parentElement
         const elementParentChildren = elementParent?.children[1]
-
         
         // How many childs has elementParentChildren?
         const childs:number = elementParentChildren?.childElementCount || 0        
@@ -90,7 +86,7 @@ export const Menu = () => {
                             </div> 
                             <div>
                                 <div className='flex gap-2 align-middle items-center justify-center cursor-pointer' onClick={onClickShow}>
-                                    <Link href='/carrera' onClick={ onClickMenu }>
+                                    <Link href='/carrera' onDoubleClick={ onClickMenu }>
                                         <p className='text-center text-white font-playfair text-3xl' >Carrera</p> 
                                     </Link>
                                     <MenuPolygonSvg className='fill-white translate-y-1'/> 
