@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
 import CorreoSvg from '../svg/correo'
 import { DevaranaInlineSvg } from '../svg/devaranaInline'
 
@@ -8,11 +8,18 @@ import MenuPolygonSvg from '../svg/menuPolygon'
 import WhatsappSvg from '../svg/whatsapp'
 import Flor3 from '../svg/flor3'
 export const Menu = () => {
+
+
+    
     
 
     const onClickMenu = () => {
         const menu = document.getElementById('menu')
         menu?.classList.toggle('menu__active')
+
+        const devaranaWord = document.getElementById('devaranaWord')
+
+        devaranaWord?.classList.toggle('devaranaWord__active')
 
     //  get body    
         const body = document.querySelector('body')

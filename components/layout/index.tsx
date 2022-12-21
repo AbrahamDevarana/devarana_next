@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React from 'react'
+import { useState } from 'react'
 import { Footer } from './Footer'
 import { HeadBanner } from './HeadBanner'
 import { Menu } from './Menu'
@@ -10,6 +10,8 @@ interface Props {
 }
 
 export const Layout = ({children}: Props) => {
+
+  const [menu , setMenu] = useState(false)
   return (
     <>
         <Head>

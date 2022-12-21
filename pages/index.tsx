@@ -13,6 +13,8 @@ import torreAqua from '../public/assets/images/home/TorreAqua.webp'
 import torreFuego from '../public/assets/images/home/TorreFuego.webp'
 import Flor5 from '../components/svg/flor5'
 import Flor3 from '../components/svg/flor3'
+import { DevaranaInlineSvg } from '../components/svg/devaranaInline'
+import { SliderHome } from '../components/home/SliderHome'
 
 export default function Home() {
   return (
@@ -27,11 +29,23 @@ export default function Home() {
             <div className='h-screen w-full relative object-contain'>
                 <Image src={fachada} className='object-cover w-full' fill alt='Devarana Home' />
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
-                    
+                    <div className="relative w-full h-full">
+                        <div className='flex flex-col justify-center w-full h-full transition-all duration-500  lg:pl-36 lg:-translate-y-0 -translate-y-32' id="devaranaWord">
+                            <DevaranaInlineSvg className='fill-white w-[274px] lg:w-[870px] lg:pl-0 ml-20' />
+                            <p className='font-playfair text-4xl lg:text-6xl text-white lg:pl-0 ml-20'>Somos Creadores</p>
+                        </div>
+                        <div className='absolute lg:left-auto left-10 bottom-12 lg:right-72'>
+                            <div className='flex flex-col lg:flex-row items-center gap-5 border-l pl-5 '>
+                                <Image src={credenza} className='object-cover h-[200px] w-[280px]' height={200} width={280} placeholder="blur" alt="Cocina"/>
+                                <Button type='button' colorType='pink' textColor='white'> DESCUBRE ROYAL VIEW </Button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div className='grid grid-cols-2 max-w-full overflow-hidden'>
+        
+        <div className='grid-cols-2 max-w-full overflow-hidden lg:grid hidden'>
             <div className='col-span-1 relative pt-1 pr-0.5'>
                 <Image src={credenza} className='object-cover w-full' height={600} width={1000} placeholder="blur" alt="Credenza"/> 
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0'>
@@ -52,6 +66,11 @@ export default function Home() {
                 </div>
             </div>
         </div>
+
+        <div className='block lg:hidden'>
+            <SliderHome />
+        </div>
+
 
 		<div className='relative py-24 overflow-hidden'>
 			<hr className='border-devarana-pink w-72 mx-auto'/>
