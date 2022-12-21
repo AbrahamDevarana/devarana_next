@@ -193,10 +193,12 @@ h1{
     padding: 0 50px!important;
 }
 
-.testimoniosSwiper .swiper-wrapper{
-    /* transition : all 5s linear!important; */
+.sliderProyectos .swiper-button-prev {
+    left: 8px!important;
 }
-
+.sliderProyectos .swiper-button-next {
+    right: 8px!important;
+}
 
 /* abajo de  1024px */
 @media (max-width: 1024px) {

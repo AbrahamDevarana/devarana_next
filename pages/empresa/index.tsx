@@ -13,6 +13,8 @@ import ViajeAniversario from "../../public/assets/images/empresa/ViajeAniversari
 import Certificados from "../../public/assets/images/empresa/Certificados.webp";
 import { BannerRedes } from "../../components/layout/BannerRedes";
 import { Form } from "../../components/Form";
+import Flor2 from "../../components/svg/flor2";
+import Flor3 from "../../components/svg/flor3";
 
 
 export default function Empresa() {
@@ -24,7 +26,7 @@ export default function Empresa() {
                 description="Home page"
                 keywords="Home page"
             />
-            <div className="initialBanner py-20">
+            <div className="initialBanner py-20 relative">
                 <h1 className="text-devarana-pink text-center py-8 lg:text-4xl text-sm font-playfair">Nuesta Misión</h1>
                 <p className="text-center lg:text-5xl text-xl text-devarana-graph font-playfair lg:leading-[70px] leading-[30px] px-10">Inspiramos al mundo <span className="text-devarana-pink"> creando espacios <br className="lg:block hidden" />
                     únicos</span> con amor y pasión, cuidando nuestro <br className="lg:block hidden" />
@@ -33,21 +35,24 @@ export default function Empresa() {
 
                 {/*  PrimerEntrega si es escritorio  y otra si es responsivo */}
 
-                <Image src={PrimerEntrega} className='object-cover w-full lg:px-24 px-4 py-20' height={600} width={1000} placeholder="blur" alt="Primer Entrega"/>
+                <Image src={PrimerEntrega} className='object-cover w-full lg:px-24 px-4 py-20 z-10' priority quality={100} height={930} width={1920} placeholder="blur" alt="Primer Entrega"/>
                 
                 <div className='bg-devarana-hazelnut lg:h-[300px] h-[250px] relative -mt-48 -z-10 max-w-full'/>
+                <div className='absolute left-0 top-0 translate-y-3/4 -z-10 -translate-x-20 '>
+                    <Flor2 className='fill-devarana-hazelnut opacity-50 scale-150 w-full rotate-[25deg]' />
+                </div>
             </div>
 
             <div className="relative overflow-hidden pb-24">
                 <div className='grid grid-cols-2 gap-y-12 lg:mx-[245px] mx-10'>
                     <div className='col-span-2 lg:col-span-1 relative '>
-                        <Image src={TorresReserva} className='object-cover w-full z-20 rounded-sm' height={600} width={800} placeholder="blur" alt="TorresReserva"/>
+                        <Image src={TorresReserva} className='object-cover w-full z-20 rounded-sm' height={1002} width={707} placeholder="blur" alt="TorresReserva"/>
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                     </div>
                     <div className='col-span-2 lg:col-span-1 flex flex-col justify-center'>
                         <h2 className='lg:text-3xl text-xl font-playfair text-devarana-pink font-medium pb-10 lg:pl-20'>Nuestra Visión</h2>
                         <div className='lg:pl-20 max-w-xl'>
-                            <p className='pb-5 text-devarana-graph lg:text-4xl text-lg'>
+                            <p className='pb-5 text-devarana-graph lg:text-4xl text-lg font-playfair'>
                                 Seremos el referente en
                                 la creación de <span className="text-devarana-pink"> desarrollos
                                 inmobiliarios </span> extraordinarios
@@ -59,7 +64,7 @@ export default function Empresa() {
                     </div>
                 </div>
                 <div className='absolute right-12 -z-10 top-10'>
-                    <Flor1 className='fill-devarana-hazelnut w-full opacity-30 -rotate-[25deg] translate-y-36 translate-x-28' />
+                    <Flor1 className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg] translate-y-36 translate-x-28' />
                 </div>
             </div>
 
@@ -68,18 +73,20 @@ export default function Empresa() {
             </div>
 
 
-            <div className="bg-devarana-pearl relative ">
-                <div className='absolute left-0 top-10 z-10 -translate-x-20'>
-                    <Flor5 className='fill-devarana-hazelnut w-full opacity-30 rotate-[25deg]' />
+            <div className="bg-devarana-pearl relative">
+                <div className='absolute left-0 top-10 z-20 -translate-x-20'>
+                    <Flor5 className='fill-devarana-hazelnut w-full rotate-[25deg]' />
                 </div>
-                <div className="lg:p-24 z-20 relative p-4">
+                <h2 className="text-center text-6xl text-devarana-graph-darker pt-24 font-playfair">Creamos pensando en ti</h2>
+                <hr className="border-devarana-pink w-[270px] px-10 mx-auto mt-9 mb-4"/>
+                <div className="lg:px-24 lg:pb-24 z-20 relative px-4">
                     <SliderProyectos />
                 </div>
             </div>
 
             <div className="bg-devarana-hazelnut">
                  <div className="mx-auto w-full py-24 max-w-6xl lg:px-10 px-5">
-                    <h3 className="text-devarana-graph-darker text-6xl text-center">Testimonio de Clientes</h3>
+                    <h3 className="text-devarana-graph-darker text-6xl text-center font-playfair">Testimonio de Clientes</h3>
                     <hr className="border-devarana-graph border-opacity-40 w-full my-10"/>
                     <div className="max-w-3xl w-full mx-auto flex items-center">
                         <p className="lg:text-[150px] text-[80px] text-devarana-blue -translate-y-12" >“</p>
@@ -93,11 +100,14 @@ export default function Empresa() {
                  </div>
             </div>
 
-            <div className="p-24">
+            <div className="p-24 relative overflow-hidden">
+                <div className='absolute right-0 bottom-0 translate-y-24 translate-x-20'>
+                    <Flor3 className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg]' />
+                </div>
                 <div className="grid lg:grid-cols-3 gap-24">
-                      <div className="col-span-1 border border-devarana-graph rounded-b border-opacity-40 relative group overflow-hidden max-h-[700px]">
-                        <Image src={Reforestacion} className='object-cover object-center w-full h-[450px] group-hover:h-[700px] transition-all duration-1000 group-hover:scale-110' height={500} width={585} placeholder="blur" alt="Reforestacion"/>
-                        <div className="p-10 bg-white group-hover:bg-devarana-midnight group-hover:bg-opacity-30 h-[250px] group-hover:h-full group-hover:-translate-y-full duration-1000 transition-all">
+                    <div className="col-span-1 border border-devarana-graph rounded-b border-opacity-40 relative group overflow-hidden max-h-[700px]">
+                        <Image src={Reforestacion} className='object-cover object-center w-full h-[450px] group-hover:h-[700px] transition-all duration-1000 group-hover:scale-110' height={500} width={800} placeholder="blur" alt="Reforestacion"/>
+                        <div className="p-10 bg-transparent group-hover:bg-devarana-midnight group-hover:bg-opacity-30 h-[250px] group-hover:h-full group-hover:-translate-y-full duration-1000 transition-all">
                             <h3 className="pb-3 text-devarana-graph-darker text-3xl group-hover:text-white transition-all duration-1000">Responsabilidad Social</h3>
                             <p className="text-devarana-graph group-hover:hidden transition-all duration-1000">
                                 Estamos comprometidos con nuestro entorno y
@@ -108,8 +118,8 @@ export default function Empresa() {
                         {/* <Card /> */}
                     </div>
                     <div className="col-span-1 border border-devarana-graph rounded-b border-opacity-40 relative group overflow-hidden max-h-[700px]">
-                        <Image src={ViajeAniversario} className='object-cover object-center w-full h-[450px] group-hover:h-[700px] transition-all duration-1000 group-hover:scale-110' height={500} width={585} placeholder="blur" alt="Certificados"/>
-                        <div className="p-10 bg-white group-hover:bg-devarana-midnight group-hover:bg-opacity-30 h-[250px] group-hover:h-full group-hover:-translate-y-full duration-1000 transition-all">
+                        <Image src={ViajeAniversario} className='object-cover object-center w-full h-[450px] group-hover:h-[700px] transition-all duration-1000 group-hover:scale-110' height={500} width={800} placeholder="blur" alt="Certificados"/>
+                        <div className="p-10 bg-transparent group-hover:bg-devarana-midnight group-hover:bg-opacity-30 h-[250px] group-hover:h-full group-hover:-translate-y-full duration-1000 transition-all">
                             <h3 className="pb-3 text-devarana-graph-darker text-3xl group-hover:text-white transition-all duration-1000">¿Por qué somos GPTW?</h3>
                             <p className="text-devarana-graph group-hover:hidden transition-all duration-1000">
                                 Estamos comprometidos con nuestro entorno y
@@ -120,8 +130,8 @@ export default function Empresa() {
                         {/* <Card /> */}
                     </div>
                     <div className="col-span-1 border border-devarana-graph rounded-b border-opacity-40 relative group overflow-hidden max-h-[700px]">
-                        <Image src={Certificados} className='object-cover object-center w-full h-[450px] group-hover:h-[700px] transition-all duration-1000 group-hover:scale-110' height={500} width={585} placeholder="blur" alt="Certificados"/>
-                        <div className="p-10 bg-white group-hover:bg-devarana-midnight group-hover:bg-opacity-30 h-[250px] group-hover:h-full group-hover:-translate-y-full duration-1000 transition-all">
+                        <Image src={Certificados} className='object-cover object-center w-full h-[450px] group-hover:h-[700px] transition-all duration-1000 group-hover:scale-110' height={500} width={800} placeholder="blur" alt="Certificados"/>
+                        <div className="p-10 bg-transparent group-hover:bg-devarana-midnight group-hover:bg-opacity-30 h-[250px] group-hover:h-full group-hover:-translate-y-full duration-1000 transition-all">
                             <h3 className="pb-3 text-devarana-graph-darker text-3xl group-hover:text-white transition-all duration-1000">Certificaciones y Premios</h3>
                             <p className="text-devarana-graph group-hover:hidden transition-all duration-1000">
                                 Estamos comprometidos con nuestro entorno y

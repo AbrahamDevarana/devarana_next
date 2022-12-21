@@ -27,7 +27,7 @@ export default function Home() {
 
         <div id="initialBanner" className='overflow-hidden'>
             <div className='h-screen w-full relative object-contain'>
-                <Image src={fachada} className='object-cover w-full' fill alt='Devarana Home' />
+                <Image src={fachada} className='object-cover w-full' fill alt='Devarana Home' placeholder='blur' priority />
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
                     <div className="relative w-full h-full">
                         <div className='flex flex-col justify-center w-full h-full transition-all duration-500  lg:pl-36 lg:-translate-y-0 -translate-y-32' id="devaranaWord">
@@ -98,7 +98,7 @@ export default function Home() {
 
 			<div className='grid grid-cols-2 gap-y-12'>
 				<div className='col-span-2 lg:col-span-1 relative lg:ml-[215px] lg:mx-0 mx-16'>
-					<Image src={cocina} className='object-cover w-full z-20 rounded-sm' height={600} width={800} placeholder="blur" alt="Cocina"/>
+					<Image src={cocina} className='object-cover w-full z-20 rounded-sm' height={1100} width={850} placeholder="blur" alt="Cocina"/>
 					<div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
 					
 				</div>
@@ -146,7 +146,7 @@ export default function Home() {
                         <h3 className='text-center pb-20 text-devarana-graph-darker text-[40px] font-playfair'>Torre Terra</h3>
                         <div className='mx-10 relative'>
                             <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                            <Image src={torreTerra} className='object-cover w-full' height={600} width={800} placeholder="blur" alt="Torre Terra"/>
+                            <Image src={torreTerra} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Terra"/>
                         </div>
                         <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair text-2xl'>Más del 80% Escriturado</p>
                         <p className='px-14 text-devarana-graph text-base'>La mezcla perfecta entre garantía en la calidad, seguridad e inversión.</p>
@@ -155,7 +155,7 @@ export default function Home() {
                         <h3 className='text-center pb-20 text-devarana-graph-darker text-[40px] font-playfair'>Torre Aqua</h3>
                         <div className='mx-10 relative'>
                             <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                            <Image src={torreAqua} className='object-cover w-full' height={600} width={800} placeholder="blur" alt="Torre Aqua"/>
+                            <Image src={torreAqua} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Aqua"/>
                         </div>
                         <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair text-2xl'>Estilo de Vida</p>
                         <p className='px-14 text-devarana-graph text-base'>Con más de 30 amenidades para ti y tu familia.</p>
@@ -164,7 +164,7 @@ export default function Home() {
                         <h3 className='text-center pb-20 text-devarana-graph-darker text-[40px] font-playfair'>Torre Fuego</h3>
                         <div className='mx-10 relative'>
                             <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                            <Image src={torreFuego} className='object-cover w-full' height={600} width={800} placeholder="blur" alt="Torre Fuego"/>
+                            <Image src={torreFuego} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Fuego"/>
                         </div>
                         <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair text-2xl'>Un Proyecto Único</p>
                         <p className='px-14 text-devarana-graph text-base'>Garantía en calidad, seguridad y plusvalía.</p>

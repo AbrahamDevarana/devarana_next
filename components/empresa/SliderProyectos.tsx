@@ -7,17 +7,23 @@ import 'swiper/css';
 import HighGardens from '../svg/high-gardens';
 
 import RoyalView from '../../public/assets/images/empresa/RoyalView.webp'
-import HighGardenHouse from '../../public/assets/images/empresa/HighGardens.webp'
+import HighGardenHouse from '../../public/assets/images/empresa/HighG.webp'
 import UpperCondesa from '../../public/assets/images/empresa/UpperCondesa.webp'
 import GrandMayran from '../../public/assets/images/empresa/GrandMayran.webp'
+import { Navigation } from 'swiper';
+import Flor5 from '../svg/flor5';
 
 export const SliderProyectos = () => {
   return (
-    <div className='bg-white'>
-
-        <Swiper>
+    <div className='bg-transparent relative'>
+        <Swiper
+            spaceBetween={20}
+            navigation
+            modules={[Navigation]}
+            className='sliderProyectos'
+        >
             <SwiperSlide>
-                <div className="grid grid-cols-12 py-24">
+                <div className="grid grid-cols-12 py-24 m-8 bg-white">
                     <div className="lg:col-span-5 col-span-12 text-devarana-graph pt-16 lg:pr-40 lg:px-0 p-10">
                         <h2 className='text-5xl uppercase tracking-widest font-playfair flex lg:justify-end'> Royal View <span className='text-base content-start pl-1'> &#174; </span></h2>
                         <p className='py-14 font-light lg:text-right lg:pl-24 leading-9'>
@@ -40,13 +46,13 @@ export const SliderProyectos = () => {
                             <p className='text-center text-2xl text-white py-1 font-playfair'>¡80% de Torre Terra escriturado!</p>
                         </div>
                         <div className='bg-devarana-hazelnut absolute -left-2 w-4 h-80 z-10 top-1/2 -translate-y-1/2 hidden lg:block'/> 
-                        <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2'/>
-                        <Image src={RoyalView} alt="Royal View" className='object-cover w-full' placeholder='blur'/>
+                        <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2 block lg:hidden'/>
+                        <Image src={RoyalView} alt="Royal View" width={850} height={850} className='object-cover w-full' placeholder='blur'/>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="grid grid-cols-12 py-24">
+                <div className="grid grid-cols-12 py-24 m-8 bg-white">
                     <div className="lg:col-span-5 col-span-12 text-devarana-graph pt-16 lg:pr-40 lg:px-0 p-10">
                         <HighGardens className='fill-devarana-graph w-[300px] lg:ml-auto' />
                         <p className='pt-14 font-light lg:text-right lg:pl-24 leading-9 pb-7'>
@@ -69,13 +75,13 @@ export const SliderProyectos = () => {
                             <p className='text-center text-2xl text-white py-1 font-playfair'>¡Sold Out!</p>
                         </div>
                         <div className='bg-devarana-hazelnut absolute -left-2 w-4 h-80 z-10 top-1/2 -translate-y-1/2 hidden lg:block'/> 
-                        <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2' />
-                        <Image src={HighGardenHouse} alt="High Gardens" className='object-cover w-full' placeholder='blur' />
+                        <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2 block lg:hidden' />
+                        <Image src={HighGardenHouse} alt="High Gardens" width={850} height={850} className='object-cover w-full' placeholder='blur' />
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="grid grid-cols-12 py-24">
+                <div className="grid grid-cols-12 py-24 m-8 bg-white">
                     <div className="lg:col-span-5 col-span-12 text-devarana-graph pt-16 lg:pr-40 lg:px-0 p-10">
                         <h2 className='text-5xl uppercase tracking-widest font-playfair lg:text-right'> Upper Condesa </h2>
                         <p className='pt-14 font-light lg:text-right lg:pl-24 leading-9 pb-7'>
@@ -97,13 +103,13 @@ export const SliderProyectos = () => {
                             <p className='text-center text-2xl text-white py-1 font-playfair'>¡Sold Out!</p>
                         </div>
                         <div className='bg-devarana-hazelnut absolute -left-2 w-4 h-80 z-10 top-1/2 -translate-y-1/2 hidden lg:block'/> 
-                        <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2' />
-                        <Image src={UpperCondesa} alt="Upper Condesa" className='object-cover w-full' placeholder='blur' />
+                        <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2 block lg:hidden' />
+                        <Image src={UpperCondesa} alt="Upper Condesa" width={850} height={850}  className='object-cover w-full' placeholder='blur' />
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="grid grid-cols-12 py-24">
+                <div className="grid grid-cols-12 py-24 m-8 bg-white">
                     <div className="lg:col-span-5 col-span-12 text-devarana-graph pt-16 lg:pr-40 lg:px-0 p-10">
                         <h2 className='text-5xl uppercase tracking-widest font-playfair lg:text-right'> Grand Mayran </h2>
                         <p className='pt-14 font-light lg:text-right lg:pl-24 leading-9 pb-7'>
@@ -124,8 +130,8 @@ export const SliderProyectos = () => {
                             <p className='text-center text-2xl text-white py-1 font-playfair'>¡Sold Out!</p>
                         </div>
                         <div className='bg-devarana-hazelnut absolute -left-2 w-4 h-80 z-10 top-1/2 -translate-y-1/2 hidden lg:block'/> 
-                        <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2' />
-                        <Image src={GrandMayran} alt="Upper Condesa" className='object-cover w-full' placeholder='blur' />
+                        <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2 block lg:hidden' />
+                        <Image src={GrandMayran} alt="Upper Condesa" width={850} height={850}  className='object-cover w-full' placeholder='blur' />
                     </div>
                 </div>
             </SwiperSlide>

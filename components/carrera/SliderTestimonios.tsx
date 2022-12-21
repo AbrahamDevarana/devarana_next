@@ -13,8 +13,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { useState } from 'react'
-
 export const SliderTestimonios = () => {
 
     // const [swiper, setSwiper] = useState<SwiperRef | null>(null);
