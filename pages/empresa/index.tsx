@@ -15,6 +15,7 @@ import { BannerRedes } from "../../components/layout/BannerRedes";
 import { Form } from "../../components/Form";
 import Flor2 from "../../components/svg/flor2";
 import Flor3 from "../../components/svg/flor3";
+import { Card } from "../../components/empresa/Card";
 
 
 export default function Empresa() {
@@ -103,44 +104,12 @@ export default function Empresa() {
             <div className="p-24 relative overflow-hidden">
                 <div className='absolute right-0 bottom-0 translate-y-24 translate-x-20'>
                     <Flor3 className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg]' />
+                    
                 </div>
-                <div className="grid lg:grid-cols-3 gap-24">
-                    <div className="col-span-1 border border-devarana-graph rounded-b border-opacity-40 relative group overflow-hidden max-h-[700px]">
-                        <Image src={Reforestacion} className='object-cover object-center w-full h-[450px] group-hover:h-[700px] transition-all duration-1000 group-hover:scale-110' height={500} width={800} placeholder="blur" alt="Reforestacion"/>
-                        <div className="p-10 bg-transparent group-hover:bg-devarana-midnight group-hover:bg-opacity-30 h-[250px] group-hover:h-full group-hover:-translate-y-full duration-1000 transition-all">
-                            <h3 className="pb-3 text-devarana-graph-darker text-3xl group-hover:text-white transition-all duration-1000">Responsabilidad Social</h3>
-                            <p className="text-devarana-graph group-hover:hidden transition-all duration-1000">
-                                Estamos comprometidos con nuestro entorno y
-                                con el medio ambiente. Cuidamos el planeta
-                                para dejar un lugar mejor.
-                            </p>
-                        </div>
-                        {/* <Card /> */}
-                    </div>
-                    <div className="col-span-1 border border-devarana-graph rounded-b border-opacity-40 relative group overflow-hidden max-h-[700px]">
-                        <Image src={ViajeAniversario} className='object-cover object-center w-full h-[450px] group-hover:h-[700px] transition-all duration-1000 group-hover:scale-110' height={500} width={800} placeholder="blur" alt="Certificados"/>
-                        <div className="p-10 bg-transparent group-hover:bg-devarana-midnight group-hover:bg-opacity-30 h-[250px] group-hover:h-full group-hover:-translate-y-full duration-1000 transition-all">
-                            <h3 className="pb-3 text-devarana-graph-darker text-3xl group-hover:text-white transition-all duration-1000">¿Por qué somos GPTW?</h3>
-                            <p className="text-devarana-graph group-hover:hidden transition-all duration-1000">
-                                Estamos comprometidos con nuestro entorno y
-                                con el medio ambiente. Cuidamos el planeta
-                                para dejar un lugar mejor.
-                            </p>
-                        </div>
-                        {/* <Card /> */}
-                    </div>
-                    <div className="col-span-1 border border-devarana-graph rounded-b border-opacity-40 relative group overflow-hidden max-h-[700px]">
-                        <Image src={Certificados} className='object-cover object-center w-full h-[450px] group-hover:h-[700px] transition-all duration-1000 group-hover:scale-110' height={500} width={800} placeholder="blur" alt="Certificados"/>
-                        <div className="p-10 bg-transparent group-hover:bg-devarana-midnight group-hover:bg-opacity-30 h-[250px] group-hover:h-full group-hover:-translate-y-full duration-1000 transition-all">
-                            <h3 className="pb-3 text-devarana-graph-darker text-3xl group-hover:text-white transition-all duration-1000">Certificaciones y Premios</h3>
-                            <p className="text-devarana-graph group-hover:hidden transition-all duration-1000">
-                                Estamos comprometidos con nuestro entorno y
-                                con el medio ambiente. Cuidamos el planeta
-                                para dejar un lugar mejor.
-                            </p>
-                        </div>
-                        {/* <Card /> */}
-                    </div>
+                <div className="grid lg:grid-cols-3 gap-24 overflow-hidden">
+                    <Card altPicture="Reforestacion" previewPos="object-bottom" url="/empresa/responsabilidad-social"  picture={Reforestacion} title="Responsabilidad Social" description="Estamos comprometidos con nuestro entorno y con el medio ambiente. Cuidamos el planeta para dejar un lugar mejor."/>
+                    <Card altPicture="ViajeAniversario" previewPos="object-top" url="/empresa/great-place-to-work"  picture={ViajeAniversario} title="¿Por qué somos GPTW?" description="Estamos comprometidos con nuestro entorno y con el medio ambiente. Cuidamos el planeta para dejar un lugar mejor."/>
+                    <Card altPicture="Certificados" previewPos="object-top" url="/empresa/certificados-y-premios"  picture={Certificados} title="Certificaciones y Premios" description="Estamos comprometidos con nuestro entorno y con el medio ambiente. Cuidamos el planeta para dejar un lugar mejor."/>
                 </div>
             </div>
 
