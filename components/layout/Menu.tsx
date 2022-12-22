@@ -10,21 +10,29 @@ import Flor3 from '../svg/flor3'
 export const Menu = () => {
 
     const [ activeMenu, setActiveMenu ] = useState<boolean>(false)
+    const [showHead, setShowHead] = useState<number>(2)
+    const [lastScrollPos, setLastScrollPos] = useState<number>(0)
+    const [url, setUrl] = useState<string>('')
 
-    const onClickMenu = () => {
-
+    const onClickMenu = (value:boolean) => {        
         const menu = document.getElementById('menu')
-        menu?.classList.toggle('menu__active')
-        
         const devaranaWord = document.getElementById('devaranaWord')
-        
-        devaranaWord?.classList.toggle('devaranaWord__active')
-        
-        //  get body    
         const body = document.querySelector('body')
-        body?.classList.toggle('modal__active')
+
+        if (value) {
+            menu?.classList.add('menu__active')
+            devaranaWord?.classList.add('devaranaWord__active')
+            body?.classList.add('modal__active')
+            
+        }else{
+            menu?.classList.remove('menu__active')
+            devaranaWord?.classList.remove('devaranaWord__active')
+            body?.classList.remove('modal__active')
+        }
+
+        //  get body    
         
-        setActiveMenu(!activeMenu)
+        setActiveMenu(value)
     }
 
     const onClickShow = (e:React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -43,14 +51,7 @@ export const Menu = () => {
         const elementChildren = element.children[1]        
         elementChildren.classList.toggle('rotate-90')
     }
-   
     
-
-
-    const [showHead, setShowHead] = useState<number>(2)
-    const [lastScrollPos, setLastScrollPos] = useState<number>(0)
-    const [url, setUrl] = useState<string>('')
-
     useEffect(() => {
         // Agrega un evento scroll al documento
         document.addEventListener('scroll', () => {
@@ -78,8 +79,7 @@ export const Menu = () => {
 
     useEffect(() => {
         setUrl(window.location.pathname)
-        
-    }, [])
+    }, [url])
 
     type bgUrlType = {
         [key: string]: string
@@ -99,8 +99,8 @@ export const Menu = () => {
     <>
         <div className={`fixed h-[60px] w-full items-center flex lg:justify-between lg:px-36 px-10 z-50 max-w-full transition-all duration-500 ease-in-out 
             ${ showHead === 1 ? 'bg-devarana-blue -translate-y-full' : showHead === 0? '-translate-y-[200%]' : bgUrl[url] + ' translate-y-0' }`}>
-            <button onClick={onClickMenu} className='h-full px-2 z-[1001]'><MenuSvg className='stroke-white' /></button>
-            <Link href="/" className='mx-auto pr-6 hover:opacity-50 transition-all ease-in-out duration-300'  onClick={onClickMenu}>
+            <button onClick={() => onClickMenu(!activeMenu)} className='h-full px-2 z-[1001]'><MenuSvg className='stroke-white' /></button>
+            <Link href="/" className='mx-auto pr-6 hover:opacity-50 transition-all ease-in-out duration-300'  onClick={ () => onClickMenu(false)}>
                 <DevaranaInlineSvg className='fill-white lg:w-[200px] w-[130px]' />
             </Link>
             <div className='lg:flex items-center gap-10 hidden'>
@@ -127,37 +127,37 @@ export const Menu = () => {
                     <div className='flex flex-col gap-10 z-20'>
                         <div>
                             <div className='flex gap-2 align-middle items-center justify-center cursor-pointer' onClick={onClickShow}>
-                                <Link href="/empresa" onClick={ onClickMenu }><p className='text-center text-white font-playfair lg:text-[40px] text-3xl' >Empresa</p> </Link>
+                                <Link href="/empresa" onClick={ () => onClickMenu(false) }><p className='text-center text-white font-playfair lg:text-[40px] text-3xl' >Empresa</p> </Link>
                                 <MenuPolygonSvg className='fill-white translate-y-1 transition-all duration-500'  />
                             </div> 
 
                             <div className='menu__opt h-44 overflow-hidden transition-all duration-500 text-center'>
-                                <Link href='/empresa/responsabilidad-social' onClick={onClickMenu}>
+                                <Link href='/empresa/responsabilidad-social' onClick={() => onClickMenu(false)}>
                                     <p className='text-white font-light lg:text-xl text-sm pt-8 pb-4'>Responsabilidad Social</p>
                                 </Link>
-                                <Link href='/empresa/great-place-to-work' onClick={onClickMenu}>
+                                <Link href='/empresa/great-place-to-work' onClick={() => onClickMenu(false)}>
                                     <p className='text-white font-light lg:text-xl text-sm py-4'>¿Qué nos convierte en GPTW?</p>
                                 </Link>
-                                <Link href='/empresa/certificados-y-premios' onClick={onClickMenu}>
+                                <Link href='/empresa/certificados-y-premios' onClick={() => onClickMenu(false)}>
                                     <p className='text-white font-light lg:text-xl text-sm pt-4'>Certificados y Premios</p>
                                 </Link>
                             </div>
                         </div> 
                         <div>
                             <div className='flex gap-2 align-middle items-center justify-center cursor-pointer' onClick={onClickShow}>
-                                <Link href='/carrera' onDoubleClick={ onClickMenu }>
+                                <Link href='/carrera' onDoubleClick={ () => onClickMenu(false) }>
                                     <p className='text-center text-white font-playfair lg:text-[40px] text-3xl' >Carrera</p> 
                                 </Link>
                                 <MenuPolygonSvg className='fill-white translate-y-1'/> 
                             </div>
                             <div className='menu__opt overflow-hidden transition-all duration-500 text-center'>
-                                <Link href='/vacantes' onClick={onClickMenu}>
+                                <Link href='/vacantes' onClick={() => onClickMenu(false)}>
                                     <p className='text-white font-light lg:text-xl text-sm pt-8 pb-4'>Vacantes</p>
                                 </Link>
                             </div>
                         </div>
                         <div className=''>
-                            <Link href='/contacto' onClick={onClickMenu}>
+                            <Link href='/contacto' onClick={() => onClickMenu(false)}>
                                 <p className='text-center text-white font-playfair lg:text-[40px] text-3xl'>Contacto</p>
                             </Link>
                         </div>
@@ -167,7 +167,7 @@ export const Menu = () => {
             </div>
         </div>
 
-        <div className='fixed w-full h-full bg-devarana-midnight bg-opacity-10 z-30 transition-all duration-500 ease-in-out' onClick={onClickMenu} style={{display: activeMenu ? 'block' : 'none'}}></div>
+        <div className='fixed w-full h-full bg-devarana-midnight bg-opacity-10 z-30 transition-all duration-500 ease-in-out' onClick={() => onClickMenu(false)} style={{display: activeMenu ? 'block' : 'none'}}></div>
 
 
     </>
