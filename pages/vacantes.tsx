@@ -5,6 +5,7 @@ import { BannerRedes } from "../components/layout/BannerRedes";
 import { Form } from "../components/Form";
 import { VacanteModal } from "../components/vacantes/VacanteModal";
 import { useEffect, useState } from "react";
+import { Seo } from "../components/layout/Seo";
 
 export default function Vacantes() {
 
@@ -26,6 +27,11 @@ export default function Vacantes() {
 
     return(
         <>
+            <Seo
+                title="Vacantes"
+                description="Vacantes page"
+                keywords="Vacantes page"
+            />
             <div id="initialBanner pb-24">
                 <div className='h-screen w-full relative object-contain'>
                     <Image src={FotoSalonIngles} priority quality={100} className='object-cover w-full' fill alt='FotoSalonIngles' />

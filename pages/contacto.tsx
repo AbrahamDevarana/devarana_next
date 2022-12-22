@@ -3,10 +3,16 @@ import Image from "next/image";
 import Prototipos from "../public/assets/images/contacto/Prototipos.webp";
 import { BannerRedes } from "../components/layout/BannerRedes";
 import { Form } from "../components/Form";
+import { Seo } from "../components/layout/Seo";
 
 export default function Contacto() {
     return (
         <>
+            <Seo
+                title="Contacto"
+                description="Contacto page"
+                keywords="Contacto page"
+            />
             <div id="initialBanner" className="pb-24">
                 <div className='h-screen w-full relative object-contain'>
                     <Image src={Prototipos} className='object-cover w-full' fill alt='carreraBanner'/>

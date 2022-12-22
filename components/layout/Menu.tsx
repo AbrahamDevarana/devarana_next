@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CorreoSvg from '../svg/correo'
 import { DevaranaInlineSvg } from '../svg/devaranaInline'
 
@@ -8,7 +8,6 @@ import MenuPolygonSvg from '../svg/menuPolygon'
 import WhatsappSvg from '../svg/whatsapp'
 import Flor3 from '../svg/flor3'
 export const Menu = () => {
-
 
     const onClickMenu = () => {
         const menu = document.getElementById('menu')
@@ -40,20 +39,74 @@ export const Menu = () => {
         const elementChildren = element.children[1]        
         elementChildren.classList.toggle('rotate-90')
     }
- 
+   
+    
+
+
+    const [showMenu, setShowMenu] = useState<number>(2)
+    const [lastScrollPos, setLastScrollPos] = useState<number>(0)
+    const [url, setUrl] = useState<string>('')
+
+    useEffect(() => {
+        // Agrega un evento scroll al documento
+        document.addEventListener('scroll', () => {
+            // Obtiene la posición actual del scroll
+            const currentScrollPos = window.pageYOffset;
+        
+            // Si la posición actual del scroll es mayor que la posición del scroll anterior, significa que se está haciendo scroll hacia abajo
+            if (currentScrollPos > lastScrollPos) {
+                // Oculta el menú
+                setShowMenu(0);
+            } else {
+                // Muestra el menú
+                setShowMenu(1);
+            }
+
+            // Si la posición del scroll es igual a 0, regresa el menú a su posición y fondo original
+            if (currentScrollPos === 0) {
+                setShowMenu(2);
+            }
+    
+            // Actualiza la posición del scroll anterior
+            setLastScrollPos(currentScrollPos);
+        });
+    }, [lastScrollPos]);
+
+    useEffect(() => {
+        setUrl(window.location.pathname)
+        
+    }, [])
+
+    type bgUrlType = {
+        [key: string]: string
+    }
+    const bgUrl: bgUrlType = {
+        '/empresa': 'bg-devarana-blue',
+        '/empresa/responsabilidad-social': 'bg-devarana-blue',
+        '/empresa/great-place-to-work': 'bg-devarana-blue',
+        '/empresa/certificados-y-premios': 'bg-devarana-blue',
+        '/carrera' : 'bg-transparent',
+        '/contacto': 'bg-transparent',
+        '/' : 'bg-transparent'
+    }
 
     
     return (
     <>
-        <div className='fixed h-[60px] w-full items-center flex lg:justify-between lg:px-36 px-10 z-50 max-w-full'>
+        <div className={`fixed h-[60px] w-full items-center flex lg:justify-between lg:px-36 px-10 z-50 max-w-full transition-all duration-500 ease-in-out 
+            ${ showMenu === 1 ? 'bg-devarana-blue -translate-y-full' : showMenu === 0? '-translate-y-[200%]' : bgUrl[url] + ' translate-y-0' }`}>
             <button onClick={onClickMenu} className='h-full px-2 z-[1001]'><MenuSvg className='stroke-white' /></button>
-            <Link href="/">
-                <DevaranaInlineSvg className='fill-white lg:w-[200px] w-[130px] mx-auto' />
+            <Link href="/" className='mx-auto pr-6 hover:opacity-50 transition-all ease-in-out duration-300'>
+                <DevaranaInlineSvg className='fill-white lg:w-[200px] w-[130px]' />
             </Link>
-            <div className='lg:flex gap-10 hidden'>
-                <CorreoSvg className='fill-white w-[25px]' />
-                <WhatsappSvg className='fill-white w-[25px]' />
-                <a href='tel:+524428244444' className="text-white font-light text-base">(442) 824 4444</a>
+            <div className='lg:flex items-center gap-10 hidden'>
+                <a className='hover:opacity-50 transition-all ease-in-out duration-300' target="_blank" rel="noreferrer" href='mailto:ventas@devarana.mx'>
+                    <CorreoSvg className='fill-white w-[25px]' />
+                </a>
+                <a className='hover:opacity-50 transition-all ease-in-out duration-300' target="_blank" rel="noreferrer" href='https://web.whatsapp.com/send?phone=+524428244444&text=Hola, quisiera más información de Devarana.'>
+                    <WhatsappSvg className='fill-white w-[25px]' />
+                </a>
+                <a href='tel:+524428244444' className="text-white font-light text-base hover:opacity-50 transition-all ease-in-out duration-300">(442) 824 4444</a>
             </div>
 
             {/* Prevent scroll */}

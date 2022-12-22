@@ -23,9 +23,9 @@ export default function Empresa() {
     return (
         <>
             <Seo
-                title="Home"
-                description="Home page"
-                keywords="Home page"
+                title="Empresa"
+                description="Empresa page"
+                keywords="Empresa page"
             />
             <div className="initialBanner py-20 relative">
                 <h1 className="text-devarana-pink text-center py-8 lg:text-4xl text-sm font-playfair">Nuesta Misión</h1>

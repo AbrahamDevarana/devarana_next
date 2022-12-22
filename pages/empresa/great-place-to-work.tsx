@@ -9,10 +9,16 @@ import Flor5 from "../../components/svg/flor5";
 import Flor3 from "../../components/svg/flor3";
 import Flor1 from "../../components/svg/flor1";
 import AniversarioSVG from "../../components/svg/aniversario";
+import { Seo } from "../../components/layout/Seo";
 
 export default function GreatPlaceToWork() {
     return (
         <>
+            <Seo
+                title="GPTW"
+                description="GPTW page"
+                keywords="GPTW page"
+            />
             <div className="relative overflow-hidden pb-24">
                 <h1 className="text-center lg:text-6xl text-xl pt-32 text-devarana-graph-darker">¿Qué nos convierte en Great Place to Work?</h1>
                 <hr className="max-w-xs border-devarana-pink my-9 mx-auto w-full"/>

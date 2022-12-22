@@ -18,6 +18,7 @@ import { SliderHome } from '../components/home/SliderHome'
 import { SliderRV } from '../components/home/SliderRV'
 import Flor4 from '../components/svg/flor4'
 import Flor2 from '../components/svg/flor2'
+import { SocialSideBar } from '../components/layout/SocialSideBar'
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
             description="Home page"
             keywords="Home page"
         />
+        <SocialSideBar />
 
         <div id="initialBanner" className='overflow-hidden'>
             <div className='h-screen w-full relative object-contain'>
@@ -70,7 +72,7 @@ export default function Home() {
                 <Image src={fotoSalon} className='object-cover w-full' height={600} width={1000} placeholder="blur" alt="Salon Ingles"/>
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0' >
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
-                        <h2 className='font-playfair text-4xl text-white pb-'>Nuestro equipo</h2> 
+                        <h2 className='font-playfair text-4xl text-white pb-5'>Nuestro equipo</h2> 
                         <Button type='button' textColor='white' colorType='whiteInverted' > SABER MÁS </Button>
                     </div>
                 </div>
@@ -153,7 +155,7 @@ export default function Home() {
                 <div className="grid grid-cols-3 gap-y-10">
                     <div className='col-span-3 lg:col-span-1'>
                         <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Terra</h3>
-                        <div className='mx-10 relative'>
+                        <div className='lg:mx-10 relative'>
                             <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
                             <Image src={torreTerra} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Terra"/>
                         </div>
@@ -162,7 +164,7 @@ export default function Home() {
                     </div>
                     <div className='col-span-3 lg:col-span-1 lg:border-r lg:border-l'>
                         <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Aqua</h3>
-                        <div className='mx-10 relative'>
+                        <div className='lg:mx-10 relative'>
                             <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
                             <Image src={torreAqua} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Aqua"/>
                         </div>
@@ -171,7 +173,7 @@ export default function Home() {
                     </div>
                     <div className='col-span-3 lg:col-span-1'>
                         <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Fuego</h3>
-                        <div className='mx-10 relative'>
+                        <div className='lg:mx-10 relative'>
                             <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
                             <Image src={torreFuego} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Fuego"/>
                         </div>

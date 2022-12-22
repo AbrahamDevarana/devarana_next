@@ -1,17 +1,23 @@
 
 import Image from "next/image";
 import Reforestacion from "../../public/assets/images/empresa/01-responsabilidad-social/Reforestacion.webp";
-import BrigadasdeSeguridad from "../../public/assets/images/empresa/01-responsabilidad-social/BrigadasdeSeguridad.webp";
+import Brigadas from "../../public/assets/images/empresa/01-responsabilidad-social/Brigadas.webp";
 import CursodeReptiles from "../../public/assets/images/empresa/01-responsabilidad-social/CursodeReptiles.webp";
 import { Form } from "../../components/Form";
 import { BannerRedes } from "../../components/layout/BannerRedes";
 import Flor2 from "../../components/svg/flor2";
 import Flor5 from "../../components/svg/flor5";
 import Flor4 from "../../components/svg/flor4";
+import { Seo } from "../../components/layout/Seo";
 
 export default function ResponsabilidadSocial() {
     return (
         <>
+            <Seo
+                title="Responsabilidad Social"
+                description="Responsabilidad Social page"
+                keywords="Responsabilidad Social page"
+            />
             <div className="relative overflow-hidden pb-24">
                 <h1 className="text-center lg:text-6xl text-xl pt-32 text-devarana-graph-darker">Responsabilidad Social</h1>
                 <hr className="max-w-xs border-devarana-pink my-9 mx-auto w-full"/>
@@ -48,7 +54,7 @@ export default function ResponsabilidadSocial() {
                     </div>
                     <div className="order-3 lg:order-4 col-span-2 lg:col-span-1  relative">
                         <div className='absolute translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
-                        <Image src={BrigadasdeSeguridad} alt="Brigadas de Seguridad" className="object-cover w-full h-full" width={700} height={500} />
+                        <Image src={Brigadas} alt="Brigadas de Seguridad" className="object-cover w-full h-full" width={700} height={500} />
                     </div>
                     <div className="order-5 lg:order-5 col-span-2 lg:col-span-1  relative">
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	

@@ -11,10 +11,16 @@ import FlorTres from '../components/svg/flor3'
 import { Form } from '../components/Form'
 import { BannerRedes } from '../components/layout/BannerRedes'
 import { SliderPortada } from '../components/carrera/SliderPortada'
+import { Seo } from '../components/layout/Seo'
 
 export default function Carrera() {
     return (
         <>
+            <Seo
+                title="Carrera"
+                description="Carrera page"
+                keywords="Carrera page"
+            />
             <div id="initialBanner">
                 <div className='h-screen w-full relative object-contain'>
                     <Image src={carreraBanner} className='object-cover w-full' fill alt='carreraBanner' />

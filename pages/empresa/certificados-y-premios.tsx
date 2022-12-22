@@ -8,10 +8,16 @@ import Flor2 from "../../components/svg/flor2";
 import Flor5 from "../../components/svg/flor5";
 import Flor3 from "../../components/svg/flor3";
 import ServicioLegendarioSVG from "../../components/svg/servicioLegendario";
+import { Seo } from "../../components/layout/Seo";
 
 export default function ResponsabilidadSocial() {
     return (
         <>
+            <Seo
+                title="Certificados"
+                description="Certificados page"
+                keywords="Certificados page"
+            />
            <div className="relative overflow-hidden pb-24">
                 <h1 className="text-center lg:text-6xl text-xl pt-32 text-devarana-graph-darker">Certificados y Premios</h1>
                 <hr className="max-w-xs border-devarana-pink my-9 mx-auto w-full"/>
