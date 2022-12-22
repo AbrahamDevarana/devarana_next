@@ -32,8 +32,8 @@ h1{
 }
 
 .modal__active{
-    overflow: hidden;
-    padding-right: 17px;
+    overflow: hidden!important;
+    /* padding-right: 17px; */
 }
 
 .buttonEffect{

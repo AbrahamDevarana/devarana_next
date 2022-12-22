@@ -23,7 +23,7 @@ export default function Carrera() {
             />
             <div id="initialBanner">
                 <div className='h-screen w-full relative object-contain'>
-                    <Image src={carreraBanner} className='object-cover w-full' fill alt='carreraBanner' />
+                    <Image src={carreraBanner} className='object-cover w-full' placeholder='blur' priority quality={100} fill alt='carreraBanner' />
                     <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0' />
                     <div className='absolute'>
                         <SliderPortada />
@@ -41,7 +41,7 @@ export default function Carrera() {
                 <div className='lg:px-64 px-14 lg:py-24 pt-24'>
                     <div className="grid grid-cols-12 lg:gap-20 gap-y-10">
                         <div className="col-span-12 lg:col-span-6 relative">
-                            <Image src={Arquitectos} className='object-cover w-full' height={600} width={800} placeholder="blur" alt="Arquitectos"/>
+                            <Image src={Arquitectos} className='object-cover w-full' height={650} width={950} placeholder="blur" alt="Arquitectos"/>
                             <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                         </div>
                         <div className="col-span-12 lg:col-span-6">

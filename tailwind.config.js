@@ -27,9 +27,10 @@ module.exports = {
         },
         
         transitionProperty: {
-          'height': 'height',
-          'backgroundImage':'backgroundImage',
-          'top' : 'top'
+            'height': 'height',
+            'backgroundImage':'backgroundImage',
+            'top' : 'top',
+            'left' : 'left',
           },  
         backgroundImage: {
             'formulario': "url('/assets/images/global/Formulario.webp')",

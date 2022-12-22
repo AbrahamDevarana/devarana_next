@@ -18,7 +18,6 @@ import { SliderHome } from '../components/home/SliderHome'
 import { SliderRV } from '../components/home/SliderRV'
 import Flor4 from '../components/svg/flor4'
 import Flor2 from '../components/svg/flor2'
-import { SocialSideBar } from '../components/layout/SocialSideBar'
 
 export default function Home() {
   return (
@@ -28,7 +27,7 @@ export default function Home() {
             description="Home page"
             keywords="Home page"
         />
-        <SocialSideBar />
+        
 
         <div id="initialBanner" className='overflow-hidden'>
             <div className='h-screen w-full relative object-contain'>

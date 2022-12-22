@@ -29,6 +29,7 @@ export const Layout = ({children}: Props) => {
         <HeadBanner />
         <Menu />
             <main>{children}</main>
+            <SocialSideBar />
         <Footer/>
     </>
   )

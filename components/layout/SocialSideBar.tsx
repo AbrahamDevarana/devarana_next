@@ -98,8 +98,11 @@ export const SocialSideBar = () => {
             return
         }
         const bg = window.getComputedStyle(elementBGcolor, null).getPropertyValue("background-color");
-        if (bg !== 'rgb(255, 255, 255)' && bg !== 'rgba(255, 255, 255, 1)'){
+        
+        if (bg !== 'rgb(255, 255, 255)' && bg !== 'rgb(229, 229, 229)' &&  bg !== 'rgb(234, 223, 212)'){
             svg.style.fill = '#ffffff'
+        }else{
+            svg.style.fill = '#56739B'
         }
     }
 
