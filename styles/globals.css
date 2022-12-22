@@ -37,12 +37,9 @@ h1{
 }
 
 .buttonEffect{
-    font-family: 'Mulish', sans-serif;
-    padding-top: 12px!important;
-    padding-bottom: 12px!important;
+    padding-top: 13px!important;
+    padding-bottom: 13px!important;
     display: inline-block;
-    font-weight: bold;
-    font-size: 12px!important;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 500ms;
@@ -50,7 +47,6 @@ h1{
     position: relative;
     outline: 2px solid transparent;
     outline-offset: 2px;
-    letter-spacing: 0.1em;
     
 }
 
@@ -103,19 +99,15 @@ h1{
 
 
 .buttonEffectInverted{
-    font-family: 'Mulish', sans-serif;
-    padding-top: 12px!important;
-    padding-bottom: 12px!important;
+    padding-top: 13px!important;
+    padding-bottom: 13px!important;
     display: inline-block;
-    font-weight: bold;
-    font-size: 12px!important;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 500ms;
     position: relative;
     outline: 2px solid transparent;
     outline-offset: 2px;
-    letter-spacing: 0.1em;
 }
 
 .buttonEffectInverted::before{
@@ -198,6 +190,15 @@ h1{
 }
 .sliderProyectos .swiper-button-next {
     right: 8px!important;
+}
+
+.sliderRV .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    top: -5px!important;
+    width: unset!important;   
+}
+
+.sliderRV .swiper-pagination-bullet{
+    background-color: #fff!important;
 }
 
 /* abajo de  1024px */

@@ -53,7 +53,7 @@ export const Menu = () => {
             <div className='lg:flex gap-10 hidden'>
                 <CorreoSvg className='fill-white w-[25px]' />
                 <WhatsappSvg className='fill-white w-[25px]' />
-                <a href='tel:+524428244444' className="text-white font-light">(442) 824 4444</a>
+                <a href='tel:+524428244444' className="text-white font-light text-base">(442) 824 4444</a>
             </div>
 
             {/* Prevent scroll */}
@@ -68,38 +68,38 @@ export const Menu = () => {
                         <div className='flex flex-col gap-10 z-20'>
                             <div>
                                 <div className='flex gap-2 align-middle items-center justify-center cursor-pointer' onClick={onClickShow}>
-                                    <Link href="/empresa" onClick={ onClickMenu }><p className='text-center text-white font-playfair text-3xl' >Empresa</p> </Link>
+                                    <Link href="/empresa" onClick={ onClickMenu }><p className='text-center text-white font-playfair lg:text-[40px] text-3xl' >Empresa</p> </Link>
                                     <MenuPolygonSvg className='fill-white translate-y-1 transition-all duration-500'  />
                                 </div> 
 
                                 <div className='menu__opt h-44 overflow-hidden transition-all duration-500 text-center'>
                                     <Link href='/empresa/responsabilidad-social' onClick={onClickMenu}>
-                                        <p className='text-white font-light pt-8 pb-4'>Responsabilidad Social</p>
+                                        <p className='text-white font-light lg:text-xl text-sm pt-8 pb-4'>Responsabilidad Social</p>
                                     </Link>
                                     <Link href='/empresa/great-place-to-work' onClick={onClickMenu}>
-                                        <p className='text-white font-light py-4'>¿Qué nos convierte en GPTW?</p>
+                                        <p className='text-white font-light lg:text-xl text-sm py-4'>¿Qué nos convierte en GPTW?</p>
                                     </Link>
                                     <Link href='/empresa/certificados-y-premios' onClick={onClickMenu}>
-                                        <p className='text-white font-light pt-4'>Certificados y Premios</p>
+                                        <p className='text-white font-light lg:text-xl text-sm pt-4'>Certificados y Premios</p>
                                     </Link>
                                 </div>
                             </div> 
                             <div>
                                 <div className='flex gap-2 align-middle items-center justify-center cursor-pointer' onClick={onClickShow}>
                                     <Link href='/carrera' onDoubleClick={ onClickMenu }>
-                                        <p className='text-center text-white font-playfair text-3xl' >Carrera</p> 
+                                        <p className='text-center text-white font-playfair lg:text-[40px] text-3xl' >Carrera</p> 
                                     </Link>
                                     <MenuPolygonSvg className='fill-white translate-y-1'/> 
                                 </div>
                                 <div className='menu__opt overflow-hidden transition-all duration-500 text-center'>
                                     <Link href='/vacantes' onClick={onClickMenu}>
-                                        <p className='text-white font-light pt-8 pb-4'>Vacantes</p>
+                                        <p className='text-white font-light lg:text-xl text-sm pt-8 pb-4'>Vacantes</p>
                                     </Link>
                                 </div>
                             </div>
                             <div className=''>
                                 <Link href='/contacto' onClick={onClickMenu}>
-                                    <p className='text-center text-white font-playfair text-3xl'>Contacto</p>
+                                    <p className='text-center text-white font-playfair lg:text-[40px] text-3xl'>Contacto</p>
                                 </Link>
                             </div>
                         </div>

@@ -26,11 +26,11 @@ export const Button = ({
     const className = (colorType:colorType) => {
         switch (colorType) {
             case 'pink':
-                return `buttonEffect lg:text-base text-xs bg-devarana-pink text-${textColor} border-2 border-devarana-pink hover:bg-transparent hover:text-devarana-pink after:hover:border-devarana-pink`
+                return `buttonEffect bg-devarana-pink text-${textColor} border-devarana-pink hover:bg-transparent hover:text-devarana-pink after:hover:border-devarana-pink`
             case 'pinkInverted':
-                return `text-${textColor} lg:text-base text-xs after:border-devarana-pink border-devarana-pink hover:bg-devarana-pink hover:text-white hover:border-devarana-pink buttonEffectInverted`
+                return `text-${textColor} after:border-devarana-pink border-devarana-pink hover:bg-devarana-pink hover:text-white hover:border-devarana-pink buttonEffectInverted`
             case 'whiteInverted':
-                return `text-${textColor} lg:text-base text-xs after:border-white border-white hover:bg-white hover:text-devarana-graph hover:border-white buttonEffectInverted`
+                return `text-${textColor} after:border-white border-white hover:bg-white hover:text-devarana-graph hover:border-white buttonEffectInverted`
             default:
                 return 'hidden'
         }
@@ -41,7 +41,7 @@ export const Button = ({
             type={type}
             onClick={onClick}
             disabled={disabled}
-            className={`py-1 px-8 border-2 after:border-2 ${className(colorType)}`}
+            className={`px-8 tracking-widest border-2 font-semibold lg:text-xs text-[8px] after:border-2 font-mulish ${className(colorType)}`}
             >{children}</button>
     )
 }

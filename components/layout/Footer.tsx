@@ -44,7 +44,7 @@ export const Footer = () => {
                                 <a href="mailto:compras@devarana.mx" className='block text-white font-extralight'>compras@devarana.mx</a>
                             </div>
                         </div>
-                        <div className='lg:col-span-3 flex flex-col gap-10 col-span-12'>
+                        <div className='lg:col-span-3 flex flex-col gap-10 col-span-12 lg:pt-0 pt-10'>
                             <div>
                                 <p className='text-white font-extrabold'>VISÍTANOS</p>
                                 <p className='text-white font-extralight block'>Av. Valle de Acantha 88, Fracc. Zibatá, Sección Acantha, <br className='lg:block hidden' /> C.P. 76269, El Marqués, Querétaro. </p>
