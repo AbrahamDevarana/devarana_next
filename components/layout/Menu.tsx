@@ -7,12 +7,16 @@ import { MenuSvg } from '../svg/menu'
 import MenuPolygonSvg from '../svg/menuPolygon'
 import WhatsappSvg from '../svg/whatsapp'
 import Flor3 from '../svg/flor3'
+import { useRouter } from 'next/router'
+
 export const Menu = () => {
+
+    const router = useRouter()
+    const path = router.pathname
 
     const [ activeMenu, setActiveMenu ] = useState<boolean>(false)
     const [showHead, setShowHead] = useState<number>(2)
     const [lastScrollPos, setLastScrollPos] = useState<number>(0)
-    const [url, setUrl] = useState<string>('')
 
     const onClickMenu = (value:boolean) => {        
         const menu = document.getElementById('menu')
@@ -51,7 +55,7 @@ export const Menu = () => {
         const elementChildren = element.children[1]        
         elementChildren.classList.toggle('rotate-90')
     }
-    
+
     useEffect(() => {
         // Agrega un evento scroll al documento
         document.addEventListener('scroll', () => {
@@ -62,24 +66,21 @@ export const Menu = () => {
             if (currentScrollPos > lastScrollPos) {
                 // Oculta el menú
                 setShowHead(0);
-            } else {
+            } else if( currentScrollPos === 0) {
+                // Si la posición del scroll es igual a 0, regresa el menú a su posición y fondo original
+                setShowHead(2);
+            }else{
                 // Muestra el menú
                 setShowHead(1);
             }
 
-            // Si la posición del scroll es igual a 0, regresa el menú a su posición y fondo original
             if (currentScrollPos === 0) {
-                setShowHead(2);
             }
     
             // Actualiza la posición del scroll anterior
             setLastScrollPos(currentScrollPos);
         });
     }, [lastScrollPos]);
-
-    useEffect(() => {
-        setUrl(window.location.pathname)
-    }, [url])
 
     type bgUrlType = {
         [key: string]: string
@@ -94,11 +95,10 @@ export const Menu = () => {
         '/' : 'bg-transparent'
     }
 
-    
     return (
     <>
         <div className={`fixed h-[60px] w-full items-center flex lg:justify-between lg:px-36 px-10 z-50 max-w-full transition-all duration-500 ease-in-out 
-            ${ showHead === 1 ? 'bg-devarana-blue -translate-y-full' : showHead === 0? '-translate-y-[200%]' : bgUrl[url] + ' translate-y-0' }`}>
+            ${ showHead === 1 ? 'bg-devarana-blue -translate-y-full' : showHead === 0? '-translate-y-[200%]' : bgUrl[path] + ' translate-y-0' }`}>
             <button onClick={() => onClickMenu(!activeMenu)} className='h-full px-2 z-[1001]'><MenuSvg className='stroke-white' /></button>
             <Link href="/" className='mx-auto pr-6 hover:opacity-50 transition-all ease-in-out duration-300'  onClick={ () => onClickMenu(false)}>
                 <DevaranaInlineSvg className='fill-white lg:w-[200px] w-[130px]' />
