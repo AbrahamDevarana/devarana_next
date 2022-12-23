@@ -33,7 +33,7 @@ export default function GreatPlaceToWork() {
                 <div className="grid grid-cols-2 gap-x-10 lg:gap-y-32 gap-y-10 lg:px-52 px-14 pt-24 relative">
                     <div className="order-1 lg:order-1 col-span-2 lg:col-span-1 relative">
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
-                        <Image src={EventoAmenidades} alt="Evento Amenidades" className="object-cover w-full h-full" width={700} height={500} />
+                        <Image src={EventoAmenidades} placeholder="blur" alt="Evento Amenidades" className="object-cover w-full h-full" width={730} height={520} />
                     </div> 
                     <div className="order-2 lg:order-2 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base">Clima Organizacional</h2>
@@ -48,11 +48,11 @@ export default function GreatPlaceToWork() {
                     </div>
                     <div className="order-3 lg:order-4 col-span-2 lg:col-span-1  relative">
                         <div className='absolute translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
-                        <Image src={ViajeAniversario} alt="Viaje Aniversario" className="object-cover w-full h-full" width={700} height={500} />
+                        <Image src={ViajeAniversario} alt="Viaje Aniversario" placeholder="blur" className="object-cover w-full h-full" width={730} height={520} />
                     </div>
                     <div className="order-5 lg:order-5 col-span-2 lg:col-span-1  relative">
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
-                        <Image src={AvancedeEstrategia} alt="Avance de Estrategia" className="object-cover w-full h-full" width={700} height={500} />
+                        <Image src={AvancedeEstrategia} alt="Avance de Estrategia" placeholder="blur" className="object-cover w-full h-full" width={730} height={520} />
                     </div>
                     <div className="order-6 lg:order-6 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base">Pasión por la Excelencia</h2>

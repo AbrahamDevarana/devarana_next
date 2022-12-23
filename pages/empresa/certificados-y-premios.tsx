@@ -32,7 +32,7 @@ export default function ResponsabilidadSocial() {
                 <div className="grid grid-cols-2 gap-x-10 lg:gap-y-32 gap-y-10 lg:px-52 px-14 pt-24 relative">
                     <div className="order-1 lg:order-1 col-span-2 lg:col-span-1 relative">
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
-                        <Image src={GPTW} alt="Reforestación" className="object-cover w-full h-full" width={700} height={500} />
+                        <Image src={GPTW} alt="Reforestación" className="object-cover w-full h-full" placeholder="blur" width={730} height={520} />
                     </div> 
                     <div className="order-2 lg:order-2 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base">Great Place to Work</h2>
@@ -47,7 +47,7 @@ export default function ResponsabilidadSocial() {
                     </div>
                     <div className="order-3 lg:order-4 col-span-2 lg:col-span-1  relative">
                         <div className='absolute translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
-                        <Image src={ESR} alt="Brigadas de Seguridad" className="object-cover w-full h-full" width={700} height={500} />
+                        <Image src={ESR} alt="Brigadas de Seguridad" className="object-cover w-full h-full" placeholder="blur" width={730} height={520} />
                     </div>
                     <div className="order-5 lg:order-5 col-span-2 lg:col-span-1  relative">
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
