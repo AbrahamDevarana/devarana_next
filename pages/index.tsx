@@ -18,6 +18,8 @@ import { SliderHome } from '../components/home/SliderHome'
 import { SliderRV } from '../components/home/SliderRV'
 import Flor4 from '../components/svg/flor4'
 import Flor2 from '../components/svg/flor2'
+import { SwiperSlide, Swiper } from 'swiper/react'
+import { Autoplay } from 'swiper'
 
 export default function Home() {
   return (
@@ -151,35 +153,65 @@ export default function Home() {
             </div>
 
             <div className='lg:px-[245px] px-14'>
-                <div className="grid grid-cols-3 gap-y-10">
-                    <div className='col-span-3 lg:col-span-1'>
-                        <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Terra</h3>
-                        <div className='lg:mx-10 relative'>
-                            <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                            <Image src={torreTerra} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Terra"/>
+                    <Swiper
+                        modules={[Autoplay]}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
+                        lazy={true}
+                        breakpoints={{
+                            320: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                                
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 40,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 96,
+                            },
+                        }}
+                    
+                    >
+                        <SwiperSlide>
+                            <div className='col-span-3 lg:col-span-1'>
+                                <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Terra</h3>
+                                <div className='lg:mx-10 relative'>
+                                    <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
+                                    <Image src={torreTerra} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Terra"/>
+                                </div>
+                                <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Más del 80% Escriturado</p>
+                                <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>La mezcla perfecta entre garantía en la calidad, seguridad e inversión.</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className='col-span-3 lg:col-span-1 lg:border-r lg:border-l'>
+                                <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Aqua</h3>
+                                <div className='lg:mx-10 relative'>
+                                    <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
+                                    <Image src={torreAqua} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Aqua"/>
+                                </div>
+                                <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Estilo de Vida</p>
+                                <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>Con más de 30 amenidades para ti y tu familia.</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <div className='col-span-3 lg:col-span-1'>
+                            <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Fuego</h3>
+                            <div className='lg:mx-10 relative'>
+                                <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
+                                <Image src={torreFuego} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Fuego"/>
+                            </div>
+                            <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Un Proyecto Único</p>
+                            <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>Garantía en calidad, seguridad y plusvalía.</p>
                         </div>
-                        <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Más del 80% Escriturado</p>
-                        <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>La mezcla perfecta entre garantía en la calidad, seguridad e inversión.</p>
-                    </div>
-                    <div className='col-span-3 lg:col-span-1 lg:border-r lg:border-l'>
-                        <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Aqua</h3>
-                        <div className='lg:mx-10 relative'>
-                            <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                            <Image src={torreAqua} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Aqua"/>
-                        </div>
-                        <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Estilo de Vida</p>
-                        <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>Con más de 30 amenidades para ti y tu familia.</p>
-                    </div>
-                    <div className='col-span-3 lg:col-span-1'>
-                        <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Fuego</h3>
-                        <div className='lg:mx-10 relative'>
-                            <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                            <Image src={torreFuego} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Fuego"/>
-                        </div>
-                        <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Un Proyecto Único</p>
-                        <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>Garantía en calidad, seguridad y plusvalía.</p>
-                    </div>
-                </div>
+                        </SwiperSlide>
+                    </Swiper>
+
                 <div className='text-center lg:pt-24 pt-12 pb-4'>
                     <Button type='button' colorType='pink' textColor='white'> SABER MÁS </Button>
                 </div>
