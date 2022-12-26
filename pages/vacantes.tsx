@@ -34,17 +34,17 @@ export default function Vacantes() {
             />
             <div id="initialBanner pb-24">
                 <div className='h-screen w-full relative object-contain'>
-                    <Image src={FotoSalonIngles} priority quality={100} className='object-cover w-full' fill alt='FotoSalonIngles' />
+                    <Image src={FotoSalonIngles} priority className='object-cover w-full h-screen' alt='Foto Salon Ingles' />
                     <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
                         <div className="relative flex justify-center items-center h-full"> 
-                            <h1 className="text-white text-4xl tracking-wide font-playfair text-center">Somos creadores, arquitectos y <br className="hidden lg:block" /> diseñadores de lo extraordinario.</h1>
+                            <h1 className="text-white lg:text-[40px] lg:leading-[50px] text-xl tracking-wide font-playfair text-center">Somos creadores, arquitectos y <br className="hidden lg:block" /> diseñadores de lo extraordinario.</h1>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="py-24">
-                <h2 className="text-devarana-graph-darker text-center font-playfair text-4xl">¡Sé parte de DEVARANA</h2>
-                <hr className="border-devarana-pink max-w-[270px] w-full mx-auto mt-9 mb-24"/>
+            <div className="lg:py-24 py-12">
+                <h2 className="text-devarana-graph-darker text-center font-playfair lg:text-6xl text-xl">¡Sé parte de DEVARANA</h2>
+                <hr className="border-devarana-pink max-w-[270px] w-full mx-auto mt-9 lg:mb-24 mb-10"/>
                 <SliderVacantes setShowModal={setShowModal} />
             </div>
 

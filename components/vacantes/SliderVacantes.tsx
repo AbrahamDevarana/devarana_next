@@ -17,7 +17,7 @@ export const SliderVacantes = ({setShowModal, setModalContent}:VacanteModalProps
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 100,
-        speed: 3000,
+        speed: 4000,
         cssEase: "linear",
         pauseOnHover: true,
         responsive: [
