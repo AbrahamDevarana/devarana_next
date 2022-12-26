@@ -45,7 +45,9 @@ export default function Vacantes() {
             <div className="lg:py-24 py-12">
                 <h2 className="text-devarana-graph-darker text-center font-playfair lg:text-6xl text-xl">¡Sé parte de DEVARANA</h2>
                 <hr className="border-devarana-pink max-w-[270px] w-full mx-auto mt-9 lg:mb-24 mb-10"/>
+                {/* <SliderVacantes2 setShowModal={setShowModal} /> */}
                 <SliderVacantes setShowModal={setShowModal} />
+
             </div>
 
             <BannerRedes />
