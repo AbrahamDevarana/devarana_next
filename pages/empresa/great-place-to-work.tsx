@@ -19,9 +19,9 @@ export default function GreatPlaceToWork() {
                 description="GPTW page"
                 keywords="GPTW page"
             />
-            <div className="relative overflow-hidden pb-24">
-                <h1 className="text-center lg:text-6xl text-xl pt-32 text-devarana-graph-darker">¿Qué nos convierte en Great Place to Work?</h1>
-                <hr className="max-w-xs border-devarana-pink my-9 mx-auto w-full"/>
+            <div className="relative overflow-hidden lg:pb-24 pb-12">
+                <h1 className="text-center lg:text-6xl text-xl lg:pt-32 pt-24 text-devarana-graph-darker">¿Qué nos convierte en Great Place to Work?</h1>
+                <hr className="max-w-xs border-devarana-pink lg:my-9 my-5 mx-auto w-full"/>
 
                 <p className="text-center max-w-screen-xl w-full px-10 mx-auto text-xs lg:text-3xl font-light text-devarana-graph">Para nosotros, construir una cultura de trabajo sólida, con base en la pasión, el compromiso, la excelencia y la innovación es clave en nuestro éxito profesional. Cada acción que hacemos nos distingue y nos lleva a ser diseñadores de lo extraordinario.</p>
 
@@ -30,7 +30,7 @@ export default function GreatPlaceToWork() {
                 </div>
                 
 
-                <div className="grid grid-cols-2 gap-x-10 lg:gap-y-32 gap-y-10 lg:px-52 px-14 pt-24 relative">
+                <div className="grid grid-cols-2 gap-x-10 lg:gap-y-32 gap-y-10 lg:px-52 px-14 lg:pt-24 pt-12 relative">
                     <div className="order-1 lg:order-1 col-span-2 lg:col-span-1 relative">
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                         <Image src={EventoAmenidades} placeholder="blur" alt="Evento Amenidades" className="object-cover w-full h-full" width={730} height={520} />
@@ -40,14 +40,14 @@ export default function GreatPlaceToWork() {
                         <p className="text-devarana-graph lg:text-xl text-xs lg:pb-0 pb-6"> Cada integrante del equipo contribuye a diseñar nuestro ambiente de trabajo con base en la confianza, la integración y el trabajo en equipo. </p>
                     </div>
                     <div className="order-4 lg:order-3 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5 relative">
-                        <h2 className="text-devarana-blue lg:text-3xl text-base text-right">Bienestar Organizacional</h2>
-                        <p className="text-devarana-graph lg:text-xl text-xs lg:pb-0 pb-6 text-right"> Desarrollamos experiencias para cada integrante de DEVARANA, impulsando la satisfacción y bienestar al interior del equipo. </p>
+                        <h2 className="text-devarana-blue lg:text-3xl text-base lg:text-right text-left">Bienestar Organizacional</h2>
+                        <p className="text-devarana-graph lg:text-xl text-xs lg:pb-0 pb-6 lg:text-right text-left"> Desarrollamos experiencias para cada integrante de DEVARANA, impulsando la satisfacción y bienestar al interior del equipo. </p>
                             <div className='absolute left-0 -z-10 top-0 bottom-0 right-0 w-full'>
                                 <AniversarioSVG className='fill-devarana-hazelnut w-full opacity-50 lg:block hidden scale-75'/>
                             </div>
                     </div>
                     <div className="order-3 lg:order-4 col-span-2 lg:col-span-1  relative">
-                        <div className='absolute translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
+                        <div className='absolute lg:translate-x-5 -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                         <Image src={ViajeAniversario} alt="Viaje Aniversario" placeholder="blur" className="object-cover w-full h-full" width={730} height={520} />
                     </div>
                     <div className="order-5 lg:order-5 col-span-2 lg:col-span-1  relative">

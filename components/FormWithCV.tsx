@@ -9,7 +9,7 @@ export const FormWithCv = () => {
         <input type="text" className='p-2 my-2 bg-white bg-opacity-30 placeholder:text-devarana-graph border-b lg:text-base text-xs' placeholder='Teléfono'/>
         <input type="email" className='p-2 my-2 bg-white bg-opacity-30 placeholder:text-devarana-graph border-b lg:text-base text-xs' placeholder='Correo'/>
         <textarea name="" id="" className='p-2 my-2 bg-white bg-opacity-30 placeholder:text-devarana-graph border-b lg:text-base text-xs' placeholder='Mensaje'></textarea>
-        <div className='flex max-w-sm justify-between pt-10'>
+        <div className='flex max-w-sm justify-between py-10'>
             <Button type='submit' colorType={'pink'} textColor={"white"}> 
                 Subir CV
             </Button> 

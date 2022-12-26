@@ -45,35 +45,35 @@ export default function Carrera() {
                             <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                         </div>
                         <div className="col-span-12 lg:col-span-6">
-                            <h3 className='border-l-4 border-devarana-pink text-xl lg:text-4xl text-devarana-graph-darker px-5 font-playfair'>Conoce al equipo</h3>
-                            <p className='text-devarana-graph lg:py-12 py-5 lg:text-2xl text-xs'>Trabajamos juntos para construir todo lo que soñamos.</p>
+                            <h3 className='border-l-4 border-devarana-pink text-xl lg:text-5xl text-devarana-graph-darker px-5 font-playfair'>Conoce al equipo</h3>
+                            <p className='text-devarana-graph lg:py-12 py-5 lg:text-2xl text-[10px]'>Trabajamos juntos para construir todo lo que soñamos.</p>
                             <div className='grid grid-cols-2 lg:gap-10 gap-y-10 pt-8'>
                                 <div className="col-span-2 lg:col-span-1 grid lg:gap-y-10 gap-y-5">
                                     <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-xs'>Arquitectura e Ingeniería</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-xs'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Arquitectura e Ingeniería</h4>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                     <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-xs'>Finanzas y Compras</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-xs'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Finanzas y Compras</h4>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                     <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-xs'>Marketing y Diseño</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-xs'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Marketing y Diseño</h4>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                 </div>
                                 <div className="col-span-2 lg:col-span-1 grid lg:gap-y-10 gap-y-5 ">
                                     <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-xs'>Arquitectura e Ingeniería</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-xs'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Arquitectura e Ingeniería</h4>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                     <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-xs'>Tecnología e Innovación</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-xs'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Tecnología e Innovación</h4>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                     <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-xs'>Construcción</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-xs'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Construcción</h4>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                 </div>
                             </div>
@@ -99,9 +99,9 @@ export default function Carrera() {
                     <div className="grid grid-cols-12 lg:gap-20 gap-y-10">
                         <div className="col-span-12 lg:col-span-6 flex flex-col justify-center order-2 lg:order-1">
                             <h3 className='border-l-4 lg:border-l-0 lg:border-r-4 border-devarana-pink text-xl lg:text-4xl text-devarana-graph-darker px-5 font-playfair lg:text-right text-left'>Descubre nuestras vacantes</h3>
-                            <p className='text-devarana-graph lg:py-12 py-5 lg:text-right text-left font-bold lg:text-2xl text-xs'>Ponte en contacto con nostros a través de:</p>
-                            <a className='block lg:text-right text-left text-devarana-pink lg:text-2xl text-xs' href="mailto:capitalhumano@devarana.mx">capitalhumano@devarana.mx</a>
-                            <a className='block lg:text-right text-left text-devarana-pink lg:text-2xl text-xs' href="mailto:talento@devarana.mx">talento@devarana.mx</a>
+                            <p className='text-devarana-graph lg:py-12 py-5 lg:text-right text-left font-bold lg:text-2xl text-[10px]'>Ponte en contacto con nostros a través de:</p>
+                            <a className='block lg:text-right text-left text-devarana-pink lg:text-2xl text-[10px]' href="mailto:capitalhumano@devarana.mx">capitalhumano@devarana.mx</a>
+                            <a className='block lg:text-right text-left text-devarana-pink lg:text-2xl text-[10px]' href="mailto:talento@devarana.mx">talento@devarana.mx</a>
                         </div>
                         <div className="col-span-12 lg:col-span-6 relative order-1 lg:order-2">
                             <Image src={Colaboradores} className='object-cover w-full' height={600} width={800} placeholder="blur" alt="Colaboradores"/>

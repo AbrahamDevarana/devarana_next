@@ -8,10 +8,10 @@ export const VacanteModal = ({setShowModal, showModal, modalContent}:VacanteModa
     
     return (
       <>      
-        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-[999999] outline-none shadow-lg focus:outline-none backdrop-blur-sm bg-black bg-opacity-20 overflow-hidden lg:p-0 p-4"
+        <div className="justify-center items-center flex overflow-x-hidden  overflow-y-auto fixed inset-0 z-[999999] outline-none shadow-lg focus:outline-none backdrop-blur-sm bg-black bg-opacity-20 overflow-hidden lg:p-0 p-4"
             onClick={() => setShowModal(false)}
         >
-            <div className="w-full mx-auto max-w-screen-lg relative" onClick={e => e.stopPropagation()}>
+            <div className="w-full mx-auto max-w-screen-lg relative bg-white overflow-y-scroll h-5/6 py-8" onClick={e => e.stopPropagation()}>
                 <button className="absolute right-4 top-2" onClick={() => setShowModal(false)}>
                     Cerrar
                 </button>

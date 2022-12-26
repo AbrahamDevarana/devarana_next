@@ -34,11 +34,11 @@ export default function Home() {
                 <Image src={fachada} className='object-cover w-full' fill alt='Devarana Home' placeholder='blur' priority />
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
                     <div className="relative w-full h-full">
-                        <div className='flex flex-col justify-center w-full h-full transition-all duration-500  lg:pl-36 lg:-translate-y-0 -translate-y-32' id="devaranaWord">
+                        <div className='flex flex-col justify-center w-full h-full transition-all duration-500  lg:pl-28 lg:-translate-y-0 -translate-y-32' id="devaranaWord">
                             <DevaranaInlineSvg className='fill-white w-[274px] lg:w-[870px] lg:pl-0 ml-20' />
                             <p className='font-playfair text-3xl lg:text-6xl text-white lg:pl-0 ml-20 tracking-wider'><span className='font-mulish font-light'>Somos</span> creadores</p>
                         </div>
-                        <div className='absolute lg:left-auto left-10 bottom-12 lg:right-72'>
+                        <div className='absolute lg:left-auto left-10 bottom-12 lg:right-44'>
                             <div className='flex flex-col lg:flex-row items-center gap-5'>    
                                 <div className='flex gap-5'>
                                     <div className='h-[200px] w-0.5 border-l-2 mt-auto'/>

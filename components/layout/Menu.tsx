@@ -66,7 +66,7 @@ export const Menu = () => {
             if (currentScrollPos > lastScrollPos) {
                 // Oculta el menú
                 setShowHead(0);
-            } else if( currentScrollPos === 0) {
+            } else if( currentScrollPos < 150) {
                 // Si la posición del scroll es igual a 0, regresa el menú a su posición y fondo original
                 setShowHead(2);
             }else{
@@ -97,13 +97,13 @@ export const Menu = () => {
 
     return (
     <>
-        <div className={`fixed h-[60px] w-full items-center flex lg:justify-between lg:px-36 px-10 z-50 max-w-full transition-all duration-500 ease-in-out 
+        <div className={`fixed h-[60px] w-full items-center grid grid-cols-12 lg:justify-between lg:px-36 px-10 z-50 max-w-full transition-all duration-500 ease-in-out 
             ${ showHead === 1 ? 'bg-devarana-blue -translate-y-full' : showHead === 0? '-translate-y-[200%]' : bgUrl[path] + ' translate-y-0' }`}>
-            <button onClick={() => onClickMenu(!activeMenu)} className='h-full px-2 z-[1001]'><MenuSvg className='stroke-white' /></button>
-            <Link href="/" className='mx-auto pr-6 hover:opacity-50 transition-all ease-in-out duration-300'  onClick={ () => onClickMenu(false)}>
+            <button onClick={() => onClickMenu(!activeMenu)} className='h-full px-2 z-[1001] col-span-2'><MenuSvg className='stroke-white' /></button>
+            <Link href="/" className='col-span-6 col-start-4 mx-auto  hover:opacity-50 transition-all ease-in-out duration-300'  onClick={ () => onClickMenu(false)}>
                 <DevaranaInlineSvg className='fill-white lg:w-[200px] w-[130px]' />
             </Link>
-            <div className='lg:flex items-center gap-10 hidden'>
+            <div className='lg:flex items-center gap-10 hidden col-span-3 ml-auto'>
                 <a className='hover:opacity-50 transition-all ease-in-out duration-300' target="_blank" rel="noreferrer" href='mailto:ventas@devarana.mx'>
                     <CorreoSvg className='fill-white w-[25px]' />
                 </a>
