@@ -178,7 +178,7 @@ export default function Home() {
                     
                     >
                         <SwiperSlide>
-                            <div className='col-span-3 lg:col-span-1'>
+                            <div className=''>
                                 <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Terra</h3>
                                 <div className='lg:mx-10 relative'>
                                     <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
@@ -189,7 +189,7 @@ export default function Home() {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='col-span-3 lg:col-span-1 lg:border-r lg:border-l'>
+                            <div className=' lg:border-r lg:border-l'>
                                 <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Aqua</h3>
                                 <div className='lg:mx-10 relative'>
                                     <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
@@ -200,7 +200,7 @@ export default function Home() {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                        <div className='col-span-3 lg:col-span-1'>
+                        <div className=''>
                             <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Fuego</h3>
                             <div className='lg:mx-10 relative'>
                                 <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
