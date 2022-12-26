@@ -2,13 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  experimental: {
+    optimizeFonts: true,
+    optimizeImages: true,
+    optimizeCss: true,
+    scrollRestoration: true,
+    granularChunks: true,
+  },
   images: {
-    // 1 month
-        minimumCacheTTL: 2592000,
-        domains: ['picsum.photos']       
-    },
-    env: {
-        // ... PRODUCTION ? DEVELOPMENT ?
+        minimumCacheTTL: 2592000,   
+
     },
 }
 

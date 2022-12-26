@@ -10,34 +10,6 @@ export const SocialSideBar = () => {
    const igRef = useRef<SVGSVGElement>(null)
 
    useEffect(() => {
-        // function updateFillColor() {
-        //     const fb = fbRef.current
-        //     if(!fb ) return
-        //     const rectFb = fb.getBoundingClientRect()
-        //     const xFb = rectFb.left
-        //     const yFb = rectFb.top
-        //     const fbUnderneath = document.elementsFromPoint(xFb, yFb)
-        //     if(!fbUnderneath || fbUnderneath.length === 0 ) return
-        //     let fbElementBGcolor: Element | null = null
-        //     for (const element of fbUnderneath){
-        //         const backgroundColor = window.getComputedStyle(element, null).getPropertyValue("background-color");
-        //         if (backgroundColor !== "rgba(0, 0, 0, 0)") {
-        //             fbElementBGcolor = element;
-        //             break;
-        //         }
-        //     }
-          
-        //     if (!fbElementBGcolor){
-        //         fb.style.fill = '#56739B'
-        //         return
-        //     }
-
-        //     const bgFb = window.getComputedStyle(fbElementBGcolor, null).getPropertyValue("background-color");
-        //     //  Si el fondo no es blanco poner el icono blanco
-        //     if (bgFb !== 'rgb(255, 255, 255)' && bgFb !== 'rgba(255, 255, 255, 1)'){
-        //         fb.style.fill = '#ffffff'
-        //     }             
-        // }
         window.addEventListener('scroll', () => updateFillColor(fbRef))
         window.addEventListener('scroll', () => updateFillColor(igRef))
         return () => {
@@ -46,35 +18,7 @@ export const SocialSideBar = () => {
         }
    }, [])
 
-    // useEffect(() => {
-    //     function updateFillColor() {
-    //         const ig = igRef.current
-    //         if(!ig ) return 
-    //         const rectIg = ig.getBoundingClientRect()
-    //         const xIg = rectIg.right
-    //         const yIg = rectIg.bottom
-    //         const igUnderneath = document.elementsFromPoint(xIg, yIg)
-    //         if(!igUnderneath || igUnderneath.length === 0) return
-    //         let igElementBGcolor: Element | null = null
-    //         for ( const element of igUnderneath){
-    //             const backgroundColor = window.getComputedStyle(element, null).getPropertyValue("background-color");
-    //             if (backgroundColor !== "rgba(0, 0, 0, 0)") {
-    //                 igElementBGcolor = element;
-    //                 break;
-    //             }
-    //         }            
-    //         if (!igElementBGcolor){
-    //             ig.style.fill = '#56739B'
-    //             return
-    //         }
-    //         const bgIg = window.getComputedStyle(igElementBGcolor, null).getPropertyValue("background-color");
-    //         if (bgIg !== 'rgb(255, 255, 255)' && bgIg !== 'rgba(255, 255, 255, 1)'){
-    //             ig.style.fill = '#ffffff'
-    //         }
-    //     }
-    //     window.addEventListener('scroll', updateFillColor)
-    //     return () => window.removeEventListener('scroll', updateFillColor)
-    // }, [])
+
      
 
     const updateFillColor = (svgRef: any) => {
@@ -109,7 +53,7 @@ export const SocialSideBar = () => {
 
 
   return (
-    <div className='flex flex-col fixed right-10 h-screen top-0 justify-center items-center gap-10 z-[999999]'>
+    <div className='flex-col fixed right-10 h-screen top-0 justify-center items-center gap-10 z-[999999] lg:flex hidden'>
         <FacebookSvg ref={fbRef} className='fill-white w-5 h-10' />
         <InstagramSvg ref={igRef} className='fill-white w-8 h-12' />
     </div>

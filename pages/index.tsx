@@ -5,17 +5,15 @@ import { Seo } from '../components/layout/Seo'
 import { Button } from '../components/Button'
 
 import fachada from '../public/assets/images/home/FachadaDEVARANA.webp'
-import credenza from '../public/assets/images/home/Credenza.webp'
-import fotoSalon from '../public/assets/images/home/FotoSalonIngles.webp'
-import cocina from '../public/assets/images/home/Cocina.webp'
-import torreTerra from '../public/assets/images/home/TorreTerra.webp'
-import torreAqua from '../public/assets/images/home/TorreAqua.webp'
-import torreFuego from '../public/assets/images/home/TorreFuego.webp'
-import Flor5 from '../components/svg/flor5'
-import Flor3 from '../components/svg/flor3'
+// import torreTerra from '../public/assets/images/home/TorreTerra.webp'
+// import torreAqua from '../public/assets/images/home/TorreAqua.webp'
+// import torreFuego from '../public/assets/images/home/TorreFuego.webp'
+
 import { DevaranaInlineSvg } from '../components/svg/devaranaInline'
 import { SliderHome } from '../components/home/SliderHome'
 import { SliderRV } from '../components/home/SliderRV'
+import Flor5 from '../components/svg/flor5'
+import Flor3 from '../components/svg/flor3'
 import Flor4 from '../components/svg/flor4'
 import Flor2 from '../components/svg/flor2'
 import { SwiperSlide, Swiper } from 'swiper/react'
@@ -60,7 +58,12 @@ export default function Home() {
         
         <div className='grid-cols-2 max-w-full overflow-hidden lg:grid hidden'>
             <div className='col-span-1 relative pt-1 pr-0.5'>
-                <Image src={credenza} className='object-cover w-full' height={600} width={1000} placeholder="blur" alt="Credenza"/> 
+                    <picture>
+                        <source srcSet='/assets/images-phone/home/Credenza.webp' media="(max-width: 1024px)" />
+                        <source srcSet='/assets/images/home/Credenza.webp' />
+                        <img src='/assets/images/home/Credenza.webp' className="object-cover w-full"  alt="Credenza" />
+                    </picture>
+                    {/* <Image src={credenza} className='object-cover w-full' alt='Devarana Home' placeholder='blur' priority /> */}
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0'>
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
                         <h2 className='font-playfair text-4xl text-white pb-5'>DEVARANA <span className='text-4xl font-mulish'>Home</span></h2> 
@@ -70,7 +73,12 @@ export default function Home() {
                 </div>				
             </div>
             <div className='col-span-1 relative pt-1 pl-0.5'>
-                <Image src={fotoSalon} className='object-cover w-full' height={600} width={1000} placeholder="blur" alt="Salon Ingles"/>
+                <picture>
+                    <source srcSet='/assets/images-phone/home/FotoSalonIngles.webp' media="(max-width: 1024px)" />
+                    <source srcSet='/assets/images/home/FotoSalonIngles.webp' />
+                    <img src='/assets/images/home/FotoSalonIngles.webp' className="object-cover w-full"  alt="FotoSalonIngles" />
+                </picture>
+                {/* <Image src={credenza} className='object-cover w-full' alt='Devarana Home' placeholder='blur' priority /> */}
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0' >
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
                         <h2 className='font-playfair text-4xl text-white pb-5'>Nuestro equipo</h2> 
@@ -111,7 +119,12 @@ export default function Home() {
 
 			<div className='grid grid-cols-2 gap-y-12'>
 				<div className='col-span-2 lg:col-span-1 relative lg:ml-[215px] lg:mx-0 mx-16'>
-					<Image src={cocina} className='object-cover w-full z-20 rounded-sm' height={1100} width={850} placeholder="blur" alt="Cocina"/>
+					{/* <Image src={cocina} className='object-cover w-full z-20 rounded-sm' height={1100} width={850} placeholder="blur" alt="Cocina"/> */}
+                    <picture>
+                        <source srcSet='/assets/images-phone/home/Cocina.webp' media="(max-width: 1024px)" />
+                        <source srcSet='/assets/images/home/Cocina.webp' />
+                        <img src='/assets/images/home/Cocina.webp' className="object-cover w-full"  alt="Credenza" />
+                    </picture>
 					<div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
 				</div>
 				<div className='col-span-2 lg:col-span-1 flex items-center'>
@@ -182,7 +195,13 @@ export default function Home() {
                                 <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Terra</h3>
                                 <div className='lg:mx-10 relative'>
                                     <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                                    <Image src={torreTerra} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Terra"/>
+                                    {/* <Image src={torreTerra} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Terra"/> */}
+                                    <picture>
+                                        <source srcSet='/assets/images-phone/home/TorreTerra.webp' media="(max-width: 1024px)" />
+                                        <source srcSet='/assets/images/home/TorreTerra.webp' />
+                                        <img src='/assets/images/home/TorreTerra.webp' className="object-cover w-full"  alt="TorreTerra" />
+                                    </picture>
+                                    
                                 </div>
                                 <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Más del 80% Escriturado</p>
                                 <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>La mezcla perfecta entre garantía en la calidad, seguridad e inversión.</p>
@@ -193,7 +212,12 @@ export default function Home() {
                                 <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Aqua</h3>
                                 <div className='lg:mx-10 relative'>
                                     <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                                    <Image src={torreAqua} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Aqua"/>
+                                    {/* <Image src={torreAqua} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Aqua"/> */}
+                                    <picture>
+                                        <source srcSet='/assets/images-phone/home/TorreAqua.webp' media="(max-width: 1024px)" />
+                                        <source srcSet='/assets/images/home/TorreAqua.webp' />
+                                        <img src='/assets/images/home/TorreAqua.webp' className="object-cover w-full"  alt="TorreAqua" />
+                                    </picture>
                                 </div>
                                 <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Estilo de Vida</p>
                                 <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>Con más de 30 amenidades para ti y tu familia.</p>
@@ -204,7 +228,12 @@ export default function Home() {
                             <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Fuego</h3>
                             <div className='lg:mx-10 relative'>
                                 <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                                <Image src={torreFuego} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Fuego"/>
+                                {/* <Image src={torreFuego} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Fuego"/> */}
+                                <picture>
+                                    <source srcSet='/assets/images-phone/home/TorreFuego.webp' media="(max-width: 1024px)" />
+                                    <source srcSet='/assets/images/home/TorreFuego.webp' />
+                                    <img src='/assets/images/home/TorreFuego.webp' className="object-cover w-full"  alt="TorreFuego" />
+                                </picture>
                             </div>
                             <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Un Proyecto Único</p>
                             <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>Garantía en calidad, seguridad y plusvalía.</p>
