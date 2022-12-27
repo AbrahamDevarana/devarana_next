@@ -1,6 +1,5 @@
-import Image from "next/image";
-
-import Prototipos from "../public/assets/images/contacto/Prototipos.webp";
+// import Image from "next/image";
+// import Prototipos from "../public/assets/images/contacto/Prototipos.webp";
 import { BannerRedes } from "../components/layout/BannerRedes";
 import { Form } from "../components/Form";
 import { Seo } from "../components/layout/Seo";
@@ -15,7 +14,12 @@ export default function Contacto() {
             />
             <div id="initialBanner" className="pb-24">
                 <div className='h-screen w-full relative object-contain'>
-                    <Image src={Prototipos} className='object-cover w-full' fill alt='carreraBanner'/>
+                    {/* <Image src={Prototipos} className='object-cover w-full' fill alt='carreraBanner'/> */}
+                    <picture>
+                        <source srcSet='/assets/images-phone/contacto/Prototipos.webp' media="(max-width: 1024px)" />
+                        <source srcSet='/assets/images/contacto/Prototipos.webp' />
+                        <img src='/assets/images/contacto/Prototipos.webp' className="object-cover w-full h-screen"  alt="carreraBanner" />
+                    </picture>
                     <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
                         <div className="relative grid grid-cols-2 lg:gap-y-16 gap-y-5 lg:px-40 px-14 h-full">
                             <div className="lg:col-span-1 col-span-2 lg:items-end items-center flex py-20">

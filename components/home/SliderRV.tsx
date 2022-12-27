@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import TorreTerra from '../../public/assets/images/home/TorreTerra.webp'
+import TorreTerra from '../../public/assets/images/home/Slide/TorreTerra.webp'
 import Image from 'next/image';
 import { Autoplay, EffectFade, Pagination } from 'swiper';
 import 'swiper/css';
@@ -22,19 +22,33 @@ export const SliderRV = () => {
         loop={true}
     >
         <SwiperSlide>
-            <Image src={TorreTerra} className='object-cover w-full object-center mt-5' height={200} width={280} placeholder="blur" alt="Render Torres"/>
+            {/* <Image src={TorreTerra} className='object-cover w-full object-center mt-5' height={200} width={280} placeholder="blur" alt="Render Torres"/> */}
+            <picture>
+                <source srcSet='/assets/images-phone/home/Slide/RoyalView.webp' media="(max-width: 1024px)" />
+                <source srcSet='/assets/images/home/Slide/RoyalView.webp' />
+                <img src='/assets/images/home/Slide/RoyalView.webp' className="object-cover w-full object-center mt-5"  alt="Credenza" />
+            </picture>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src={TorreTerra} className='object-cover w-full object-center mt-5' height={200} width={280} placeholder="blur" alt="Render Torres"/>
+             <picture>
+                <source srcSet='/assets/images-phone/home/Slide/IMG_7004.webp' media="(max-width: 1024px)" />
+                <source srcSet='/assets/images/home/Slide/IMG_7004.webp' />
+                <img src='/assets/images/home/Slide/IMG_7004.webp' className="object-cover w-full object-center mt-5"  alt="Credenza" />
+            </picture>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src={TorreTerra} className='object-cover w-full object-center mt-5' height={200} width={280} placeholder="blur" alt="Render Torres"/>
+             <picture>
+                <source srcSet='/assets/images-phone/home/Slide/IMG_7666.webp' media="(max-width: 1024px)" />
+                <source srcSet='/assets/images/home/Slide/IMG_7666.webp' />
+                <img src='/assets/images/home/Slide/IMG_7666.webp' className="object-cover w-full object-center mt-5"  alt="Credenza" />
+            </picture>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src={TorreTerra} className='object-cover w-full object-center mt-5' height={200} width={280} placeholder="blur" alt="Render Torres"/>
-        </SwiperSlide>
-        <SwiperSlide>
-            <Image src={TorreTerra} className='object-cover w-full object-center mt-5' height={200} width={280} placeholder="blur" alt="Render Torres"/>
+             <picture>
+                <source srcSet='/assets/images-phone/home/Slide/RV-AMNBC--11.webp' media="(max-width: 1024px)" />
+                <source srcSet='/assets/images/home/Slide/RV-AMNBC--11.webp' />
+                <img src='/assets/images/home/Slide/RV-AMNBC--11.webp' className="object-cover w-full object-center mt-5"  alt="Credenza" />
+            </picture>
         </SwiperSlide>
     </Swiper>
   )

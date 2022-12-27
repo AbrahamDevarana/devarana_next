@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from '../components/Button'
 
-import carreraBanner from '../public/assets/images/carrera/AvanceEstrategia.webp'
-import Arquitectos from '../public/assets/images/carrera/Arquitectos.webp'
 import { SliderTestimonios } from '../components/carrera/SliderTestimonios'
-import Colaboradores from '../public/assets/images/carrera/Colaboradores.webp'
+// import carreraBanner from '../public/assets/images/carrera/AvanceEstrategia.webp'
+// import Arquitectos from '../public/assets/images/carrera/Arquitectos.webp'
+// import Colaboradores from '../public/assets/images/carrera/Colaboradores.webp'
 import Flor5 from '../components/svg/flor5'
 import FlorTres from '../components/svg/flor3'
 import { Form } from '../components/Form'
@@ -23,8 +23,13 @@ export default function Carrera() {
             />
             <div id="initialBanner">
                 <div className='h-screen w-full relative object-contain'>
-                    <Image src={carreraBanner} className='object-cover w-full' placeholder='blur' priority quality={100} fill alt='carreraBanner' />
-                    <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0' />
+                    {/* <Image src={carreraBanner} className='object-cover w-full' placeholder='blur' priority quality={100} fill alt='carreraBanner' /> */}
+                    <picture>
+                        <source srcSet='/assets/images-phone/carrera/AvanceEstrategia.webp' media="(max-width: 1024px)" />
+                        <source srcSet='/assets/images/carrera/AvanceEstrategia.webp' />
+                        <img src='/assets/images/carrera/AvanceEstrategia.webp' className="object-cover w-full h-screen"  alt="carreraBanner" />
+                    </picture>
+                    <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0 h-full' />
                     <div className='absolute'>
                         <SliderPortada />
                     </div>
@@ -40,11 +45,18 @@ export default function Carrera() {
                 </div>
                 <div className='lg:px-32 px-14 lg:py-24 pt-24'>
                     <div className="grid grid-cols-12 lg:gap-20 gap-y-10">
-                        <div className="col-span-12 lg:col-span-6 relative">
-                            <Image src={Arquitectos} className='object-cover w-full' height={650} width={950} placeholder="blur" alt="Arquitectos"/>
-                            <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
+                        <div className="col-span-12 xl:col-span-6 relative">
+                            {/* <Image src={Arquitectos} className='object-cover w-full' height={650} width={950} placeholder="blur" alt="Arquitectos"/> */}
+                            <div className="relative">
+                                <picture>
+                                    <source srcSet='/assets/images-phone/carrera/Arquitectos.webp' media="(max-width: 1024px)" />
+                                    <source srcSet='/assets/images/carrera/Arquitectos.webp' />
+                                    <img src='/assets/images/carrera/Arquitectos.webp' className="object-cover w-full"  alt="Arquitectos" />
+                                </picture>
+                                <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
+                            </div>
                         </div>
-                        <div className="col-span-12 lg:col-span-6">
+                        <div className="col-span-12 xl:col-span-6">
                             <h3 className='border-l-4 border-devarana-pink text-xl lg:text-5xl text-devarana-graph-darker px-5 font-playfair'>Conoce al equipo</h3>
                             <p className='text-devarana-graph lg:py-12 py-5 lg:text-2xl text-[10px]'>Trabajamos juntos para construir todo lo que soñamos.</p>
                             <div className='grid grid-cols-2 lg:gap-10 gap-y-10 pt-8'>
@@ -104,7 +116,12 @@ export default function Carrera() {
                             <a className='block lg:text-right text-left text-devarana-pink lg:text-2xl text-[10px]' href="mailto:talento@devarana.mx">talento@devarana.mx</a>
                         </div>
                         <div className="col-span-12 lg:col-span-6 relative order-1 lg:order-2">
-                            <Image src={Colaboradores} className='object-cover w-full' height={600} width={800} placeholder="blur" alt="Colaboradores"/>
+                            {/* <Image src={Colaboradores} className='object-cover w-full' height={600} width={800} placeholder="blur" alt="Colaboradores"/> */}
+                            <picture>
+                                <source srcSet='/assets/images-phone/carrera/Colaboradores.webp' media="(max-width: 1024px)" />
+                                <source srcSet='/assets/images/carrera/Colaboradores.webp' />
+                                <img src='/assets/images/carrera/Colaboradores.webp' className="object-cover w-full"  alt="Colaboradores" />
+                            </picture>
                             <div className='absolute lg:translate-x-5 -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                         </div>
                     </div>

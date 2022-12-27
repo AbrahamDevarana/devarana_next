@@ -1,25 +1,31 @@
 import Image from 'next/image'  
+import { SwiperSlide, Swiper } from 'swiper/react'
+import { Autoplay } from 'swiper'
 import { Form } from '../components/Form'
 import { BannerRedes } from '../components/layout/BannerRedes'
 import { Seo } from '../components/layout/Seo'
 import { Button } from '../components/Button'
-
 import fachada from '../public/assets/images/home/FachadaDEVARANA.webp'
+
 // import torreTerra from '../public/assets/images/home/TorreTerra.webp'
 // import torreAqua from '../public/assets/images/home/TorreAqua.webp'
 // import torreFuego from '../public/assets/images/home/TorreFuego.webp'
 
-import { DevaranaInlineSvg } from '../components/svg/devaranaInline'
 import { SliderHome } from '../components/home/SliderHome'
 import { SliderRV } from '../components/home/SliderRV'
+
+import { DevaranaInlineSvg } from '../components/svg/devaranaInline'
 import Flor5 from '../components/svg/flor5'
 import Flor3 from '../components/svg/flor3'
 import Flor4 from '../components/svg/flor4'
 import Flor2 from '../components/svg/flor2'
-import { SwiperSlide, Swiper } from 'swiper/react'
-import { Autoplay } from 'swiper'
+
 
 export default function Home() {
+
+    console.log('fachada', fachada);
+    
+
   return (
     <>
         <Seo
@@ -58,12 +64,12 @@ export default function Home() {
         
         <div className='grid-cols-2 max-w-full overflow-hidden lg:grid hidden'>
             <div className='col-span-1 relative pt-1 pr-0.5'>
-                    <picture>
-                        <source srcSet='/assets/images-phone/home/Credenza.webp' media="(max-width: 1024px)" />
-                        <source srcSet='/assets/images/home/Credenza.webp' />
-                        <img src='/assets/images/home/Credenza.webp' className="object-cover w-full"  alt="Credenza" />
-                    </picture>
-                    {/* <Image src={credenza} className='object-cover w-full' alt='Devarana Home' placeholder='blur' priority /> */}
+                <picture>
+                    <source srcSet='/assets/images-phone/home/Credenza.webp' media="(max-width: 1024px)" />
+                    <source srcSet='/assets/images/home/Credenza.webp' />
+                    <img src='/assets/images/home/Credenza.webp' className="object-cover w-full"  alt="Credenza" />
+                </picture>
+                {/* <Image src={credenza} className='object-cover w-full' alt='Devarana Home' placeholder='blur' priority /> */}
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0'>
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
                         <h2 className='font-playfair text-4xl text-white pb-5'>DEVARANA <span className='text-4xl font-mulish'>Home</span></h2> 

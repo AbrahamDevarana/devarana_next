@@ -1,17 +1,14 @@
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import { Button } from '../Button';
+import { Navigation } from 'swiper';
+import HighGardens from '../svg/high-gardens';
 import 'swiper/css';
 
-import HighGardens from '../svg/high-gardens';
-
-import RoyalView from '../../public/assets/images/empresa/RoyalView.webp'
-import HighGardenHouse from '../../public/assets/images/empresa/HighG.webp'
-import UpperCondesa from '../../public/assets/images/empresa/UpperCondesa.webp'
-import GrandMayran from '../../public/assets/images/empresa/GrandMayran.webp'
-import { Navigation } from 'swiper';
-import Flor5 from '../svg/flor5';
+// import RoyalView from '../../public/assets/images/empresa/RoyalView.webp'
+// import HighGardenHouse from '../../public/assets/images/empresa/HighG.webp'
+// import UpperCondesa from '../../public/assets/images/empresa/UpperCondesa.webp'
+// import GrandMayran from '../../public/assets/images/empresa/GrandMayran.webp'
 
 export const SliderProyectos = () => {
   return (
@@ -47,7 +44,12 @@ export const SliderProyectos = () => {
                         </div>
                         <div className='bg-devarana-hazelnut absolute -left-2 w-4 h-80 z-10 top-1/2 -translate-y-1/2 hidden lg:block'/> 
                         <div className='bg-devarana-hazelnut absolute -top-1.5 w-6/12 h-3 left-1/2 -translate-x-1/2 block lg:hidden'/>
-                        <Image src={RoyalView} alt="Royal View" width={850} height={850} className='object-cover w-full' placeholder='blur'/>
+                        {/* <Image src={RoyalView} alt="Royal View" width={850} height={850} className='object-cover w-full' placeholder='blur'/> */}
+                        <picture>
+                            <source srcSet='/assets/images-phone/empresa/RoyalView.webp' media="(max-width: 1024px)" />
+                            <source srcSet='/assets/images/empresa/RoyalView.webp' />
+                            <img src='/assets/images/empresa/RoyalView.webp' className="object-cover w-full"  alt="Royal View" />
+                        </picture>
                     </div>
                 </div>
             </SwiperSlide>
@@ -76,7 +78,12 @@ export const SliderProyectos = () => {
                         </div>
                         <div className='bg-devarana-hazelnut absolute -left-2 w-4 h-80 z-10 top-1/2 -translate-y-1/2 hidden lg:block'/> 
                         <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2 block lg:hidden' />
-                        <Image src={HighGardenHouse} alt="High Gardens" width={850} height={850} className='object-cover w-full' placeholder='blur' />
+                        {/* <Image src={HighGardenHouse} alt="High Gardens" width={850} height={850} className='object-cover w-full' placeholder='blur' /> */}
+                        <picture>
+                            <source srcSet='/assets/images-phone/empresa/HighGardens.webp' media="(max-width: 1024px)" />
+                            <source srcSet='/assets/images/empresa/HighGardens.webp' />
+                            <img src='/assets/images/empresa/HighGardens.webp' className="object-cover w-full" alt="High Gardens" />
+                        </picture>
                     </div>
                 </div>
             </SwiperSlide>
@@ -104,7 +111,12 @@ export const SliderProyectos = () => {
                         </div>
                         <div className='bg-devarana-hazelnut absolute -left-2 w-4 h-80 z-10 top-1/2 -translate-y-1/2 hidden lg:block'/> 
                         <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2 block lg:hidden' />
-                        <Image src={UpperCondesa} alt="Upper Condesa" width={850} height={850}  className='object-cover w-full' placeholder='blur' />
+                        {/* <Image src={UpperCondesa} alt="Upper Condesa" width={850} height={850}  className='object-cover w-full' placeholder='blur' /> */}
+                        <picture>
+                            <source srcSet='/assets/images-phone/empresa/UpperCondesa.webp' media="(max-width: 1024px)" />
+                            <source srcSet='/assets/images/empresa/UpperCondesa.webp' />
+                            <img src='/assets/images/empresa/UpperCondesa.webp' className="object-cover w-full" alt="Upper Condesa" />
+                        </picture>
                     </div>
                 </div>
             </SwiperSlide>
@@ -131,7 +143,12 @@ export const SliderProyectos = () => {
                         </div>
                         <div className='bg-devarana-hazelnut absolute -left-2 w-4 h-80 z-10 top-1/2 -translate-y-1/2 hidden lg:block'/> 
                         <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2 block lg:hidden' />
-                        <Image src={GrandMayran} alt="Upper Condesa" width={850} height={850}  className='object-cover w-full' placeholder='blur' />
+                        {/* <Image src={GrandMayran} alt="Grand Mayran" width={850} height={850}  className='object-cover w-full' placeholder='blur' /> */}
+                        <picture>
+                            <source srcSet='/assets/images-phone/empresa/GrandMayran.webp' media="(max-width: 1024px)" />
+                            <source srcSet='/assets/images/empresa/GrandMayran.webp' />
+                            <img src='/assets/images/empresa/GrandMayran.webp' className="object-cover w-full" alt="Grand Mayran" />
+                        </picture>
                     </div>
                 </div>
             </SwiperSlide>

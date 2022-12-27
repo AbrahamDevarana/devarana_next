@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FotoSalonIngles from "../public/assets/images/home/FotoSalonIngles.webp";
+// import FotoSalonIngles from "../public/assets/images/home/FotoSalonIngles.webp";
 import { SliderVacantes } from "../components/vacantes/SliderVacantes";
 import { BannerRedes } from "../components/layout/BannerRedes";
 import { Form } from "../components/Form";
@@ -34,7 +34,12 @@ export default function Vacantes() {
             />
             <div id="initialBanner pb-24">
                 <div className='h-screen w-full relative object-contain'>
-                    <Image src={FotoSalonIngles} priority className='object-cover w-full h-screen' alt='Foto Salon Ingles' />
+                    {/* <Image src={FotoSalonIngles} priority className='object-cover w-full h-screen' alt='Foto Salon Ingles' /> */}
+                    <picture>
+                        <source srcSet='/assets/images-phone/home/FotoSalonIngles.webp' media="(max-width: 1024px)" />
+                        <source srcSet='/assets/images/home/FotoSalonIngles.webp' />
+                        <img src='/assets/images/home/FotoSalonIngles.webp' className="object-cover w-full h-screen"  alt="Foto Salon Ingles" />
+                    </picture>
                     <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
                         <div className="relative flex justify-center items-center h-full"> 
                             <h1 className="text-white lg:text-[40px] lg:leading-[50px] text-xl tracking-wide font-playfair text-center">Somos creadores, arquitectos y <br className="hidden lg:block" /> diseñadores de lo extraordinario.</h1>

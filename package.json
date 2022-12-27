@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "tailwind": "tailwindcss -o styles/build.css --minify",
+    "tw": "tailwindcss -o styles/build.css --minify",
     "local": "yarn tailwind && next build"
   },
   "dependencies": {

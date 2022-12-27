@@ -3,8 +3,8 @@ import { Seo } from "../../components/layout/Seo";
 import Flor1 from "../../components/svg/flor1";
 import { SliderValores } from "../../components/empresa/SliderValores";
 import { SliderProyectos } from "../../components/empresa/SliderProyectos";
-import PrimerEntrega from "../../public/assets/images/empresa/PrimerEntrega.webp";
-import TorresReserva from "../../public/assets/images/empresa/TorresReserva.webp";
+// import PrimerEntrega from "../../public/assets/images/empresa/PrimerEntrega.webp";
+// import TorresReserva from "../../public/assets/images/empresa/TorresReserva.webp";
 import Flor5 from "../../components/svg/flor5";
 import Reforestacion from "../../public/assets/images/empresa/Reforestacion.webp";
 import ViajeAniversario from "../../public/assets/images/empresa/ViajeAniversario.webp";
@@ -36,8 +36,12 @@ export default function Empresa() {
 
                 {/*  PrimerEntrega si es escritorio  y otra si es responsivo */}
 
-                <Image src={PrimerEntrega} className='object-cover w-full lg:px-24 px-4 py-20 z-10' priority quality={100} height={930} width={1920} placeholder="blur" alt="Primer Entrega"/>
-                
+                {/* <Image src={PrimerEntrega} className='object-cover w-full lg:px-24 px-4 py-20 z-10' priority quality={100} height={930} width={1920} placeholder="blur" alt="Primer Entrega"/> */}
+                <picture>
+                    <source srcSet='/assets/images-phone/empresa/PrimerEntrega.webp' media="(max-width: 1024px)" />
+                    <source srcSet='/assets/images/empresa/PrimerEntrega.webp' />
+                    <img src='/assets/images/empresa/PrimerEntrega.webp' className="object-cover w-full lg:px-24 px-4 py-20 z-10"  alt="Primer Entrega" />
+                </picture>
                 
                 <div className='bg-devarana-hazelnut lg:h-[300px] h-[250px] relative -mt-48 -z-10 max-w-full'/>
                 <div className='absolute left-0 top-0 translate-y-3/4 -z-10 -translate-x-20 '>
@@ -48,7 +52,12 @@ export default function Empresa() {
             <div className="relative overflow-hidden pb-24">
                 <div className='grid grid-cols-2 gap-y-12 lg:mx-[245px] mx-10'>
                     <div className='col-span-2 lg:col-span-1 relative '>
-                        <Image src={TorresReserva} className='object-cover w-full z-20 rounded-sm' height={1002} width={707} placeholder="blur" alt="TorresReserva"/>
+                        {/* <Image src={TorresReserva} className='object-cover w-full z-20 rounded-sm' height={1002} width={707} placeholder="blur" alt="TorresReserva"/> */}
+                        <picture>
+                            <source srcSet='/assets/images-phone/empresa/TorresReserva.webp' media="(max-width: 1024px)" />
+                            <source srcSet='/assets/images/empresa/TorresReserva.webp' />
+                            <img src='/assets/images/empresa/TorresReserva.webp' className="object-cover w-full z-20 rounded-sm"  alt="TorresReserva" />
+                        </picture>
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                     </div>
                     <div className='col-span-2 lg:col-span-1 flex flex-col justify-center'>

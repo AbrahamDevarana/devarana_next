@@ -1,14 +1,14 @@
 
-import Image from "next/image";
-import GPTW from "../../public/assets/images/empresa/03-certificados-y-premios/GPTW.webp";
-import ESR from "../../public/assets/images/empresa/03-certificados-y-premios/ESR.webp";
+import { Seo } from "../../components/layout/Seo";
 import { Form } from "../../components/Form";
 import { BannerRedes } from "../../components/layout/BannerRedes";
+import Image from "next/image";
+// import GPTW from "../../public/assets/images/empresa/03-certificados-y-premios/GPTW.webp";
+// import ESR from "../../public/assets/images/empresa/03-certificados-y-premios/ESR.webp";
 import Flor2 from "../../components/svg/flor2";
 import Flor5 from "../../components/svg/flor5";
 import Flor3 from "../../components/svg/flor3";
 import ServicioLegendarioSVG from "../../components/svg/servicioLegendario";
-import { Seo } from "../../components/layout/Seo";
 
 export default function ResponsabilidadSocial() {
     return (
@@ -32,7 +32,12 @@ export default function ResponsabilidadSocial() {
                 <div className="grid grid-cols-2 gap-x-10 lg:gap-y-32 gap-y-10 lg:px-52 px-14 lg:pt-24 pt-12 relative">
                     <div className="order-1 lg:order-1 col-span-2 lg:col-span-1 relative">
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
-                        <Image src={GPTW} alt="Reforestación" className="object-cover w-full h-full" placeholder="blur" width={730} height={520} />
+                        {/* <Image src={GPTW} alt="GPTW" className="object-cover w-full h-full" placeholder="blur" width={730} height={520} /> */}
+                        <picture>
+                            <source srcSet='/assets/images-phone/empresa/03-certificados-y-premios/GPTW.webp' media="(max-width: 1024px)" />
+                            <source srcSet='/assets/images/empresa/03-certificados-y-premios/GPTW.webp' />
+                            <img src='/assets/images/empresa/03-certificados-y-premios/GPTW.webp' className="object-cover w-full h-full"  alt="GPTW" />
+                        </picture>
                     </div> 
                     <div className="order-2 lg:order-2 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base">Great Place to Work</h2>
@@ -47,7 +52,12 @@ export default function ResponsabilidadSocial() {
                     </div>
                     <div className="order-3 lg:order-4 col-span-2 lg:col-span-1  relative">
                         <div className='absolute lg:translate-x-5 -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
-                        <Image src={ESR} alt="Brigadas de Seguridad" className="object-cover w-full h-full" placeholder="blur" width={730} height={520} />
+                        {/* <Image src={ESR} alt="Brigadas de Seguridad" className="object-cover w-full h-full" placeholder="blur" width={730} height={520} /> */}
+                        <picture>
+                            <source srcSet='/assets/images-phone/empresa/03-certificados-y-premios/ESR.webp' media="(max-width: 1024px)" />
+                            <source srcSet='/assets/images/empresa/03-certificados-y-premios/ESR.webp' />
+                            <img src='/assets/images/empresa/03-certificados-y-premios/ESR.webp' className="object-cover w-full h-full"  alt="Brigadas de Seguridad" />
+                        </picture>
                     </div>
                     <div className="order-5 lg:order-5 col-span-2 lg:col-span-1  relative">
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
