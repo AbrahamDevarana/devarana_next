@@ -38,7 +38,7 @@ export default function Carrera() {
                 <div className='absolute right-0 -z-10 top-20 bottom-0'>
                     <FlorTres className='fill-devarana-hazelnut w-full opacity-50 -rotate-[45deg] translate-x-16'/>
                 </div>
-                <div className='lg:px-64 px-14 lg:py-24 pt-24'>
+                <div className='lg:px-32 px-14 lg:py-24 pt-24'>
                     <div className="grid grid-cols-12 lg:gap-20 gap-y-10">
                         <div className="col-span-12 lg:col-span-6 relative">
                             <Image src={Arquitectos} className='object-cover w-full' height={650} width={950} placeholder="blur" alt="Arquitectos"/>
