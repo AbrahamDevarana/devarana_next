@@ -54,8 +54,12 @@ export const SocialSideBar = () => {
 
   return (
     <div className='flex-col fixed right-10 h-screen top-0 justify-center items-center gap-10 z-[999999] lg:flex hidden'>
-        <FacebookSvg ref={fbRef} className='fill-white w-5 h-10' />
-        <InstagramSvg ref={igRef} className='fill-white w-8 h-12' />
+        <a href="https://www.facebook.com/DevaranaResidences" target={"_blank"} rel="noreferrer">
+            <FacebookSvg ref={fbRef} className='fill-white w-5 h-10 hover:opacity-50 transition-all duration-500 ease-in-out' />
+        </a>
+        <a href="https://www.instagram.com/devarana.mx/" target={"_blank"} rel="noreferrer">
+            <InstagramSvg ref={igRef} className='fill-white w-8 h-12 hover:opacity-50 transition-all duration-500 ease-in-out' />
+        </a>
     </div>
   )
 }

@@ -19,6 +19,7 @@ import Flor5 from '../components/svg/flor5'
 import Flor3 from '../components/svg/flor3'
 import Flor4 from '../components/svg/flor4'
 import Flor2 from '../components/svg/flor2'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -84,7 +85,8 @@ export default function Home() {
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0'>
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
                         <h2 className='font-playfair text-4xl text-white pb-5 tracking-[0.04em]'>DEVARANA <span className='text-4xl font-mulish font-bold'>Home</span></h2> 
-                        <Button type='button' textColor='white' colorType='whiteInverted' > MUY PRONTO </Button>
+                        {/* <Button type='button' textColor='white' colorType='whiteInverted' > MUY PRONTO </Button> */}
+                        <p className='lg:text-xl text-[8px] text-white pb-5 tracking-widest'>¡MUY PRONTO!</p>
                     </div>
                   
                 </div>				
@@ -99,7 +101,9 @@ export default function Home() {
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0' >
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
                         <h2 className='font-playfair text-4xl text-white pb-5 tracking-[0.04em]'>Nuestro equipo</h2> 
-                        <Button type='button' textColor='white' colorType='whiteInverted' > SABER MÁS </Button>
+                        <Link href={"/carrera"}>
+                            <Button type='button' textColor='white' colorType='whiteInverted' > SABER MÁS </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -131,7 +135,9 @@ export default function Home() {
             
 			
 			<div className='text-center lg:pb-24 pb-16'>
-				<Button type='button' colorType='pinkInverted' textColor='devarana-pink'> SABER MÁS </Button>
+				<Link href={"/empresa"}>
+                    <Button type='button' colorType='pinkInverted' textColor='devarana-pink'> SABER MÁS </Button>
+                </Link>
 			</div>
 
 			<div className='grid grid-cols-2 gap-y-12'>
@@ -259,7 +265,10 @@ export default function Home() {
                     </Swiper>
 
                 <div className='text-center lg:pt-24 pt-12 pb-4'>
-                    <Button type='button' colorType='pink' textColor='white'> SABER MÁS </Button>
+                    {/* <Button type='button' colorType='pink' textColor='white'> SABER MÁS </Button> */}
+                    <a href="https://royalview.mx" target={'_blank'} rel="noreferrer">
+                        <Button type='button' colorType='pink' textColor='white'> DESCUBRE ROYAL VIEW </Button>
+                    </a>
                 </div>
             </div>
         </div>

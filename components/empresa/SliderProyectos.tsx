@@ -4,6 +4,7 @@ import { Button } from '../Button';
 import { Navigation } from 'swiper';
 import HighGardens from '../svg/high-gardens';
 import 'swiper/css';
+import Link from 'next/link';
 
 // import RoyalView from '../../public/assets/images/empresa/RoyalView.webp'
 // import HighGardenHouse from '../../public/assets/images/empresa/HighG.webp'
@@ -35,7 +36,9 @@ export const SliderProyectos = () => {
                         </p>
 
                         <div className='text-center'>
+                        <a href="https://royalview.mx" target={'_blank'} rel="noreferrer">
                             <Button type='button' colorType='pink' textColor='white'>DESCUBRE</Button>
+                        </a>
                         </div>
                     </div>
                     <div className="lg:col-span-6 col-span-12 relative mx-2 lg:mx-0">
