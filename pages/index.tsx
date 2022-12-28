@@ -46,7 +46,7 @@ export default function Home() {
                             <div className="relative">
                                 <div className="flex lg:pl-0 ml-20">
                                     <p className='font-mulish font-extralight tracking-wider text-3xl lg:text-6xl text-white translate-y-0.5'>Somos</p>
-                                    <div className="lg:h-[60px] h-[30px] overflow-hidden pl-5">
+                                    <div className="lg:h-[65px] h-[35px] overflow-hidden pl-5">
                                         <p className="font-playfair text-3xl lg:text-6xl text-white listEffect_item pb-5 tracking-wider">creadores</p>
                                         <p className="font-playfair text-3xl lg:text-6xl text-white listEffect_item pb-5 tracking-wider">arquitectos</p>
                                         <p className="font-playfair text-3xl lg:text-6xl text-white listEffect_item pb-5 tracking-wider">diseñadores</p>

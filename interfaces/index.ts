@@ -10,3 +10,12 @@ export interface VacanteModalProps {
     modalContent?: []
     setModalContent?: (modalContent: JSX.Element) => void;
 }
+
+export interface VacanteProps {
+    id: number;
+    area: string;
+    title: string;
+    description: string;
+    requirements: [];
+    activities: [];
+}

@@ -98,19 +98,19 @@ export const Menu = () => {
     return (
     <>
         <div className={`fixed h-[60px] w-full items-center grid grid-cols-12 lg:justify-between lg:px-[138px] px-10 z-50 max-w-full transition-all duration-500 ease-in-out 
-            ${ showHead === 1 ? 'bg-devarana-blue -translate-y-full' : showHead === 0? '-translate-y-[200%]' : bgUrl[path] + ' translate-y-0' }`}>
-            <button onClick={() => onClickMenu(!activeMenu)} className='h-full px-2 z-[1001] col-span-2'><MenuSvg className='stroke-white' /></button>
-            <Link href="/" className='col-span-6 col-start-4 mx-auto  hover:opacity-50 transition-all ease-in-out duration-300'  onClick={ () => onClickMenu(false)}>
-                <DevaranaInlineSvg className='fill-white lg:w-[200px] w-[130px]' />
+            ${ showHead === 1 ? 'bg-devarana-pearl -translate-y-full shadow' : showHead === 0? '-translate-y-[200%]' : bgUrl[path] + ' translate-y-0' }`}>
+            <button onClick={() => onClickMenu(!activeMenu)} className='h-full px-2 z-[1001] col-span-2'><MenuSvg className={`${showHead === 1 ? 'stroke-devarana-graph-darker' : 'stroke-white'}`} /></button>
+            <Link href="/" className='col-span-6 col-start-4 mx-auto  hover:opacity-50 transition-all ease-in-out duration-500' onClick={ () => onClickMenu(false)}>
+                <DevaranaInlineSvg className={`${showHead === 1 ? 'fill-devarana-graph-darker' : 'fill-white'}  lg:w-[200px] w-[130px]`} />
             </Link>
             <div className='lg:flex items-center gap-10 hidden col-span-3 ml-auto'>
-                <a className='hover:opacity-50 transition-all ease-in-out duration-300' target="_blank" rel="noreferrer" href='mailto:ventas@devarana.mx'>
-                    <CorreoSvg className='fill-white w-[25px]' />
+                <a className='hover:opacity-50 transition-all ease-in-out duration-500' target="_blank" rel="noreferrer" href='mailto:ventas@devarana.mx'>
+                    <CorreoSvg className={`${showHead === 1 ? 'fill-devarana-graph-darker' : 'fill-white'} w-[25px]`} />
                 </a>
-                <a className='hover:opacity-50 transition-all ease-in-out duration-300' target="_blank" rel="noreferrer" href='https://web.whatsapp.com/send?phone=+524428244444&text=Hola, quisiera más información de Devarana.'>
-                    <WhatsappSvg className='fill-white w-[25px]' />
+                <a className='hover:opacity-50 transition-all ease-in-out duration-500' target="_blank" rel="noreferrer" href='https://web.whatsapp.com/send?phone=+524428244444&text=Hola, quisiera más información de Devarana.'>
+                    <WhatsappSvg className={`${showHead === 1 ? 'fill-devarana-graph-darker' : 'fill-white'} w-[25px]`} />
                 </a>
-                <a href='tel:+524428244444' className="text-white font-light text-base hover:opacity-50 transition-all ease-in-out duration-300 tracking-wider">(442) 824 4444</a>
+                <a href='tel:+524428244444' className={`${showHead === 1 ? 'text-devarana-graph-darker' : 'text-white'} font-light text-base hover:opacity-50 transition-all ease-in-out duration-300 tracking-wider`}>(442) 824 4444</a>
             </div>
 
             {/* Prevent scroll */}
@@ -127,7 +127,7 @@ export const Menu = () => {
                     <div className='flex flex-col gap-10 z-20'>
                         <div>
                             <div className='flex gap-2 align-middle items-center justify-center cursor-pointer' onClick={onClickShow}>
-                                <Link href="/empresa" onClick={ () => onClickMenu(false) }><p className='text-center text-white font-playfair lg:text-[40px] text-3xl' >Empresa</p> </Link>
+                                <Link href="/empresa" onClick={ () => onClickMenu(false) }><p className='text-center text-white font-playfair lg:text-[40px] text-3xl pb-2 hover:border-b-2' >Empresa</p> </Link>
                                 <MenuPolygonSvg className='fill-white translate-y-1 transition-all duration-500'  />
                             </div> 
 
@@ -146,7 +146,7 @@ export const Menu = () => {
                         <div>
                             <div className='flex gap-2 align-middle items-center justify-center cursor-pointer' onClick={onClickShow}>
                                 <Link href='/carrera' onDoubleClick={ () => onClickMenu(false) }>
-                                    <p className='text-center text-white font-playfair lg:text-[40px] text-3xl' >Carrera</p> 
+                                    <p className='text-center text-white font-playfair lg:text-[40px] text-3xl pb-2 hover:border-b-2' >Carrera</p> 
                                 </Link>
                                 <MenuPolygonSvg className='fill-white translate-y-1'/> 
                             </div>
@@ -156,9 +156,9 @@ export const Menu = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className=''>
-                            <Link href='/contacto' onClick={() => onClickMenu(false)}>
-                                <p className='text-center text-white font-playfair lg:text-[40px] text-3xl'>Contacto</p>
+                        <div className='flex justify-center'>
+                            <Link href='/contacto' onClick={() => onClickMenu(false)} className="w-auto">
+                                <p className='text-center text-white font-playfair lg:text-[40px] text-3xl pb-2 hover:border-b-2'>Contacto</p>
                             </Link>
                         </div>
                     </div>
