@@ -7,14 +7,13 @@ export const SliderPortada = () => {
     <Swiper
         spaceBetween={20}
         slidesPerView={3.5} 
-        centeredSlides={true}
         breakpoints={{
             320: {
                 slidesPerView: 1.5,
                 spaceBetween: 20,
             },
             768: {
-                slidesPerView: 2.5,
+                slidesPerView: 34,
                 spaceBetween: 20,
             },
             1024: {
