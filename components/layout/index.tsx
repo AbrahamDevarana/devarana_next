@@ -25,6 +25,7 @@ export const Layout = ({children}: Props) => {
             <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#56739b"/>
             <meta name="msapplication-TileColor" content="#f9f9f7"/>
             <meta name="theme-color" content="#f9f9f7"></meta>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
         <HeadBanner />
         <Menu />

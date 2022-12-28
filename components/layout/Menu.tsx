@@ -97,7 +97,7 @@ export const Menu = () => {
 
     return (
     <>
-        <div className={`fixed h-[60px] w-full items-center grid grid-cols-12 lg:justify-between lg:px-36 px-10 z-50 max-w-full transition-all duration-500 ease-in-out 
+        <div className={`fixed h-[60px] w-full items-center grid grid-cols-12 lg:justify-between lg:px-[138px] px-10 z-50 max-w-full transition-all duration-500 ease-in-out 
             ${ showHead === 1 ? 'bg-devarana-blue -translate-y-full' : showHead === 0? '-translate-y-[200%]' : bgUrl[path] + ' translate-y-0' }`}>
             <button onClick={() => onClickMenu(!activeMenu)} className='h-full px-2 z-[1001] col-span-2'><MenuSvg className='stroke-white' /></button>
             <Link href="/" className='col-span-6 col-start-4 mx-auto  hover:opacity-50 transition-all ease-in-out duration-300'  onClick={ () => onClickMenu(false)}>
@@ -110,7 +110,7 @@ export const Menu = () => {
                 <a className='hover:opacity-50 transition-all ease-in-out duration-300' target="_blank" rel="noreferrer" href='https://web.whatsapp.com/send?phone=+524428244444&text=Hola, quisiera más información de Devarana.'>
                     <WhatsappSvg className='fill-white w-[25px]' />
                 </a>
-                <a href='tel:+524428244444' className="text-white font-light text-base hover:opacity-50 transition-all ease-in-out duration-300">(442) 824 4444</a>
+                <a href='tel:+524428244444' className="text-white font-light text-base hover:opacity-50 transition-all ease-in-out duration-300 tracking-wider">(442) 824 4444</a>
             </div>
 
             {/* Prevent scroll */}

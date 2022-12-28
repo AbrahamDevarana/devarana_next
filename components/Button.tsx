@@ -41,7 +41,7 @@ export const Button = ({
             type={type}
             onClick={onClick}
             disabled={disabled}
-            className={`px-8 tracking-widest border-2 font-semibold lg:text-xs text-[8px] after:border-2 font-mulish ${className(colorType)}`}
+            className={`px-8 tracking-[0.15em] border font-normal lg:text-xs text-[8px] after:border font-mulish ${className(colorType)}`}
             >{children}</button>
     )
 }

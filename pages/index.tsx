@@ -23,8 +23,7 @@ import Flor2 from '../components/svg/flor2'
 
 export default function Home() {
 
-    console.log('fachada', fachada);
-    
+   
 
   return (
     <>
@@ -42,9 +41,9 @@ export default function Home() {
                     <div className="relative w-full h-full">
                         <div className='flex flex-col justify-center w-full h-full transition-all duration-500  lg:pl-28 lg:-translate-y-0 -translate-y-32' id="devaranaWord">
                             <DevaranaInlineSvg className='fill-white w-[274px] lg:w-[870px] lg:pl-0 ml-20' />
-                            <p className='font-playfair text-3xl lg:text-6xl text-white lg:pl-0 ml-20 tracking-wider'><span className='font-mulish font-light'>Somos</span> creadores</p>
+                            <p className='font-playfair text-3xl lg:text-6xl text-white lg:pl-0 ml-20 tracking-wider'><span className='font-mulish font-extralight'>Somos</span> creadores</p>
                         </div>
-                        <div className='absolute lg:left-auto left-10 bottom-12 lg:right-44'>
+                        <div className='absolute lg:left-auto left-10 bottom-12 lg:right-60'>
                             <div className='flex flex-col lg:flex-row items-center gap-5'>    
                                 <div className='flex gap-5'>
                                     <div className='h-[200px] w-0.5 border-l-2 mt-auto'/>
@@ -72,7 +71,7 @@ export default function Home() {
                 {/* <Image src={credenza} className='object-cover w-full' alt='Devarana Home' placeholder='blur' priority /> */}
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0'>
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
-                        <h2 className='font-playfair text-4xl text-white pb-5'>DEVARANA <span className='text-4xl font-mulish'>Home</span></h2> 
+                        <h2 className='font-playfair text-4xl text-white pb-5 tracking-[0.04em]'>DEVARANA <span className='text-4xl font-mulish font-bold'>Home</span></h2> 
                         <Button type='button' textColor='white' colorType='whiteInverted' > MUY PRONTO </Button>
                     </div>
                   
@@ -87,7 +86,7 @@ export default function Home() {
                 {/* <Image src={credenza} className='object-cover w-full' alt='Devarana Home' placeholder='blur' priority /> */}
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0' >
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
-                        <h2 className='font-playfair text-4xl text-white pb-5'>Nuestro equipo</h2> 
+                        <h2 className='font-playfair text-4xl text-white pb-5 tracking-[0.04em]'>Nuestro equipo</h2> 
                         <Button type='button' textColor='white' colorType='whiteInverted' > SABER MÁS </Button>
                     </div>
                 </div>
@@ -101,21 +100,21 @@ export default function Home() {
 
 		<div className='relative lg:py-24 py-12 overflow-hidden'>
 			<hr className='border-devarana-pink w-72 mx-auto'/>
-			<div className='text-center max-w-screen-lg mx-auto lg:py-20 py-12 tracking-wide lg:text-3xl text-[10px] px-14'>
-				<p className='text-devarana-graph pb-5 font-light'>
+			<div className='text-center max-w-screen-xl mx-auto lg:py-20 py-12 tracking-wide lg:text-3xl lg:px-0 text-[10px] px-14'>
+				<p className='text-devarana-graph pb-5 font-light leading-10'>
 					Empresa México-Holandesa con más de 10 años de exitosa experiencia en el
 					sector inmobiliario, que nace con el deseo de construir desarrollos del más alto nivel.
 				</p>
-				<p className='text-devarana-graph font-light'>
+				<p className='text-devarana-graph font-light leading-10'>
 					En <span className='font-medium font-playfair'> DEVARANA </span> cuidamos cada detalle y nuestra trayectoria de éxito es
-					testigo de plusvalía y patrimonio sólido.
+					<br className='lg:block hidden' /> testigo de plusvalía y patrimonio sólido.
 				</p>
 			</div>
             <div className='absolute left-0 -z-10 top-32 bottom-0'>
-                <Flor4 className='fill-devarana-hazelnut w-full opacity-50 rotate-[25deg] -translate-x-28 scale-150' />
+                <Flor4 className='fill-devarana-hazelnut w-full opacity-30 rotate-[25deg] -translate-x-28 scale-150' />
             </div>
             <div className='absolute right-0 -z-10 top-1/4'>
-                <Flor2 className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg] translate-y-3/4 translate-x-28 scale-150' />
+                <Flor2 className='fill-devarana-hazelnut w-full opacity-30 -rotate-[25deg] translate-y-3/4 translate-x-28 scale-150' />
             </div>
             
 			
@@ -137,7 +136,7 @@ export default function Home() {
 					<div>
 						<h2 className='lg:text-6xl text-xl font-playfair text-devarana-graph-darker font-medium pb-10 lg:pl-20 pl-14'>¿Por qué DEVARANA?</h2>
 						<hr className='border-devarana-pink w-72 mb-10'/>
-						<div className='lg:pl-20 lg:px-0 px-14 max-w-3xl lg:text-3xl text-[10px] font-light'>
+						<div className='lg:pl-20 lg:px-0 px-14 max-w-3xl lg:text-3xl text-[10px] '>
 							<p className='pb-5 text-devarana-graph'>
 								Diseñamos cada espacio pensando en el confort,
 								la practicidad y el buen gusto; sumando materiales
