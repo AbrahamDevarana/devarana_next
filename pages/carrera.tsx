@@ -30,7 +30,7 @@ export default function Carrera() {
                         <img src='/assets/images/carrera/AvanceEstrategia.webp' className="object-cover w-full h-screen"  alt="carreraBanner" />
                     </picture>
                     <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0 h-full' />
-                    <div className='absolute'>
+                    <div className='absolute w-10/12 max-w-full -translate-y-3/4 right-0'>
                         <SliderPortada />
                     </div>
                     
