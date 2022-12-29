@@ -25,8 +25,8 @@ export default function Vacantes() {
     //   Obtener vacantes de la API
       const [vacantes, setVacantes] = useState([])
       useEffect(() => {
-        const getVacantes = async () => {
-          const res = await fetch('http://localhost:3000/api/vacantes')
+          const getVacantes = async () => {
+          const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}vacantes`)
           const data = await res.json()
           const {vacantes} = data
           setVacantes(vacantes)
