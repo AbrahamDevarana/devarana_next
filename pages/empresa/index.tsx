@@ -6,9 +6,12 @@ import { SliderProyectos } from "../../components/empresa/SliderProyectos";
 // import PrimerEntrega from "../../public/assets/images/empresa/PrimerEntrega.webp";
 // import TorresReserva from "../../public/assets/images/empresa/TorresReserva.webp";
 import Flor5 from "../../components/svg/flor5";
-import Reforestacion from "../../public/assets/images/empresa/Reforestacion.webp";
-import ViajeAniversario from "../../public/assets/images/empresa/ViajeAniversario.webp";
-import Certificados from "../../public/assets/images/empresa/Certificados.webp";
+import Reforestacion from "../../public/assets/images/empresa/ReforestacionG.webp";
+import ViajeAniversario from "../../public/assets/images/empresa/ViajeAniversarioG.webp";
+import Certificados from "../../public/assets/images/empresa/CertificadosG.webp";
+import ReforestacionC from "../../public/assets/images/empresa/ReforestacionC.webp";
+import ViajeAniversarioC from "../../public/assets/images/empresa/ViajeAniversarioC.webp";
+import CertificadosC from "../../public/assets/images/empresa/CertificadosC.webp";
 import { BannerRedes } from "../../components/layout/BannerRedes";
 import { Form } from "../../components/Form";
 import Flor2 from "../../components/svg/flor2";
@@ -16,6 +19,8 @@ import Flor3 from "../../components/svg/flor3";
 import { Card } from "../../components/empresa/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
+import { SliderTestimonios } from "../../components/empresa/SliderTestimonios";
+
 
 
 export default function Empresa() {
@@ -59,7 +64,7 @@ export default function Empresa() {
                             <source srcSet='/assets/images/empresa/TorresReserva.webp' />
                             <img src='/assets/images/empresa/TorresReserva.webp' className="object-cover w-full z-20 rounded-sm"  alt="TorresReserva" />
                         </picture>
-                        <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
+                        <div className='absolute -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                     </div>
                     <div className='col-span-2 lg:col-span-1 flex flex-col justify-center'>
                         <h2 className='lg:text-[36px] text-xl font-playfair text-devarana-pink font-medium pb-10 lg:pl-20'>Nuestra Visión</h2>
@@ -100,14 +105,7 @@ export default function Empresa() {
                  <div className="mx-auto w-full lg:py-24 py-10 max-w-6xl lg:px-10 px-5">
                     <h3 className="text-devarana-graph-darker lg:text-6xl text-xl text-center font-playfair">Testimonio de Clientes</h3>
                     <hr className="border-devarana-graph border-opacity-40 w-full lg:my-10 my-6"/>
-                    <div className="max-w-3xl w-full mx-auto flex items-center">
-                        <p className="lg:text-[150px] text-[80px] text-devarana-blue lg:-translate-y-12 -translate-y-8" >“</p>
-                        <p className="text-center text-devarana-graph lg:px-10 px-2 lg:text-xl text-[10px] font-light"> Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur
-                            duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor
-                            cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. </p>
-                        <sub className="lg:text-[150px] text-[80px] text-devarana-blue px-5 items-end flex lg:translate-y-14 translate-y-10">”</sub>
-                    </div>
-                    <p className="lg:text-xl text-[10px] font-bold text-devarana-blue text-center"> John Doe </p>
+                        <SliderTestimonios />
                     <hr className="border-devarana-graph border-opacity-40 w-full lg:my-10 my-6"/>
                  </div>
             </div>
@@ -142,13 +140,13 @@ export default function Empresa() {
                         }}
                     >
                         <SwiperSlide>
-                            <Card altPicture="Reforestacion" previewPos="object-bottom" url="/empresa/responsabilidad-social"  picture={Reforestacion} title="Responsabilidad Social" description="Estamos comprometidos con nuestro entorno y con el medio ambiente. Cuidamos el planeta para dejar un lugar mejor."/>
+                            <Card altPicture="Reforestacion" previewPos="object-bottom" url="/empresa/responsabilidad-social"  previewPicture={ReforestacionC} picture={Reforestacion} title="Responsabilidad Social" description="Estamos comprometidos con nuestro entorno y con el medio ambiente. Cuidamos el planeta para dejar un lugar mejor."/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card altPicture="ViajeAniversario" previewPos="object-top" url="/empresa/great-place-to-work"  picture={ViajeAniversario} title="¿Por qué somos GPTW?" description="Nos sentimos orgullosos de ser una empresa inclusiva, innovadora y extraordinaria."/>
+                            <Card altPicture="ViajeAniversario" previewPos="object-top" url="/empresa/great-place-to-work"  previewPicture={ViajeAniversarioC} picture={ViajeAniversario} title="¿Por qué somos GPTW?" description="Nos sentimos orgullosos de ser una empresa inclusiva, innovadora y extraordinaria."/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card altPicture="Certificados" previewPos="object-top" url="/empresa/certificados-y-premios"  picture={Certificados} title="Certificaciones y Premios" description="Comprometidos con el servicio y la calidad de lo que diseñamos, certificamos nuestros procesos."/>
+                            <Card altPicture="Certificados" previewPos="object-top" url="/empresa/certificados-y-premios"  previewPicture={CertificadosC} picture={Certificados} title="Certificaciones y Premios" description="Comprometidos con el servicio y la calidad de lo que diseñamos, certificamos nuestros procesos."/>
                         </SwiperSlide>
                     </Swiper>
                 </div>

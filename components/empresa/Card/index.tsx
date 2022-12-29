@@ -7,6 +7,7 @@ import RightArrowSvg from '../../svg/rightArrow'
 interface CardProps {
     // picture image import
     picture: StaticImageData
+    previewPicture: StaticImageData
     altPicture: string
     title: string
     description: string
@@ -14,13 +15,13 @@ interface CardProps {
     url: string
 }
 
-export const Card = ({picture, altPicture, title, description, previewPos = "object-center", url="/" }:CardProps) => {    
+export const Card = ({picture, altPicture, title, description, previewPos = "object-center", url="/", previewPicture }:CardProps) => {    
   return (
     <>
         <div className="overflow-hidden relative h-auto select-none will-change-transform group border border-devarana-graph rounded-b border-opacity-40">
-        <div className="lg:object-center md:object-top object-bottom hidden"/>
+            <div className="lg:object-center md:object-top object-bottom hidden"/>
             <div className="h-[450px] flex items-end w-full overflow-hidden group-hover:-translate-y-[30px] group-hover:opacity-0" style={{ transition: 'all 1s cubic-bezier(0.33, 0, 0.13, 1)' }}>
-                <Image src={picture} className={`object-cover w-full h-full ${previewPos} translate-y-0 translate-0`} height={280} width={573} placeholder="blur" alt={altPicture} />
+                <Image src={previewPicture} className={`object-cover w-full h-full ${previewPos} translate-y-0 translate-0`} height={280} width={573} placeholder="blur" alt={altPicture} />
             </div>
             <h3 className="text-devarana-graph-darker lg:text-3xl text-xl relative p-8 pb-0 text-left group-hover:-translate-y-[436px] group-hover:opacity-1 group-hover:text-white overflow-hidden z-20" style={{ transition: 'all 1s cubic-bezier(0.33, 0, 0.13, 1)' }}>
                 <span className="text-devarana-graph-darker group-hover:text-white font-playfair tracking-wide" style={{ transition: 'all 1s cubic-bezier(0.33, 0, 0.13, 1)' }}> { title }</span>

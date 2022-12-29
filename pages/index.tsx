@@ -217,7 +217,7 @@ export default function Home() {
                             <div className='lg:h-[750px]'>
                                 <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Terra</h3>
                                 <div className='lg:mx-10 relative'>
-                                    <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
+                                    <div className='absolute h-full scale-y-[1.14] inset-0 mx-5 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
                                     {/* <Image src={torreTerra} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Terra"/> */}
                                     <picture>
                                         <source srcSet='/assets/images-phone/home/TorreTerra.webp' media="(max-width: 1024px)" />
@@ -234,7 +234,7 @@ export default function Home() {
                             <div className='lg:h-[750px] lg:border-r lg:border-l'>
                                 <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Aqua</h3>
                                 <div className='lg:mx-10 relative'>
-                                    <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
+                                    <div className='absolute h-full scale-y-[1.14] inset-0 mx-5 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
                                     {/* <Image src={torreAqua} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Aqua"/> */}
                                     <picture>
                                         <source srcSet='/assets/images-phone/home/TorreAqua.webp' media="(max-width: 1024px)" />
@@ -250,7 +250,7 @@ export default function Home() {
                         <div className='lg:h-[750px]'>
                             <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Fuego</h3>
                             <div className='lg:mx-10 relative'>
-                                <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
+                                <div className='absolute h-full scale-y-[1.14] inset-0 mx-5 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
                                 {/* <Image src={torreFuego} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Fuego"/> */}
                                 <picture>
                                     <source srcSet='/assets/images-phone/home/TorreFuego.webp' media="(max-width: 1024px)" />

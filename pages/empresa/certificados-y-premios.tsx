@@ -31,7 +31,7 @@ export default function ResponsabilidadSocial() {
 
                 <div className="grid grid-cols-2 gap-x-10 lg:gap-y-32 gap-y-10 lg:px-52 px-14 lg:pt-24 pt-12 relative">
                     <div className="order-1 lg:order-1 col-span-2 lg:col-span-1 relative">
-                        <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
+                        <div className='absolute -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                         {/* <Image src={GPTW} alt="GPTW" className="object-cover w-full h-full" placeholder="blur" width={730} height={520} /> */}
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/03-certificados-y-premios/GPTW.webp' media="(max-width: 1024px)" />
@@ -51,7 +51,7 @@ export default function ResponsabilidadSocial() {
                         <Flor2 className='fill-devarana-hazelnut w-full opacity-50 rotate-[10deg] scale-[2] -translate-x-40 translate-y-2/3 lg:block hidden'/>
                     </div>
                     <div className="order-3 lg:order-4 col-span-2 lg:col-span-1  relative">
-                        <div className='absolute lg:translate-x-5 -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
+                        <div className='absolute lg:translate-x-[30px] -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                         {/* <Image src={ESR} alt="Brigadas de Seguridad" className="object-cover w-full h-full" placeholder="blur" width={730} height={520} /> */}
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/03-certificados-y-premios/ESR.webp' media="(max-width: 1024px)" />
@@ -60,7 +60,7 @@ export default function ResponsabilidadSocial() {
                         </picture>
                     </div>
                     <div className="order-5 lg:order-5 col-span-2 lg:col-span-1  relative">
-                        <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
+                        <div className='absolute -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                         <div className="bg-white">
                             <ServicioLegendarioSVG className='w-full h-full p-10 fill-devarana-blue' />
                         </div>

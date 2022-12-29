@@ -53,7 +53,7 @@ export default function Carrera() {
                                     <source srcSet='/assets/images/carrera/Arquitectos.webp' />
                                     <img src='/assets/images/carrera/Arquitectos.webp' className="object-cover w-full"  alt="Arquitectos" />
                                 </picture>
-                                <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
+                                <div className='absolute -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                             </div>
                         </div>
                         <div className="col-span-12 xl:col-span-6">
@@ -122,7 +122,7 @@ export default function Carrera() {
                                 <source srcSet='/assets/images/carrera/Colaboradores.webp' />
                                 <img src='/assets/images/carrera/Colaboradores.webp' className="object-cover w-full"  alt="Colaboradores" />
                             </picture>
-                            <div className='absolute lg:translate-x-5 -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
+                            <div className='absolute lg:translate-x-5 -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                         </div>
                     </div>
                 </div>
