@@ -8,7 +8,7 @@ export interface VacanteModalProps {
     setShowModal: (showModal: boolean) => void;
     showModal?: boolean | false ;
     modalContent: VacanteProps | null;
-    setModalContent?: (vacante: VacanteProps) => void;
+    setModalContent?: (vacante: VacanteProps) => void ;
     vacantes?: VacanteProps[];
     vacante?: VacanteProps
 }
