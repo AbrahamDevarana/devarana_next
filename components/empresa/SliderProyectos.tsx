@@ -4,12 +4,6 @@ import { Button } from '../Button';
 import { Navigation } from 'swiper';
 import HighGardens from '../svg/high-gardens';
 import 'swiper/css';
-import Link from 'next/link';
-
-// import RoyalView from '../../public/assets/images/empresa/RoyalView.webp'
-// import HighGardenHouse from '../../public/assets/images/empresa/HighG.webp'
-// import UpperCondesa from '../../public/assets/images/empresa/UpperCondesa.webp'
-// import GrandMayran from '../../public/assets/images/empresa/GrandMayran.webp'
 
 export const SliderProyectos = () => {
   return (

@@ -56,40 +56,42 @@ export default function Carrera() {
                                 <div className='absolute -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                             </div>
                         </div>
-                        <div className="col-span-12 xl:col-span-6">
-                            <h3 className='border-l-4 border-devarana-pink text-xl lg:text-5xl text-devarana-graph-darker px-5 font-playfair'>Conoce al equipo</h3>
-                            <p className='text-devarana-graph lg:py-12 py-5 lg:text-2xl text-[10px]'>Trabajamos juntos para construir todo lo que soñamos.</p>
-                            <div className='grid grid-cols-2 lg:gap-10 gap-y-10 pt-8'>
-                                <div className="col-span-2 lg:col-span-1 grid lg:gap-y-10 gap-y-5">
-                                    <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Arquitectura e Ingeniería</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                        <div className="col-span-12 xl:col-span-6 flex flex-col justify-center">
+                            <div>
+                                <h3 className='border-l-4 border-devarana-pink text-xl lg:text-5xl text-devarana-graph-darker px-5 font-playfair'>Conoce al equipo</h3>
+                                <p className='text-devarana-graph lg:py-12 py-5 lg:text-2xl text-[10px]'>Trabajamos juntos para construir todo lo que soñamos.</p>
+                                <div className='grid grid-cols-2 lg:gap-10 gap-y-10 pt-8'>
+                                    <div className="col-span-2 lg:col-span-1 grid lg:gap-y-10 gap-y-5">
+                                        <div className=''>
+                                            <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Arquitectura e Ingeniería</h4>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        </div>
+                                        <div className=''>
+                                            <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Finanzas y Compras</h4>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        </div>
+                                        <div className=''>
+                                            <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Marketing y Diseño</h4>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        </div>
                                     </div>
-                                    <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Finanzas y Compras</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
-                                    </div>
-                                    <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Marketing y Diseño</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
-                                    </div>
-                                </div>
-                                <div className="col-span-2 lg:col-span-1 grid lg:gap-y-10 gap-y-5 ">
-                                    <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Arquitectura e Ingeniería</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
-                                    </div>
-                                    <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Tecnología e Innovación</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
-                                    </div>
-                                    <div className=''>
-                                        <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Construcción</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                    <div className="col-span-2 lg:col-span-1 grid lg:gap-y-10 gap-y-5 ">
+                                        <div className=''>
+                                            <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Arquitectura e Ingeniería</h4>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        </div>
+                                        <div className=''>
+                                            <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Tecnología e Innovación</h4>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        </div>
+                                        <div className=''>
+                                            <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Construcción</h4>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className='text-center lg:py-20 py-10'>
+                            <div className='text-center lg:pt-20 py-10'>
                                 <Button colorType='pink' type='button' textColor='white'> SABER MÁS </Button>
                             </div>
                         </div>

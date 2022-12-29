@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 // import Construccion from '../../public/assets/images/carrera/Construccion.webp'
 import { Button } from '../Button';
 import { VacanteCardProps, VacanteProps } from "../../interfaces";

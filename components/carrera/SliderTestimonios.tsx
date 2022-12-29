@@ -25,8 +25,8 @@ export const SliderTestimonios = () => {
                                     <p className='text-left lg:text-xl text-xs'>“DEVARANA me inspira a descubrir mi mejor versión profesional y personal”.</p>
                                 </div>
                                 <div className='mt-auto ml-auto px-10 pb-5'>
-                                    <p className='text-white font-light'>Itze Vega</p>
-                                    <p className='text-white font-bold'>COMERCIAL</p>
+                                    <p className='text-white font-light text-right'>Itze Vega</p>
+                                    <p className='text-white font-bold text-right'>COMERCIAL</p>
                                 </div>
                             </div>
                         </div>
@@ -46,8 +46,8 @@ export const SliderTestimonios = () => {
                                     <p className='text-left lg:text-xl text-xs'>“DEVARANA para mí es un lugar excepcional, con un gran equipo de personas apasionadas, todos con la misma meta en común, ser un factor de cambio, siempre apuntando a la satisfacción de nuestro cliente”.</p>
                                 </div>
                                 <div className='mt-auto ml-auto px-10 pb-5'>
-                                    <p className='text-white font-light'>Luis Rubio</p>
-                                    <p className='text-white font-bold'>OPERACIONES</p>
+                                    <p className='text-white font-light text-right'>Luis Rubio</p>
+                                    <p className='text-white font-bold text-right'>OPERACIONES</p>
                                 </div>
                             </div>
                         </div>
@@ -67,8 +67,8 @@ export const SliderTestimonios = () => {
                                     <p className='text-left lg:text-xl text-xs'>“Ser parte de DEVARANA significa buscar la excelencia y ofrecer a nuestros clientes no solo las mejores residencias del mercado sino experiencias inigualables”.</p>
                                 </div>
                                 <div className='mt-auto ml-auto px-10 pb-5'>
-                                    <p className='text-white font-light'>Ximena Páramo</p>
-                                    <p className='text-white font-bold'>INNOVACIÓN Y CALIDAD</p>
+                                    <p className='text-white font-light text-right'>Ximena Páramo</p>
+                                    <p className='text-white font-bold text-right'>INNOVACIÓN Y CALIDAD</p>
                                 </div>
                             </div>
                         </div>
@@ -88,8 +88,8 @@ export const SliderTestimonios = () => {
                                     <p className='text-left lg:text-xl text-xs'>“DEVARANA ha sido un parteaguas en mi carrera profesional, estoy muy agradecido y contento de pertenecer a una empresa de clase mundial”.</p>
                                 </div>
                                 <div className='mt-auto ml-auto px-10 pb-5'>
-                                    <p className='text-white font-light'>Gregorio León</p>
-                                    <p className='text-white font-bold'>COMERCIAL</p>
+                                    <p className='text-white font-light text-right'>Gregorio León</p>
+                                    <p className='text-white font-bold text-right'>COMERCIAL</p>
                                 </div>
                             </div>
                         </div>
@@ -109,8 +109,8 @@ export const SliderTestimonios = () => {
                                     <p className='text-left lg:text-xl text-xs'>“Para mi DEVARANA es una oportunidad de colaborar en lo que me apasiona y aprender constantemente”.</p>
                                 </div>
                                 <div className='mt-auto ml-auto px-10 pb-5'>
-                                    <p className='text-white font-light'>Fátima Ortiz</p>
-                                    <p className='text-white font-bold'>GERENCIA GENERAL</p>
+                                    <p className='text-white font-light text-right'>Fátima Ortiz</p>
+                                    <p className='text-white font-bold text-right'>GERENCIA GENERAL</p>
                                 </div>
                             </div>
                         </div>
@@ -132,8 +132,8 @@ export const SliderTestimonios = () => {
                                     <p className='text-left lg:text-xl text-xs'>“DEVARANA me inspira a descubrir mi mejor versión profesional y personal”.</p>
                                 </div>
                                 <div className='mt-auto ml-auto px-10 pb-5'>
-                                    <p className='text-white font-light'>Itze Vega</p>
-                                    <p className='text-white font-bold'>COMERCIAL</p>
+                                    <p className='text-white font-light text-right'>Itze Vega</p>
+                                    <p className='text-white font-bold text-right'>COMERCIAL</p>
                                 </div>
                             </div>
                         </div>
@@ -153,8 +153,8 @@ export const SliderTestimonios = () => {
                                     <p className='text-left lg:text-xl text-xs'>“DEVARANA para mí es un lugar excepcional, con un gran equipo de personas apasionadas, todos con la misma meta en común, ser un factor de cambio, siempre apuntando a la satisfacción de nuestro cliente”.</p>
                                 </div>
                                 <div className='mt-auto ml-auto px-10 pb-5'>
-                                    <p className='text-white font-light'>Luis Rubio</p>
-                                    <p className='text-white font-bold'>OPERACIONES</p>
+                                    <p className='text-white font-light text-right'>Luis Rubio</p>
+                                    <p className='text-white font-bold text-right'>OPERACIONES</p>
                                 </div>
                             </div>
                         </div>
@@ -174,8 +174,8 @@ export const SliderTestimonios = () => {
                                     <p className='text-left lg:text-xl text-xs'>“Ser parte de DEVARANA significa buscar la excelencia y ofrecer a nuestros clientes no solo las mejores residencias del mercado sino experiencias inigualables”.</p>
                                 </div>
                                 <div className='mt-auto ml-auto px-10 pb-5'>
-                                    <p className='text-white font-light'>Ximena Páramo</p>
-                                    <p className='text-white font-bold'>INNOVACIÓN Y CALIDAD</p>
+                                    <p className='text-white font-light text-right'>Ximena Páramo</p>
+                                    <p className='text-white font-bold text-right'>INNOVACIÓN Y CALIDAD</p>
                                 </div>
                             </div>
                         </div>
@@ -195,8 +195,8 @@ export const SliderTestimonios = () => {
                                     <p className='text-left lg:text-xl text-xs'>“DEVARANA ha sido un parteaguas en mi carrera profesional, estoy muy agradecido y contento de pertenecer a una empresa de clase mundial”.</p>
                                 </div>
                                 <div className='mt-auto ml-auto px-10 pb-5'>
-                                    <p className='text-white font-light'>Gregorio León</p>
-                                    <p className='text-white font-bold'>COMERCIAL</p>
+                                    <p className='text-white font-light text-right'>Gregorio León</p>
+                                    <p className='text-white font-bold text-right'>COMERCIAL</p>
                                 </div>
                             </div>
                         </div>
@@ -216,8 +216,8 @@ export const SliderTestimonios = () => {
                                     <p className='text-left lg:text-xl text-xs'>“Para mi DEVARANA es una oportunidad de colaborar en lo que me apasiona y aprender constantemente”.</p>
                                 </div>
                                 <div className='mt-auto ml-auto px-10 pb-5'>
-                                    <p className='text-white font-light'>Fátima Ortiz</p>
-                                    <p className='text-white font-bold'>GERENCIA GENERAL</p>
+                                    <p className='text-white font-light text-right'>Fátima Ortiz</p>
+                                    <p className='text-white font-bold text-right'>GERENCIA GENERAL</p>
                                 </div>
                             </div>
                         </div>
