@@ -42,11 +42,11 @@ export default function GreatPlaceToWork() {
                     </div> 
                     <div className="order-2 lg:order-2 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base">Clima Organizacional</h2>
-                        <p className="text-devarana-graph lg:text-xl text-xs lg:pb-0 pb-6"> Cada integrante del equipo contribuye a diseñar nuestro ambiente de trabajo con base en la confianza, la integración y el trabajo en equipo. </p>
+                        <p className="text-devarana-graph lg:text-xl text-xs font-light lg:pb-0 pb-6"> Cada integrante del equipo contribuye a diseñar nuestro ambiente de trabajo con base en la confianza, la integración y el trabajo en equipo. </p>
                     </div>
                     <div className="order-4 lg:order-3 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5 relative">
                         <h2 className="text-devarana-blue lg:text-3xl text-base lg:text-right text-left">Bienestar Organizacional</h2>
-                        <p className="text-devarana-graph lg:text-xl text-xs lg:pb-0 pb-6 lg:text-right text-left"> Desarrollamos experiencias para cada integrante de DEVARANA, impulsando la satisfacción y bienestar al interior del equipo. </p>
+                        <p className="text-devarana-graph lg:text-xl text-xs font-light lg:pb-0 pb-6 lg:text-right text-left"> Desarrollamos experiencias para cada integrante de DEVARANA, impulsando la satisfacción y bienestar al interior del equipo. </p>
                             <div className='absolute left-0 -z-10 top-0 bottom-0 right-0 w-full'>
                                 <AniversarioSVG className='fill-devarana-hazelnut w-full opacity-50 lg:block hidden scale-75'/>
                             </div>
@@ -71,7 +71,7 @@ export default function GreatPlaceToWork() {
                     </div>
                     <div className="order-6 lg:order-6 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base">Pasión por la Excelencia</h2>
-                        <p className="text-devarana-graph lg:text-xl text-xs">En nuestro ADN está la búsqueda de la excelencia en todo lo que hacemos, por eso impulsamos el desarrollo personal y profesional al interior del equipo.</p>
+                        <p className="text-devarana-graph lg:text-xl text-xs font-light">En nuestro ADN está la búsqueda de la excelencia en todo lo que hacemos, por eso impulsamos el desarrollo personal y profesional al interior del equipo.</p>
                     </div>
                     <div className='absolute right-0 -z-10 bottom-0'>
                         <Flor1 className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg] scale-150 translate-x-36 translate-y-32 lg:block hidden'/>

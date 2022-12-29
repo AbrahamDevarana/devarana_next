@@ -41,14 +41,14 @@ export default function ResponsabilidadSocial() {
                     </div> 
                     <div className="order-2 lg:order-2 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base">Brigada de Reforestación Parque La Beata</h2>
-                        <p className="text-devarana-graph lg:text-xl text-xs lg:pb-0 pb-6"> Con nuestro programa de reforestación buscamos sumar a nuestro
+                        <p className="text-devarana-graph lg:text-xl text-xs font-light lg:pb-0 pb-6"> Con nuestro programa de reforestación buscamos sumar a nuestro
                             medio ambiente y preservar la calidad de las áreas verdes. Así como
                             sensibilizar y fomentar dicho valor a nuestros colaboradores, transmitiendo
                             e implementándolos en nuestra cultura organizacional.</p>
                     </div>
                     <div className="order-4 lg:order-3 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base lg:text-right text-left">Brigadas de Seguridad</h2>
-                        <p className="text-devarana-graph lg:text-xl text-xs lg:pb-0 pb-6 lg:text-right text-left"> Con nuestro equipo de brigadistas buscamos que sean la primera línea
+                        <p className="text-devarana-graph lg:text-xl text-xs font-light lg:pb-0 pb-6 lg:text-right text-left"> Con nuestro equipo de brigadistas buscamos que sean la primera línea
                             de intervención en caso de que alguien requiera ayuda o exista alguna
                             incidencia dentro de la oficina al igual que en construcción, ya que ellos
                             detectan la emergencia, definen de qué tipo es y brindan soporte a la
@@ -77,7 +77,7 @@ export default function ResponsabilidadSocial() {
                     </div>
                     <div className="order-6 lg:order-6 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base">Curso de Reptiles</h2>
-                        <p className="text-devarana-graph lg:text-xl text-xs"> A través de los cursos brindados por parte de herpetólogos y biólogos
+                        <p className="text-devarana-graph lg:text-xl text-xs font-light"> A través de los cursos brindados por parte de herpetólogos y biólogos
                             especializados en la zona de Zibatá, llevamos a cabo sesiones con el
                             objetivo de que el colaborador tenga la oportunidad de contar con la
                             información necesaria que le permita dar soluciones al enfrentarse a

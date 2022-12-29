@@ -41,11 +41,11 @@ export default function ResponsabilidadSocial() {
                     </div> 
                     <div className="order-2 lg:order-2 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base">Great Place to Work</h2>
-                        <p className="text-devarana-graph lg:text-xl text-xs lg:pb-0 pb-6"> Nuestro compromiso por generar un ambiente de trabajo extraordinario, nos ha llevado a certificar por tercer año consecutivo como una de las mejores empresas para trabajar en México. </p>
+                        <p className="text-devarana-graph lg:text-xl text-xs font-light lg:pb-0 pb-6"> Nuestro compromiso por generar un ambiente de trabajo extraordinario, nos ha llevado a certificar por tercer año consecutivo como una de las mejores empresas para trabajar en México. </p>
                     </div>
                     <div className="order-4 lg:order-3 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base lg:text-right text-left">Empresa Socialmente Responsable</h2>
-                        <p className="text-devarana-graph lg:text-xl text-xs lg:pb-0 pb-6 lg:text-right text-left"> Buscamos implementar estrategias que nos orienten hacia un modelo de gestión sostenible y socialmente responsable que deje huella en nuestro entorno. </p>
+                        <p className="text-devarana-graph lg:text-xl text-xs font-light lg:pb-0 pb-6 lg:text-right text-left"> Buscamos implementar estrategias que nos orienten hacia un modelo de gestión sostenible y socialmente responsable que deje huella en nuestro entorno. </p>
                     </div>
                     <div className='absolute left-0 -z-10 top-0 translate-y-full'>
                         <Flor2 className='fill-devarana-hazelnut w-full opacity-50 rotate-[10deg] scale-[2] -translate-x-40 translate-y-2/3 lg:block hidden'/>
@@ -67,7 +67,7 @@ export default function ResponsabilidadSocial() {
                     </div>
                     <div className="order-6 lg:order-6 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
                         <h2 className="text-devarana-blue lg:text-3xl text-base">Servicio Legendario - ISO 9001:2015</h2>
-                        <p className="text-devarana-graph lg:text-xl text-xs"> Hemos asumido el compromiso de implementar un modelo de Gestión de Calidad con la finalidad de impulsar la satisfacción de nuestro equipo de trabajo, clientes y socios de negocio. </p>
+                        <p className="text-devarana-graph lg:text-xl text-xs font-light"> Hemos asumido el compromiso de implementar un modelo de Gestión de Calidad con la finalidad de impulsar la satisfacción de nuestro equipo de trabajo, clientes y socios de negocio. </p>
                     </div>
                     <div className='absolute right-0 -z-10 bottom-0'>
                         <Flor3 className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg] scale-[2] translate-x-36 translate-y-32 lg:block hidden'/>

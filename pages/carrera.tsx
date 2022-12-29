@@ -63,29 +63,29 @@ export default function Carrera() {
                                 <div className="col-span-2 lg:col-span-1 grid lg:gap-y-10 gap-y-5">
                                     <div className=''>
                                         <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Arquitectura e Ingeniería</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                     <div className=''>
                                         <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Finanzas y Compras</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                     <div className=''>
                                         <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Marketing y Diseño</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                 </div>
                                 <div className="col-span-2 lg:col-span-1 grid lg:gap-y-10 gap-y-5 ">
                                     <div className=''>
                                         <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Arquitectura e Ingeniería</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                     <div className=''>
                                         <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Tecnología e Innovación</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                     <div className=''>
                                         <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Construcción</h4>
-                                        <p className='text-devarana-graph lg:text-xl text-[10px]'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                        <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
                                     </div>
                                 </div>
                             </div>
