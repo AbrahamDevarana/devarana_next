@@ -7,15 +7,30 @@ export interface SvgProps {
 export interface VacanteModalProps {
     setShowModal: (showModal: boolean) => void;
     showModal?: boolean | false ;
-    modalContent?: []
-    setModalContent?: (modalContent: JSX.Element) => void;
+    modalContent: VacanteProps | null;
+    setModalContent?: (vacante: VacanteProps) => void;
+    vacantes?: VacanteProps[];
+    vacante?: VacanteProps
 }
 
 export interface VacanteProps {
     id: number;
     area: string;
-    title: string;
-    description: string;
-    requirements: [];
-    activities: [];
+    titulo: string;
+    descripcion: string;
+    requisitos: string[];
+    responsabilidades: string[];
+    prestaciones: string[];   
+}
+
+export interface VacanteCardProps {
+    vacante: VacanteProps;
+    setShowModal: (showModal: boolean) => void;
+    setModalContent: (vacante: VacanteProps) => void;
+}
+
+export interface VacanteSliderProps {
+    vacantes: VacanteProps[];
+    setShowModal: (showModal: boolean) => void;
+    setModalContent: (vacante: VacanteProps) => void;
 }

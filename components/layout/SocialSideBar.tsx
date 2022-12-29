@@ -32,7 +32,7 @@ export const SocialSideBar = () => {
         let elementBGcolor: Element | null = null
         for ( const element of underneath){
             const backgroundColor = window.getComputedStyle(element, null).getPropertyValue("background-color");
-            if (backgroundColor !== "rgba(0, 0, 0, 0)") {
+            if (backgroundColor !== "rgba(0, 0, 0, 0)" ) {
                 elementBGcolor = element;
                 break;
             }
@@ -43,7 +43,7 @@ export const SocialSideBar = () => {
         }
         const bg = window.getComputedStyle(elementBGcolor, null).getPropertyValue("background-color");
         
-        if (bg !== 'rgb(255, 255, 255)' && bg !== 'rgb(229, 229, 229)' &&  bg !== 'rgb(234, 223, 212)'){
+        if (bg !== 'rgb(255, 255, 255)' && bg !== 'rgb(229, 229, 229)' &&  bg !== 'rgb(234, 223, 212)' && bg !== "rgb(249, 249, 247)"){
             svg.style.fill = '#ffffff'
         }else{
             svg.style.fill = '#56739B'
@@ -55,10 +55,10 @@ export const SocialSideBar = () => {
   return (
     <div className='flex-col fixed right-10 h-screen top-0 justify-center items-center gap-10 z-[999999] lg:flex hidden'>
         <a href="https://www.facebook.com/DevaranaResidences" target={"_blank"} rel="noreferrer">
-            <FacebookSvg ref={fbRef} className='fill-white w-5 h-10 hover:opacity-50 transition-all duration-500 ease-in-out' />
+            <FacebookSvg ref={fbRef} className='fill-white w-5 h-10 hover:opacity-50 transition-all duration-300 ease-in-out' />
         </a>
         <a href="https://www.instagram.com/devarana.mx/" target={"_blank"} rel="noreferrer">
-            <InstagramSvg ref={igRef} className='fill-white w-8 h-12 hover:opacity-50 transition-all duration-500 ease-in-out' />
+            <InstagramSvg ref={igRef} className='fill-white w-8 h-12 hover:opacity-50 transition-all duration-300 ease-in-out' />
         </a>
     </div>
   )

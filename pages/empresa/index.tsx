@@ -28,11 +28,12 @@ export default function Empresa() {
                 keywords="Empresa page"
             />
             <div className="initialBanner py-20 relative">
-                <h1 className="text-devarana-pink text-center lg:py-14 py-8 lg:text-[40px] text-sm font-playfair">Nuesta Misión</h1>
-                <p className="text-center lg:text-6xl text-xl text-devarana-graph font-playfair lg:leading-[70px] leading-[30px] px-10">Inspiramos al mundo <span className="text-devarana-pink"> creando espacios <br className="lg:block hidden" />
+                <h1 className="text-devarana-pink text-center lg:py-14 py-8 lg:text-[36px] text-sm font-playfair">Nuestra Misión</h1>
+                <p className="text-center lg:text-[50px] text-xl text-devarana-graph font-playfair lg:leading-[70px] leading-[30px] px-10">Inspiramos al mundo <span className="text-devarana-pink font-playfair"> creando espacios <br className="lg:block hidden" />
                     únicos</span> con amor y pasión, cuidando nuestro <br className="lg:block hidden" />
                     entorno, la rentabilidad y el bienestar de <br className="lg:block hidden" />
-                    nuestros clientes.</p>
+                    <span className="text-devarana-pink font-playfair"> nuestros clientes. </span>
+                </p>
 
                 {/*  PrimerEntrega si es escritorio  y otra si es responsivo */}
 
@@ -61,15 +62,15 @@ export default function Empresa() {
                         <div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                     </div>
                     <div className='col-span-2 lg:col-span-1 flex flex-col justify-center'>
-                        <h2 className='lg:text-[40px] text-xl font-playfair text-devarana-pink font-medium pb-10 lg:pl-20'>Nuestra Visión</h2>
+                        <h2 className='lg:text-[36px] text-xl font-playfair text-devarana-pink font-medium pb-10 lg:pl-20'>Nuestra Visión</h2>
                         <div className='lg:pl-20 max-w-3xl'>
-                            <p className='pb-5 text-devarana-graph lg:text-5xl text-lg font-playfair tracking-wider'>
+                            <p className='pb-5 text-devarana-graph lg:text-[40px] lg:leading-[60px] text-lg font-playfair tracking-wider'>
                                 Seremos el referente en
-                                la creación de <span className="text-devarana-pink"> desarrollos
+                                la creación de <span className="text-devarana-pink font-playfair"> desarrollos
                                 inmobiliarios </span> extraordinarios
                                 en las zonas estratégicas
                                 de México, destacando en 
-                                <span className="text-devarana-pink"> diseño, calidad y servicio.</span>
+                                <span className="text-devarana-pink font-playfair"> diseño, calidad y servicio.</span>
                             </p>
                         </div>
                     </div>
@@ -144,10 +145,10 @@ export default function Empresa() {
                             <Card altPicture="Reforestacion" previewPos="object-bottom" url="/empresa/responsabilidad-social"  picture={Reforestacion} title="Responsabilidad Social" description="Estamos comprometidos con nuestro entorno y con el medio ambiente. Cuidamos el planeta para dejar un lugar mejor."/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card altPicture="ViajeAniversario" previewPos="object-top" url="/empresa/great-place-to-work"  picture={ViajeAniversario} title="¿Por qué somos GPTW?" description="Estamos comprometidos con nuestro entorno y con el medio ambiente. Cuidamos el planeta para dejar un lugar mejor."/>
+                            <Card altPicture="ViajeAniversario" previewPos="object-top" url="/empresa/great-place-to-work"  picture={ViajeAniversario} title="¿Por qué somos GPTW?" description="Nos sentimos orgullosos de ser una empresa inclusiva, innovadora y extraordinaria."/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card altPicture="Certificados" previewPos="object-top" url="/empresa/certificados-y-premios"  picture={Certificados} title="Certificaciones y Premios" description="Estamos comprometidos con nuestro entorno y con el medio ambiente. Cuidamos el planeta para dejar un lugar mejor."/>
+                            <Card altPicture="Certificados" previewPos="object-top" url="/empresa/certificados-y-premios"  picture={Certificados} title="Certificaciones y Premios" description="Comprometidos con el servicio y la calidad de lo que diseñamos, certificamos nuestros procesos."/>
                         </SwiperSlide>
                     </Swiper>
                 </div>

@@ -148,19 +148,19 @@ export default function Home() {
                         <source srcSet='/assets/images/home/Cocina.webp' />
                         <img src='/assets/images/home/Cocina.webp' className="object-cover w-full"  alt="Credenza" />
                     </picture>
-					<div className='absolute -translate-x-5 -translate-y-5 top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
+					<div className='absolute -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
 				</div>
 				<div className='col-span-2 lg:col-span-1 flex items-center'>
 					<div>
 						<h2 className='lg:text-6xl text-xl font-playfair text-devarana-graph-darker font-medium pb-10 lg:pl-20 pl-14'>¿Por qué DEVARANA?</h2>
 						<hr className='border-devarana-pink w-72 mb-10'/>
 						<div className='lg:pl-20 lg:px-0 px-14 max-w-3xl lg:text-3xl text-[10px] '>
-							<p className='pb-5 text-devarana-graph'>
+							<p className='pb-5 text-devarana-graph font-light'>
 								Diseñamos cada espacio pensando en el confort,
 								la practicidad y el buen gusto; sumando materiales
 								de calidad que agregan valor a nuestros clientes.
 							</p>
-							<p className='text-devarana-graph'>	
+							<p className='text-devarana-graph font-light'>	
 								La calidad en la construcción de cada proyecto
 								se contempla desde el inicio y a ello sumamos
 								pruebas asegurando la excelencia en cada
@@ -172,7 +172,7 @@ export default function Home() {
 			</div>
 		</div>
 
-		<div className='bg-devarana-blue lg:h-[300px] h-[152px] text-devarana-pink relative' />
+		<div className='bg-devarana-blue lg:h-[200px] h-[100px] text-devarana-pink relative' />
 
         <div className='relative overflow-hidden lg:pb-24 pb-12'>
             <div className='lg:py-[100px] py-[50px]'>
@@ -199,22 +199,22 @@ export default function Home() {
                         breakpoints={{
                             320: {
                                 slidesPerView: 1,
-                                spaceBetween: 20,
+                                spaceBetween: 0,
                                 
                             },
                             768: {
                                 slidesPerView: 2,
-                                spaceBetween: 40,
+                                spaceBetween: 0,
                             },
                             1024: {
                                 slidesPerView: 3,
-                                spaceBetween: 96,
+                                spaceBetween: 0,
                             },
                         }}
                     
                     >
                         <SwiperSlide>
-                            <div className=''>
+                            <div className='lg:h-[750px]'>
                                 <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Terra</h3>
                                 <div className='lg:mx-10 relative'>
                                     <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
@@ -226,12 +226,12 @@ export default function Home() {
                                     </picture>
                                     
                                 </div>
-                                <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Más del 80% Escriturado</p>
-                                <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>La mezcla perfecta entre garantía en la calidad, seguridad e inversión.</p>
+                                <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-xl text-base'>Más del 80% Escriturado</p>
+                                <p className='px-14 text-devarana-graph lg:text-[22px] text-[10px] lg:text-left font-light text-center'>La mezcla perfecta entre garantía en la calidad, seguridad e inversión.</p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className=' lg:border-r lg:border-l'>
+                            <div className='lg:h-[750px] lg:border-r lg:border-l'>
                                 <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Aqua</h3>
                                 <div className='lg:mx-10 relative'>
                                     <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
@@ -242,12 +242,12 @@ export default function Home() {
                                         <img src='/assets/images/home/TorreAqua.webp' className="object-cover w-full"  alt="TorreAqua" />
                                     </picture>
                                 </div>
-                                <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Estilo de Vida</p>
-                                <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>Con más de 30 amenidades para ti y tu familia.</p>
+                                <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-xl text-base'>Estilo de Vida</p>
+                                <p className='px-14 text-devarana-graph lg:text-[22px] text-[10px] lg:text-left font-light text-center'>Con más de 30 amenidades para ti y tu familia.</p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                        <div className=''>
+                        <div className='lg:h-[750px]'>
                             <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Fuego</h3>
                             <div className='lg:mx-10 relative'>
                                 <div className='absolute h-[112%] -top-6 left-0 right-0 mx-5 bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
@@ -258,8 +258,8 @@ export default function Home() {
                                     <img src='/assets/images/home/TorreFuego.webp' className="object-cover w-full"  alt="TorreFuego" />
                                 </picture>
                             </div>
-                            <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-2xl text-base'>Un Proyecto Único</p>
-                            <p className='px-14 text-devarana-graph lg:text-2xl text-[10px] lg:text-left font-light text-center'>Garantía en calidad, seguridad y plusvalía.</p>
+                            <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-xl text-base'>Un Proyecto Único</p>
+                            <p className='px-14 text-devarana-graph lg:text-[22px] text-[10px] lg:text-left font-light text-center'>Garantía en calidad, seguridad y plusvalía.</p>
                         </div>
                         </SwiperSlide>
                     </Swiper>

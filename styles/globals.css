@@ -8,6 +8,10 @@ h1{
     font-family: 'Playfair Display', sans-serif;
 }
 
+body{
+    background-color: #F9F9F7;
+}
+
 
 .menu__container {
     height: 100vh;

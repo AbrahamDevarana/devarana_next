@@ -23,7 +23,7 @@ export const Card = ({picture, altPicture, title, description, previewPos = "obj
                 <Image src={picture} className={`object-cover w-full h-full ${previewPos} translate-y-0 translate-0`} height={280} width={573} placeholder="blur" alt={altPicture} />
             </div>
             <h3 className="text-devarana-graph-darker lg:text-3xl text-xl relative p-8 pb-0 text-left group-hover:-translate-y-[436px] group-hover:opacity-1 group-hover:text-white overflow-hidden z-20" style={{ transition: 'all 1s cubic-bezier(0.33, 0, 0.13, 1)' }}>
-                <span className="text-devarana-graph-darker group-hover:text-white" style={{ transition: 'all 1s cubic-bezier(0.33, 0, 0.13, 1)' }}> { title }</span>
+                <span className="text-devarana-graph-darker group-hover:text-white font-playfair tracking-wide" style={{ transition: 'all 1s cubic-bezier(0.33, 0, 0.13, 1)' }}> { title }</span>
             </h3>
             <div className="relative mt-2 z-20 px-8 text-left group-hover:text-white group-hover:-translate-y-[436px] opacity-0 group-hover:opacity-100" style={{ transition: 'all 1s cubic-bezier(0.33, 0, 0.13, 1)' }}>
                 <Link href={url}>

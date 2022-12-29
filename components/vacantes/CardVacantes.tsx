@@ -2,12 +2,13 @@ import Image from "next/image"
 
 // import Construccion from '../../public/assets/images/carrera/Construccion.webp'
 import { Button } from '../Button';
-import { VacanteModalProps } from "../../interfaces";
+import { VacanteCardProps, VacanteProps } from "../../interfaces";
 
-export const CardVacantes = ({setShowModal, setModalContent}:VacanteModalProps) => {
-
-    const handleModal = () => {
+export const CardVacantes = ({setShowModal, setModalContent, vacante}:VacanteCardProps) => {
+    
+    const handleModal = (vacante:VacanteProps) => {
         setShowModal(true)
+        setModalContent(vacante)
     }
     
     return (
@@ -21,9 +22,9 @@ export const CardVacantes = ({setShowModal, setModalContent}:VacanteModalProps) 
                 </picture>
                 <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0 rounded-3xl'>
                     <div className="flex flex-col items-start pl-10 justify-end pb-12 h-full">
-                        <p className='lg:text-sm text-[10px] text-white pb-2 font-bold'>ARQUITECTURA E INGENIERÍA</p> 
-                        <h2 className='text-white pb-5 lg:text-3xl text-xl font-light'>Analista de Costos y Presupuestos</h2>
-                        <Button type='button' textColor='white' onClick={handleModal} colorType='pink'> APLICAR </Button>
+                        <p className='lg:text-sm text-[10px] text-white pb-2 font-bold uppercase'>{ vacante?.area }</p> 
+                        <h2 className='text-white pb-5 lg:text-3xl text-xl font-light'>{vacante ?.titulo }</h2>
+                        <Button type='button' textColor='white' onClick={ () => handleModal(vacante)} colorType='pink'> APLICAR </Button>
                     </div>        
                 </div>		
             </div>        

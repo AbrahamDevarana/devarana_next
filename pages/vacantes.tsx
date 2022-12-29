@@ -6,16 +6,13 @@ import { Form } from "../components/Form";
 import { VacanteModal } from "../components/vacantes/VacanteModal";
 import { useEffect, useState } from "react";
 import { Seo } from "../components/layout/Seo";
+import { VacanteProps } from "../interfaces";
 
 export default function Vacantes() {
 
     const [showModal, setShowModal] = useState(false)
-    const [modalContent, setModalContent] = useState('')
+    const [modalContent, setModalContent] = useState<VacanteProps | null>(null)
 
-    const handleModal = (content: string) => {
-        setShowModal(!showModal)
-        setModalContent(content)
-    }
 
     useEffect(() => {
         if (showModal) {
@@ -24,6 +21,19 @@ export default function Vacantes() {
           document.body.style.overflow = "unset";
         }
       }, [showModal])
+
+    //   Obtener vacantes de la API
+      const [vacantes, setVacantes] = useState([])
+      useEffect(() => {
+        const getVacantes = async () => {
+          const res = await fetch('http://localhost:3000/api/vacantes')
+          const data = await res.json()
+          const {vacantes} = data
+          setVacantes(vacantes)
+        }
+        getVacantes()
+      }, [])     
+
 
     return(
         <>
@@ -51,14 +61,14 @@ export default function Vacantes() {
                 <h2 className="text-devarana-graph-darker text-center font-playfair lg:text-6xl text-xl">¡Sé parte de DEVARANA</h2>
                 <hr className="border-devarana-pink max-w-[270px] w-full mx-auto mt-9 lg:mb-24 mb-10"/>
                 {/* <SliderVacantes2 setShowModal={setShowModal} /> */}
-                <SliderVacantes setShowModal={setShowModal} />
+                <SliderVacantes setShowModal={setShowModal} vacantes={vacantes} setModalContent={setModalContent}/>
 
             </div>
 
             <BannerRedes />
             <Form />    
 
-            { showModal && <VacanteModal showModal={showModal} setShowModal={setShowModal} /> }
+            { showModal && <VacanteModal showModal={showModal} setShowModal={setShowModal} modalContent={modalContent}/> }
         </>
     )
 };

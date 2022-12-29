@@ -86,10 +86,10 @@ export const Menu = () => {
         [key: string]: string
     }
     const bgUrl: bgUrlType = {
-        '/empresa': 'bg-devarana-blue',
-        '/empresa/responsabilidad-social': 'bg-devarana-blue',
-        '/empresa/great-place-to-work': 'bg-devarana-blue',
-        '/empresa/certificados-y-premios': 'bg-devarana-blue',
+        '/empresa': 'bg-devarana-pearl',
+        '/empresa/responsabilidad-social': 'bg-devarana-pearl',
+        '/empresa/great-place-to-work': 'bg-devarana-pearl',
+        '/empresa/certificados-y-premios': 'bg-devarana-pearl',
         '/carrera' : 'bg-transparent',
         '/contacto': 'bg-transparent',
         '/' : 'bg-transparent'
@@ -99,18 +99,18 @@ export const Menu = () => {
     <>
         <div className={`fixed h-[60px] w-full items-center grid grid-cols-12 lg:justify-between lg:px-[138px] px-10 z-50 max-w-full transition-all duration-500 ease-in-out 
             ${ showHead === 1 ? 'bg-devarana-pearl -translate-y-full shadow' : showHead === 0? '-translate-y-[200%]' : bgUrl[path] + ' translate-y-0' }`}>
-            <button onClick={() => onClickMenu(!activeMenu)} className='h-full px-2 z-[1001] col-span-2'><MenuSvg className={`${showHead === 1 ? 'stroke-devarana-graph-darker' : 'stroke-white'}`} /></button>
+            <button onClick={() => onClickMenu(!activeMenu)} className='h-full px-2 z-[1001] col-span-2'><MenuSvg className={`${showHead === 1 || bgUrl[path] ? 'stroke-devarana-graph-darker' : 'stroke-white'}`} /></button>
             <Link href="/" className='col-span-6 col-start-4 mx-auto  hover:opacity-50 transition-all ease-in-out duration-500' onClick={ () => onClickMenu(false)}>
-                <DevaranaInlineSvg className={`${showHead === 1 ? 'fill-devarana-graph-darker' : 'fill-white'}  lg:w-[200px] w-[130px]`} />
+                <DevaranaInlineSvg className={`${showHead === 1 || bgUrl[path] ? 'fill-devarana-graph-darker' : 'fill-white'}  lg:w-[200px] w-[130px]`} />
             </Link>
             <div className='lg:flex items-center gap-10 hidden col-span-3 ml-auto'>
                 <a className='hover:opacity-50 transition-all ease-in-out duration-500' target="_blank" rel="noreferrer" href='mailto:ventas@devarana.mx'>
-                    <CorreoSvg className={`${showHead === 1 ? 'fill-devarana-graph-darker' : 'fill-white'} w-[25px]`} />
+                    <CorreoSvg className={`${showHead === 1 || bgUrl[path] ? 'fill-devarana-graph-darker' : 'fill-white'} w-[25px]`} />
                 </a>
                 <a className='hover:opacity-50 transition-all ease-in-out duration-500' target="_blank" rel="noreferrer" href='https://web.whatsapp.com/send?phone=+524428244444&text=Hola, quisiera más información de Devarana.'>
-                    <WhatsappSvg className={`${showHead === 1 ? 'fill-devarana-graph-darker' : 'fill-white'} w-[25px]`} />
+                    <WhatsappSvg className={`${showHead === 1 || bgUrl[path] ? 'fill-devarana-graph-darker' : 'fill-white'} w-[25px]`} />
                 </a>
-                <a href='tel:+524428244444' className={`${showHead === 1 ? 'text-devarana-graph-darker' : 'text-white'} font-light text-base hover:opacity-50 transition-all ease-in-out duration-300 tracking-wider`}>(442) 824 4444</a>
+                <a href='tel:+524428244444' className={`${showHead === 1 || bgUrl[path] ? 'text-devarana-graph-darker' : 'text-white'} font-light text-base hover:opacity-50 transition-all ease-in-out duration-300 tracking-wider`}>(442) 824 4444</a>
             </div>
 
             {/* Prevent scroll */}

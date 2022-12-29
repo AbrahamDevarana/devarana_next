@@ -34,10 +34,10 @@ export const SliderValores = () => {
         className="valoresSwiper"
     >
         <SwiperSlide>
-                <div className=" justify-center flex-col gap-5 flex py-[60px] px-5">
-                    <Amor className="fill-white h-16 w-16 mx-auto" />
+                <div className="flex-col gap-10 flex px-5 h-[595px]">
+                    <Amor className="fill-white h-[100px] mx-auto mt-[120px]" />
                     <h3 className="text-center text-white font-playfair lg:text-3xl text-xl"><span className="text-devarana-babyblue font-playfair">Inspiramos con</span> Amor</h3>
-                    <p className="text-white lg:text-xl text-xs px-10 font-light"> 
+                    <p className="text-white lg:text-xl text-xs px-10 font-extralight"> 
                         El amor verdadero es preeminente en esta
                         vida y nos motiva a hacer el bien en todo lo
                         que emprendemos. Con nuestras acciones
@@ -47,10 +47,10 @@ export const SliderValores = () => {
                 </div>
         </SwiperSlide>                   
         <SwiperSlide>      
-                <div className=" justify-center flex-col gap-5 flex py-[60px] px-5">
-                    <Triunfador className="fill-white h-16 w-16 mx-auto" />
+                <div className="flex-col gap-10 flex px-5 h-[595px]">
+                    <Triunfador className="fill-white h-[100px] mx-auto mt-[120px]" />
                     <h3 className="text-center text-white font-playfair lg:text-3xl text-xl"><span className="text-devarana-babyblue font-playfair">Espíritu</span> Triunfador</h3>
-                    <p className="text-white lg:text-xl text-xs px-10 font-light"> 
+                    <p className="text-white lg:text-xl text-xs px-10 font-extralight"> 
                         ¡Somos optimistas, nos enfocamos en lo
                         positivo y ante cualquier situación nos
                         acompaña nuestro espíritu triunfador!
@@ -58,10 +58,10 @@ export const SliderValores = () => {
                 </div>
         </SwiperSlide>                   
         <SwiperSlide>
-                <div className=" justify-center flex-col gap-5 flex py-[60px] px-5">
-                    <Extraordinario className="fill-white h-16 w-16 mx-auto" />
+                <div className="flex-col gap-10 flex px-5 h-[595px]">
+                    <Extraordinario className="fill-white h-[100px] mx-auto mt-[120px]" />
                     <h3 className="text-center text-white font-playfair lg:text-3xl text-xl"><span className="text-devarana-babyblue font-playfair">Lo </span> Extraordinario<span className="text-devarana-babyblue font-playfair"> es Primero</span>  </h3>
-                    <p className="text-white lg:text-xl text-xs px-10 font-light"> 
+                    <p className="text-white lg:text-xl text-xs px-10 font-extralight"> 
                         La atención a los detalles, nuestro servicio
                         legendario y esfuerzo por la satisfacción
                         total, son parte de nuestra esencia.
@@ -69,10 +69,10 @@ export const SliderValores = () => {
                 </div>
         </SwiperSlide>                   
         <SwiperSlide>
-                <div className=" justify-center flex-col gap-5 flex py-[60px] px-5">
-                    <Apasionados className="fill-white h-16 w-16 mx-auto" />
+                <div className="flex-col gap-10 flex px-5 h-[595px]">
+                    <Apasionados className="fill-white h-[100px] mx-auto mt-[120px]" />
                     <h3 className="text-center text-white font-playfair lg:text-3xl text-xl"><span className="text-devarana-babyblue font-playfair">Somos</span> Apasionados</h3>
-                    <p className="text-white lg:text-xl text-xs px-10 font-light"> 
+                    <p className="text-white lg:text-xl text-xs px-10 font-extralight"> 
                         Buscamos nuestra esencia para dedicarnos
                         a lo que amamos y hacer nuestro trabajo
                         siempre con pasión. ¡Nos levantamos cada
@@ -82,10 +82,10 @@ export const SliderValores = () => {
                 </div>
         </SwiperSlide>                   
         <SwiperSlide>
-                <div className=" justify-center flex-col gap-5 flex py-[60px] px-5">
-                    <Excelencia className="fill-white h-16 w-16 mx-auto" />
+                <div className="flex-col gap-10 flex px-5 h-[595px]">
+                    <Excelencia className="fill-white h-[100px] mx-auto mt-[120px]" />
                     <h3 className="text-center text-white font-playfair lg:text-3xl text-xl"><span className="text-devarana-babyblue font-playfair">La</span> Excelencia <span className="text-devarana-babyblue font-playfair">está en nuestro ADN</span> </h3>
-                    <p className="text-white lg:text-xl text-xs px-10 font-light"> 
+                    <p className="text-white lg:text-xl text-xs px-10 font-extralight"> 
                         Buscamos la excelencia en todo lo que
                         hacemos y damos todos los días lo mejor
                         de nosotros mismos para vivir plenamente
@@ -94,10 +94,10 @@ export const SliderValores = () => {
                 </div>
         </SwiperSlide>                   
         <SwiperSlide>
-                <div className=" justify-center flex-col gap-5 flex py-[60px] px-5">
-                    <Extraordinario className="fill-white h-16 w-16 mx-auto" />
+                <div className="flex-col gap-10 flex px-5 h-[595px]">
+                    <Extraordinario className="fill-white h-[100px] mx-auto mt-[120px]" />
                     <h3 className="text-center text-white font-playfair lg:text-3xl text-xl"><span className="text-devarana-babyblue font-playfair">Somos</span> Incluyentes</h3>
-                    <p className="text-white lg:text-xl text-xs px-10 font-light"> 
+                    <p className="text-white lg:text-xl text-xs px-10 font-extralight"> 
                         La atención a los detalles, nuestro servicio
                         legendario y esfuerzo por la satisfacción
                         total, son parte de nuestra esencia.
@@ -105,10 +105,10 @@ export const SliderValores = () => {
                 </div>
         </SwiperSlide>                   
         <SwiperSlide>
-                <div className=" justify-center flex-col gap-5 flex py-[60px] px-5">
-                    <Innovacion className="fill-white h-16 w-16 mx-auto" />
+                <div className="flex-col gap-10 flex px-5 h-[595px]">
+                    <Innovacion className="fill-white h-[100px] mx-auto mt-[120px]" />
                     <h3 className="text-center text-white font-playfair lg:text-3xl text-xl"><span className="text-devarana-babyblue font-playfair">La</span> Innovación <span className="text-devarana-babyblue font-playfair">nos Distingue</span> </h3>
-                    <p className="text-white lg:text-xl text-xs px-10 font-light"> 
+                    <p className="text-white lg:text-xl text-xs px-10 font-extralight"> 
                         ¡Creemos firmemente en la constante
                         innovación! Nos ilusionan los retos y
                         buscamos siempre estar a la vanguardia.

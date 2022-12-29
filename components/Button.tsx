@@ -19,7 +19,7 @@ export const Button = ({
     disabled,
     colorType,
     textColor,
-    children = 'Enviar'
+    children = 'ENVIAR'
 
 }: Props) => {
 
