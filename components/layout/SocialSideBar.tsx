@@ -4,7 +4,7 @@ import InstagramSvg from '../svg/instagram'
 
 
 
-export const SocialSideBar = () => {
+export default function SocialSideBar () {
 
    const fbRef = useRef<SVGSVGElement>(null)
    const igRef = useRef<SVGSVGElement>(null)

@@ -2,10 +2,10 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Button } from '../Button'
 import Image from 'next/image'
-import 'swiper/css';
 import credenza from '../../public/assets/images/home/Credenza.webp'
 import fotoSalon from '../../public/assets/images/home/FotoSalonIngles.webp'
 import { Autoplay } from 'swiper';
+import 'swiper/css';
 
 export const SliderHome = () => {
   return (

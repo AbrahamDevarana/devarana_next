@@ -1,25 +1,23 @@
-import Image from 'next/image'  
 import { SwiperSlide, Swiper } from 'swiper/react'
 import { Autoplay } from 'swiper'
-import { Form } from '../components/Form'
-import { BannerRedes } from '../components/layout/BannerRedes'
 import { Seo } from '../components/layout/Seo'
 import { Button } from '../components/Button'
-import fachada from '../public/assets/images/home/FachadaDEVARANA.webp'
 
-// import torreTerra from '../public/assets/images/home/TorreTerra.webp'
-// import torreAqua from '../public/assets/images/home/TorreAqua.webp'
-// import torreFuego from '../public/assets/images/home/TorreFuego.webp'
 
+import { DevaranaInlineSvg } from '../components/svg/devaranaInline'
+import Link from 'next/link'
+
+import dynamic from 'next/dynamic'
 import { SliderHome } from '../components/home/SliderHome'
 import { SliderRV } from '../components/home/SliderRV'
 
-import { DevaranaInlineSvg } from '../components/svg/devaranaInline'
-import Flor5 from '../components/svg/flor5'
-import Flor3 from '../components/svg/flor3'
-import Flor4 from '../components/svg/flor4'
-import Flor2 from '../components/svg/flor2'
-import Link from 'next/link'
+
+const Flor5 = dynamic(() => import('../components/svg/flor5'), { ssr: false })
+const Flor3 = dynamic(() => import('../components/svg/flor3'), { ssr: false })
+const Flor4 = dynamic(() => import('../components/svg/flor4'), { ssr: false })
+const Flor2 = dynamic(() => import('../components/svg/flor2'), { ssr: false })
+const Form = dynamic(() => import('../components/Form'), { ssr: false })
+const BannerRedes = dynamic(() => import('../components/layout/BannerRedes'), { ssr: false })
 
 
 export default function Home() {
@@ -37,7 +35,11 @@ export default function Home() {
 
         <div id="initialBanner" className='overflow-hidden'>
             <div className='h-screen w-full relative object-contain'>
-                <Image src={fachada} className='object-cover w-full' fill alt='Devarana Home' placeholder='blur' priority />
+                <picture>
+                    <source srcSet='/assets/images-phone/home/FachadaDEVARANA.webp' media="(max-width: 1024px)" />
+                    <source srcSet='/assets/images/home/FachadaDEVARANA.webp' />
+                    <img src='/assets/images/home/FachadaDEVARANA.webp' className="object-cover w-full"  alt="Fachada" />
+                </picture>
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
                     <div className="relative w-full h-full">
                         <div className='flex flex-col justify-center w-full h-full transition-all duration-500  lg:pl-28 lg:-translate-y-0 -translate-y-32' id="devaranaWord">
@@ -54,7 +56,6 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            {/* <p className='font-playfair text-3xl lg:text-6xl text-white lg:pl-0 ml-20 tracking-wider'><span className='font-mulish font-extralight'>Somos</span> creadores</p> */}
                         </div>
                         <div className='absolute lg:left-auto left-10 bottom-12 lg:right-60'>
                             <div className='flex flex-col lg:flex-row items-center gap-5'>    
@@ -81,11 +82,9 @@ export default function Home() {
                     <source srcSet='/assets/images/home/Credenza.webp' />
                     <img src='/assets/images/home/Credenza.webp' className="object-cover w-full"  alt="Credenza" />
                 </picture>
-                {/* <Image src={credenza} className='object-cover w-full' alt='Devarana Home' placeholder='blur' priority /> */}
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0'>
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
                         <h2 className='font-playfair text-4xl text-white pb-5 tracking-[0.04em]'>DEVARANA <span className='text-4xl font-mulish font-bold'>Home</span></h2> 
-                        {/* <Button type='button' textColor='white' colorType='whiteInverted' > MUY PRONTO </Button> */}
                         <p className='lg:text-xl text-[8px] text-white pb-5 tracking-widest'>¡MUY PRONTO!</p>
                     </div>
                   
@@ -97,7 +96,6 @@ export default function Home() {
                     <source srcSet='/assets/images/home/FotoSalonIngles.webp' />
                     <img src='/assets/images/home/FotoSalonIngles.webp' className="object-cover w-full"  alt="FotoSalonIngles" />
                 </picture>
-                {/* <Image src={credenza} className='object-cover w-full' alt='Devarana Home' placeholder='blur' priority /> */}
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0' >
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
                         <h2 className='font-playfair text-4xl text-white pb-5 tracking-[0.04em]'>Nuestro equipo</h2> 
@@ -142,7 +140,6 @@ export default function Home() {
 
 			<div className='grid grid-cols-2 gap-y-12'>
 				<div className='col-span-2 lg:col-span-1 relative lg:ml-[215px] lg:mx-0 mx-16'>
-					{/* <Image src={cocina} className='object-cover w-full z-20 rounded-sm' height={1100} width={850} placeholder="blur" alt="Cocina"/> */}
                     <picture>
                         <source srcSet='/assets/images-phone/home/Cocina.webp' media="(max-width: 1024px)" />
                         <source srcSet='/assets/images/home/Cocina.webp' />
@@ -218,7 +215,6 @@ export default function Home() {
                                 <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Terra</h3>
                                 <div className='lg:mx-10 relative'>
                                     <div className='absolute h-full scale-y-[1.14] inset-0 mx-5 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                                    {/* <Image src={torreTerra} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Terra"/> */}
                                     <picture>
                                         <source srcSet='/assets/images-phone/home/TorreTerra.webp' media="(max-width: 1024px)" />
                                         <source srcSet='/assets/images/home/TorreTerra.webp' />
@@ -235,7 +231,6 @@ export default function Home() {
                                 <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Aqua</h3>
                                 <div className='lg:mx-10 relative'>
                                     <div className='absolute h-full scale-y-[1.14] inset-0 mx-5 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                                    {/* <Image src={torreAqua} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Aqua"/> */}
                                     <picture>
                                         <source srcSet='/assets/images-phone/home/TorreAqua.webp' media="(max-width: 1024px)" />
                                         <source srcSet='/assets/images/home/TorreAqua.webp' />
@@ -251,7 +246,6 @@ export default function Home() {
                             <h3 className='text-center lg:pb-20 pb-12 text-devarana-graph-darker lg:text-[40px] text-lg font-playfair'>Torre Fuego</h3>
                             <div className='lg:mx-10 relative'>
                                 <div className='absolute h-full scale-y-[1.14] inset-0 mx-5 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
-                                {/* <Image src={torreFuego} className='object-cover w-full' height={450} width={400} placeholder="blur" alt="Torre Fuego"/> */}
                                 <picture>
                                     <source srcSet='/assets/images-phone/home/TorreFuego.webp' media="(max-width: 1024px)" />
                                     <source srcSet='/assets/images/home/TorreFuego.webp' />
@@ -265,7 +259,6 @@ export default function Home() {
                     </Swiper>
 
                 <div className='text-center lg:pt-24 pt-12 pb-4'>
-                    {/* <Button type='button' colorType='pink' textColor='white'> SABER MÁS </Button> */}
                     <a href="https://royalview.mx" target={'_blank'} rel="noreferrer">
                         <Button type='button' colorType='pink' textColor='white'> DESCUBRE ROYAL VIEW </Button>
                     </a>

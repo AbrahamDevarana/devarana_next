@@ -1,14 +1,14 @@
 
 import { Seo } from "../../components/layout/Seo";
-import { Form } from "../../components/Form";
-import { BannerRedes } from "../../components/layout/BannerRedes";
-import Image from "next/image";
-// import GPTW from "../../public/assets/images/empresa/03-certificados-y-premios/GPTW.webp";
-// import ESR from "../../public/assets/images/empresa/03-certificados-y-premios/ESR.webp";
-import Flor2 from "../../components/svg/flor2";
-import Flor5 from "../../components/svg/flor5";
-import Flor3 from "../../components/svg/flor3";
+import dynamic from 'next/dynamic'
 import ServicioLegendarioSVG from "../../components/svg/servicioLegendario";
+
+const Flor2 = dynamic(() => import('../../components/svg/flor2'), { ssr: false })
+const Flor5 = dynamic(() => import('../../components/svg/flor5'), { ssr: false })
+const Flor3 = dynamic(() => import('../../components/svg/flor3'), { ssr: false })
+
+const Form = dynamic(() => import('../../components/Form'), { ssr: false })
+const BannerRedes = dynamic(() => import('../../components/layout/BannerRedes'), { ssr: false })
 
 export default function ResponsabilidadSocial() {
     return (
@@ -32,7 +32,6 @@ export default function ResponsabilidadSocial() {
                 <div className="grid grid-cols-2 gap-x-10 lg:gap-y-32 gap-y-10 lg:px-52 px-14 lg:pt-24 pt-12 relative">
                     <div className="order-1 lg:order-1 col-span-2 lg:col-span-1 relative">
                         <div className='absolute -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
-                        {/* <Image src={GPTW} alt="GPTW" className="object-cover w-full h-full" placeholder="blur" width={730} height={520} /> */}
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/03-certificados-y-premios/GPTW.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/03-certificados-y-premios/GPTW.webp' />
@@ -52,7 +51,6 @@ export default function ResponsabilidadSocial() {
                     </div>
                     <div className="order-3 lg:order-4 col-span-2 lg:col-span-1  relative">
                         <div className='absolute lg:translate-x-[30px] -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
-                        {/* <Image src={ESR} alt="Brigadas de Seguridad" className="object-cover w-full h-full" placeholder="blur" width={730} height={520} /> */}
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/03-certificados-y-premios/ESR.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/03-certificados-y-premios/ESR.webp' />

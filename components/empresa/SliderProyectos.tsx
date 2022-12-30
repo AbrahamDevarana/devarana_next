@@ -73,7 +73,6 @@ export const SliderProyectos = () => {
                         </div>
                         <div className='bg-devarana-hazelnut absolute -left-2 w-4 h-80 z-10 top-1/2 -translate-y-1/2 hidden lg:block'/> 
                         <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2 block lg:hidden' />
-                        {/* <Image src={HighGardenHouse} alt="High Gardens" width={850} height={850} className='object-cover w-full' placeholder='blur' /> */}
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/HighGardens.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/HighGardens.webp' />
@@ -138,7 +137,6 @@ export const SliderProyectos = () => {
                         </div>
                         <div className='bg-devarana-hazelnut absolute -left-2 w-4 h-80 z-10 top-1/2 -translate-y-1/2 hidden lg:block'/> 
                         <div className='bg-devarana-hazelnut absolute -top-2 w-10/12 h-4 left-1/2 -translate-x-1/2 block lg:hidden' />
-                        {/* <Image src={GrandMayran} alt="Grand Mayran" width={850} height={850}  className='object-cover w-full' placeholder='blur' /> */}
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/GrandMayran.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/GrandMayran.webp' />

@@ -1,9 +1,12 @@
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import { useState } from 'react'
-import { Footer } from './Footer'
 import { HeadBanner } from './HeadBanner'
 import { Menu } from './Menu'
-import { SocialSideBar } from './SocialSideBar'
+
+
+const Footer = dynamic(() => import('./Footer'), { ssr: false })
+const SocialSideBar = dynamic(() => import('./SocialSideBar'), { ssr: false })
 
 interface Props {
     children: React.ReactNode

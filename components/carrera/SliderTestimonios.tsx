@@ -1,11 +1,3 @@
-import Image from 'next/image'
-// import Fatima from '../../public/assets/images/carrera/Testimonios/Fatima.webp'
-// import Itze from '../../public/assets/images/carrera/Testimonios/Itze.webp'
-// import Rubio from '../../public/assets/images/carrera/Testimonios/Rubio.webp'
-// import Ximena from '../../public/assets/images/carrera/Testimonios/Ximena.webp'
-// import Gregorio from '../../public/assets/images/carrera/Testimonios/Gregorio.webp'
-
-
 export const SliderTestimonios = () => {
   return (
     <div className='relative z-20 translate-x-0 translate-y-0 my-12 max-w-full overflow-hidden'>
@@ -13,7 +5,6 @@ export const SliderTestimonios = () => {
             <div className="line-stroke__item line-stroke__1">
                 <div className='relative px-5 line-stroke__img group'>
                     <div className="relative">
-                        {/* <Image src={Itze} alt='Itze' className='object-cover lg:w-full w-[280px]' placeholder='blur' /> */}
                         <picture>
                             <source srcSet='/assets/images-phone/carrera/Testimonios/Itze.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/carrera/Testimonios/Itze.webp' />
@@ -34,7 +25,6 @@ export const SliderTestimonios = () => {
                 </div>
                 <div className='relative px-5 line-stroke__img group'>
                     <div className="relative">
-                        {/* <Image src={Rubio} alt='Rubio' className='object-cover lg:w-full w-[280px]' placeholder='blur'/> */}
                         <picture>
                             <source srcSet='/assets/images-phone/carrera/Testimonios/Rubio.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/carrera/Testimonios/Rubio.webp' />
@@ -55,7 +45,6 @@ export const SliderTestimonios = () => {
                 </div>
                 <div className='relative px-5 line-stroke__img group'>
                     <div className="relative">
-                        {/* <Image src={Ximena} alt='Ximena' className='object-cover lg:w-full w-[280px]' placeholder='blur'/> */}
                         <picture>
                             <source srcSet='/assets/images-phone/carrera/Testimonios/Ximena.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/carrera/Testimonios/Ximena.webp' />
@@ -76,7 +65,6 @@ export const SliderTestimonios = () => {
                 </div>                
                 <div className='relative px-5 line-stroke__img group'>
                     <div className="relative">
-                        {/* <Image src={Gregorio} alt='Gregorio' className='object-cover lg:w-full w-[280px]' placeholder='blur'/> */}
                         <picture>
                             <source srcSet='/assets/images-phone/carrera/Testimonios/Gregorio.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/carrera/Testimonios/Gregorio.webp' />
@@ -97,7 +85,6 @@ export const SliderTestimonios = () => {
                 </div>
                 <div className='relative px-5 line-stroke__img group'>
                     <div className="relative">
-                        {/* <Image src={Fatima} alt='Fatima' className='object-cover lg:w-full w-[280px]' placeholder='blur' />   */}
                         <picture>
                             <source srcSet='/assets/images-phone/carrera/Testimonios/Fatima.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/carrera/Testimonios/Fatima.webp' />
@@ -120,7 +107,6 @@ export const SliderTestimonios = () => {
             <div className="line-stroke__item line-stroke__2">
                 <div className='relative px-5 line-stroke__img group'>
                     <div className="relative">
-                        {/* <Image src={Itze} alt='Itze' className='object-cover lg:w-full w-[280px]' placeholder='blur' /> */}
                         <picture>
                             <source srcSet='/assets/images-phone/carrera/Testimonios/Itze.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/carrera/Testimonios/Itze.webp' />
@@ -141,7 +127,6 @@ export const SliderTestimonios = () => {
                 </div>
                 <div className='relative px-5 line-stroke__img group'>
                     <div className="relative">
-                        {/* <Image src={Rubio} alt='Rubio' className='object-cover lg:w-full w-[280px]' placeholder='blur'/> */}
                         <picture>
                             <source srcSet='/assets/images-phone/carrera/Testimonios/Rubio.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/carrera/Testimonios/Rubio.webp' />
@@ -162,7 +147,6 @@ export const SliderTestimonios = () => {
                 </div>
                 <div className='relative px-5 line-stroke__img group'>
                     <div className="relative">
-                        {/* <Image src={Ximena} alt='Ximena' className='object-cover lg:w-full w-[280px]' placeholder='blur'/> */}
                         <picture>
                             <source srcSet='/assets/images-phone/carrera/Testimonios/Ximena.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/carrera/Testimonios/Ximena.webp' />
@@ -183,7 +167,6 @@ export const SliderTestimonios = () => {
                 </div>                
                 <div className='relative px-5 line-stroke__img group'>
                     <div className="relative">
-                        {/* <Image src={Gregorio} alt='Gregorio' className='object-cover lg:w-full w-[280px]' placeholder='blur'/> */}
                         <picture>
                             <source srcSet='/assets/images-phone/carrera/Testimonios/Gregorio.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/carrera/Testimonios/Gregorio.webp' />
@@ -204,7 +187,6 @@ export const SliderTestimonios = () => {
                 </div>
                 <div className='relative px-5 line-stroke__img group'>
                     <div className="relative">
-                        {/* <Image src={Fatima} alt='Fatima' className='object-cover lg:w-full w-[280px]' placeholder='blur' />   */}
                         <picture>
                             <source srcSet='/assets/images-phone/carrera/Testimonios/Fatima.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/carrera/Testimonios/Fatima.webp' />

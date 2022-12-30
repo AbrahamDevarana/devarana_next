@@ -1,18 +1,13 @@
-import React from 'react'
-import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import { Button } from '../components/Button'
-
 import { SliderTestimonios } from '../components/carrera/SliderTestimonios'
-// import carreraBanner from '../public/assets/images/carrera/AvanceEstrategia.webp'
-// import Arquitectos from '../public/assets/images/carrera/Arquitectos.webp'
-// import Colaboradores from '../public/assets/images/carrera/Colaboradores.webp'
-import Flor5 from '../components/svg/flor5'
-import FlorTres from '../components/svg/flor3'
-import { Form } from '../components/Form'
-import { BannerRedes } from '../components/layout/BannerRedes'
 import { SliderPortada } from '../components/carrera/SliderPortada'
 import { Seo } from '../components/layout/Seo'
 
+const Flor5 = dynamic(() => import('../components/svg/flor5'), { ssr: false })
+const FlorTres = dynamic(() => import('../components/svg/flor3'), { ssr: false })
+const Form = dynamic(() => import('../components/Form'), { ssr: false })
+const BannerRedes = dynamic(() => import('../components/layout/BannerRedes'), { ssr: false })
 export default function Carrera() {
     return (
         <>
@@ -23,7 +18,6 @@ export default function Carrera() {
             />
             <div id="initialBanner">
                 <div className='h-screen w-full relative object-contain'>
-                    {/* <Image src={carreraBanner} className='object-cover w-full' placeholder='blur' priority quality={100} fill alt='carreraBanner' /> */}
                     <picture>
                         <source srcSet='/assets/images-phone/carrera/AvanceEstrategia.webp' media="(max-width: 1024px)" />
                         <source srcSet='/assets/images/carrera/AvanceEstrategia.webp' />
@@ -46,7 +40,6 @@ export default function Carrera() {
                 <div className='lg:px-32 px-14 lg:py-24 pt-24'>
                     <div className="grid grid-cols-12 lg:gap-20 gap-y-10">
                         <div className="col-span-12 xl:col-span-6 relative">
-                            {/* <Image src={Arquitectos} className='object-cover w-full' height={650} width={950} placeholder="blur" alt="Arquitectos"/> */}
                             <div className="relative">
                                 <picture>
                                     <source srcSet='/assets/images-phone/carrera/Arquitectos.webp' media="(max-width: 1024px)" />
@@ -68,25 +61,25 @@ export default function Carrera() {
                                         </div>
                                         <div className=''>
                                             <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Finanzas y Compras</h4>
-                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Lograr mayor eficiencia financiera y rentabilidad.</p>
                                         </div>
                                         <div className=''>
                                             <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Marketing y Diseño</h4>
-                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Posicionamiento de marca a través de estrategias innovadoras.</p>
                                         </div>
                                     </div>
                                     <div className="col-span-2 lg:col-span-1 grid lg:gap-y-10 gap-y-5 ">
                                         <div className=''>
-                                            <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Arquitectura e Ingeniería</h4>
-                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                            <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Comercial</h4>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'> Destacamos por nuestro servicio legendario al cliente.</p>
                                         </div>
                                         <div className=''>
                                             <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Tecnología e Innovación</h4>
-                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Mejora contínua a través de la transformación digital interna.</p>
                                         </div>
                                         <div className=''>
                                             <h4 className='lg:text-xl text-devarana-blue font-black lg:pb-8 pb-4 text-[10px]'>Construcción</h4>
-                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Diseñar y construir desarrollos del más alto nivel.</p>
+                                            <p className='text-devarana-graph lg:text-xl text-[10px] font-light'>Calidad y atención en todos nuestros procesos constructivos.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -118,7 +111,6 @@ export default function Carrera() {
                             <a className='block lg:text-right text-left text-devarana-pink lg:text-2xl text-[10px]' href="mailto:talento@devarana.mx">talento@devarana.mx</a>
                         </div>
                         <div className="col-span-12 lg:col-span-6 relative order-1 lg:order-2">
-                            {/* <Image src={Colaboradores} className='object-cover w-full' height={600} width={800} placeholder="blur" alt="Colaboradores"/> */}
                             <picture>
                                 <source srcSet='/assets/images-phone/carrera/Colaboradores.webp' media="(max-width: 1024px)" />
                                 <source srcSet='/assets/images/carrera/Colaboradores.webp' />

@@ -1,9 +1,8 @@
-// import Image from "next/image";
-// import Prototipos from "../public/assets/images/contacto/Prototipos.webp";
-import { BannerRedes } from "../components/layout/BannerRedes";
-import { Form } from "../components/Form";
+import dynamic from 'next/dynamic'
 import { Seo } from "../components/layout/Seo";
 
+const Form = dynamic(() => import('../components/Form'), { ssr: false })
+const BannerRedes = dynamic(() => import('../components/layout/BannerRedes'), { ssr: false })
 export default function Contacto() {
     return (
         <>
@@ -14,7 +13,6 @@ export default function Contacto() {
             />
             <div id="initialBanner" className="pb-24">
                 <div className='h-screen w-full relative object-contain'>
-                    {/* <Image src={Prototipos} className='object-cover w-full' fill alt='carreraBanner'/> */}
                     <picture>
                         <source srcSet='/assets/images-phone/contacto/Prototipos.webp' media="(max-width: 1024px)" />
                         <source srcSet='/assets/images/contacto/Prototipos.webp' />

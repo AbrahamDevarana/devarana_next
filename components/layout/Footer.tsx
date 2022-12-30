@@ -1,10 +1,9 @@
-import React from 'react'
 import { DevaranaInlineSvg } from '../svg/devaranaInline'
 import FacebookSvg from '../svg/facebook'
 import InstagramSvg from '../svg/instagram'
 import Link from 'next/link'
 
-export const Footer = () => {
+export default function Footer () {
     return (
         <>
             <div className='bg-devarana-blue py-24 lg:px-0 px-14'>

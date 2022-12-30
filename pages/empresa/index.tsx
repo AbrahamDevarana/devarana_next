@@ -1,10 +1,7 @@
-import Image from "next/image";
+import dynamic from 'next/dynamic'
 import { Seo } from "../../components/layout/Seo";
-import Flor1 from "../../components/svg/flor1";
 import { SliderValores } from "../../components/empresa/SliderValores";
 import { SliderProyectos } from "../../components/empresa/SliderProyectos";
-// import PrimerEntrega from "../../public/assets/images/empresa/PrimerEntrega.webp";
-// import TorresReserva from "../../public/assets/images/empresa/TorresReserva.webp";
 import Flor5 from "../../components/svg/flor5";
 import Reforestacion from "../../public/assets/images/empresa/ReforestacionG.webp";
 import ViajeAniversario from "../../public/assets/images/empresa/ViajeAniversarioG.webp";
@@ -12,15 +9,16 @@ import Certificados from "../../public/assets/images/empresa/CertificadosG.webp"
 import ReforestacionC from "../../public/assets/images/empresa/ReforestacionC.webp";
 import ViajeAniversarioC from "../../public/assets/images/empresa/ViajeAniversarioC.webp";
 import CertificadosC from "../../public/assets/images/empresa/CertificadosC.webp";
-import { BannerRedes } from "../../components/layout/BannerRedes";
-import { Form } from "../../components/Form";
-import Flor2 from "../../components/svg/flor2";
-import Flor3 from "../../components/svg/flor3";
 import { Card } from "../../components/empresa/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import { SliderTestimonios } from "../../components/empresa/SliderTestimonios";
 
+const Flor1 = dynamic(() => import('../../components/svg/flor1'), { ssr: false })
+const Flor2 = dynamic(() => import('../../components/svg/flor2'), { ssr: false })
+const Flor3 = dynamic(() => import('../../components/svg/flor3'), { ssr: false })
+const Form = dynamic(() => import('../../components/Form'), { ssr: false })
+const BannerRedes = dynamic(() => import('../../components/layout/BannerRedes'), { ssr: false })
 
 
 export default function Empresa() {

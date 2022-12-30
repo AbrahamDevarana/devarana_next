@@ -1,10 +1,9 @@
-import React from 'react'
 import FacebookSvg from '../svg/facebook'
 import GoogleSvg from '../svg/google'
 import InstagramSvg from '../svg/instagram'
 import WazeSvg from '../svg/waze'
 
-export const BannerRedes = () => {
+export default function BannerRedes () {
   return (
     <>
         <div className='grid grid-cols-2 lg:pb-24 pb-12'>

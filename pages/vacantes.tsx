@@ -1,12 +1,13 @@
-import Image from "next/image";
-// import FotoSalonIngles from "../public/assets/images/home/FotoSalonIngles.webp";
+import dynamic from 'next/dynamic'
+
 import { SliderVacantes } from "../components/vacantes/SliderVacantes";
-import { BannerRedes } from "../components/layout/BannerRedes";
-import { Form } from "../components/Form";
 import { VacanteModal } from "../components/vacantes/VacanteModal";
 import { useEffect, useState } from "react";
 import { Seo } from "../components/layout/Seo";
 import { VacanteProps } from "../interfaces";
+
+const Form = dynamic(() => import('../components/Form'), { ssr: false })
+const BannerRedes = dynamic(() => import('../components/layout/BannerRedes'), { ssr: false })
 
 export default function Vacantes() {
 
@@ -44,7 +45,6 @@ export default function Vacantes() {
             />
             <div id="initialBanner pb-24">
                 <div className='h-screen w-full relative object-contain'>
-                    {/* <Image src={FotoSalonIngles} priority className='object-cover w-full h-screen' alt='Foto Salon Ingles' /> */}
                     <picture>
                         <source srcSet='/assets/images-phone/home/FotoSalonIngles.webp' media="(max-width: 1024px)" />
                         <source srcSet='/assets/images/home/FotoSalonIngles.webp' />
@@ -60,7 +60,6 @@ export default function Vacantes() {
             <div className="lg:py-24 py-12">
                 <h2 className="text-devarana-graph-darker text-center font-playfair lg:text-6xl text-xl">¡Sé parte de DEVARANA</h2>
                 <hr className="border-devarana-pink max-w-[270px] w-full mx-auto mt-9 lg:mb-24 mb-10"/>
-                {/* <SliderVacantes2 setShowModal={setShowModal} /> */}
                 <SliderVacantes setShowModal={setShowModal} vacantes={vacantes} setModalContent={setModalContent}/>
 
             </div>
