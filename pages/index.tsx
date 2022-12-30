@@ -10,6 +10,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { SliderHome } from '../components/home/SliderHome'
 import { SliderRV } from '../components/home/SliderRV'
+import Image from 'next/image'
 
 
 const Flor5 = dynamic(() => import('../components/svg/flor5'), { ssr: false })
@@ -21,9 +22,6 @@ const BannerRedes = dynamic(() => import('../components/layout/BannerRedes'), { 
 
 
 export default function Home() {
-
-   
-
   return (
     <>
         <Seo
@@ -38,7 +36,7 @@ export default function Home() {
                 <picture>
                     <source srcSet='/assets/images-phone/home/FachadaDEVARANA.webp' media="(max-width: 1024px)" />
                     <source srcSet='/assets/images/home/FachadaDEVARANA.webp' />
-                    <img src='/assets/images/home/FachadaDEVARANA.webp' className="object-cover w-full"  alt="Fachada" />
+                    <Image src='/assets/images/home/FachadaDEVARANA.webp' layout="fill" objectFit="cover" alt="Fachada" />
                 </picture>
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
                     <div className="relative w-full h-full">
@@ -80,7 +78,7 @@ export default function Home() {
                 <picture>
                     <source srcSet='/assets/images-phone/home/Credenza.webp' media="(max-width: 1024px)" />
                     <source srcSet='/assets/images/home/Credenza.webp' />
-                    <img src='/assets/images/home/Credenza.webp' className="object-cover w-full"  alt="Credenza" />
+                    <Image src='/assets/images/home/Credenza.webp' width={950} height={500} className="object-cover w-full"  alt="Credenza" />
                 </picture>
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0'>
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
@@ -94,7 +92,7 @@ export default function Home() {
                 <picture>
                     <source srcSet='/assets/images-phone/home/FotoSalonIngles.webp' media="(max-width: 1024px)" />
                     <source srcSet='/assets/images/home/FotoSalonIngles.webp' />
-                    <img src='/assets/images/home/FotoSalonIngles.webp' className="object-cover w-full"  alt="FotoSalonIngles" />
+                    <Image src='/assets/images/home/FotoSalonIngles.webp' width={950} height={500} className="object-cover w-full"  alt="FotoSalonIngles" />
                 </picture>
 				<div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-1 bottom-0' >
                     <div className="flex flex-col items-center justify-end pb-12 h-full">
@@ -143,7 +141,7 @@ export default function Home() {
                     <picture>
                         <source srcSet='/assets/images-phone/home/Cocina.webp' media="(max-width: 1024px)" />
                         <source srcSet='/assets/images/home/Cocina.webp' />
-                        <img src='/assets/images/home/Cocina.webp' className="object-cover w-full"  alt="Credenza" />
+                        <Image src='/assets/images/home/Cocina.webp' width={750} height={1050} className="object-cover w-full"  alt="Credenza" />
                     </picture>
 					<div className='absolute -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />
 				</div>
@@ -218,7 +216,7 @@ export default function Home() {
                                     <picture>
                                         <source srcSet='/assets/images-phone/home/TorreTerra.webp' media="(max-width: 1024px)" />
                                         <source srcSet='/assets/images/home/TorreTerra.webp' />
-                                        <img src='/assets/images/home/TorreTerra.webp' className="object-cover w-full"  alt="TorreTerra" />
+                                        <Image src='/assets/images/home/TorreTerra.webp' width={400} height={450} className="object-cover w-full" alt='TorreTerra' />
                                     </picture>
                                     
                                 </div>
@@ -234,7 +232,7 @@ export default function Home() {
                                     <picture>
                                         <source srcSet='/assets/images-phone/home/TorreAqua.webp' media="(max-width: 1024px)" />
                                         <source srcSet='/assets/images/home/TorreAqua.webp' />
-                                        <img src='/assets/images/home/TorreAqua.webp' className="object-cover w-full"  alt="TorreAqua" />
+                                        <Image src='/assets/images/home/TorreAqua.webp' width={400} height={450} className="object-cover w-full" alt='TorreAqua' />
                                     </picture>
                                 </div>
                                 <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-xl text-base'>Estilo de Vida</p>
@@ -249,7 +247,7 @@ export default function Home() {
                                 <picture>
                                     <source srcSet='/assets/images-phone/home/TorreFuego.webp' media="(max-width: 1024px)" />
                                     <source srcSet='/assets/images/home/TorreFuego.webp' />
-                                    <img src='/assets/images/home/TorreFuego.webp' className="object-cover w-full"  alt="TorreFuego" />
+                                    <Image src='/assets/images/home/TorreFuego.webp' width={400} height={450} className="object-cover w-full" alt='TorreFuego' />
                                 </picture>
                             </div>
                             <p className='text-center pt-14 pb-6 text-devarana-graph-darker font-playfair lg:text-xl text-base'>Un Proyecto Único</p>

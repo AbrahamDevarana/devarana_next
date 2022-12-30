@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import { Seo } from "../components/layout/Seo";
+import Image from 'next/image';
 
 const Form = dynamic(() => import('../components/Form'), { ssr: false })
 const BannerRedes = dynamic(() => import('../components/layout/BannerRedes'), { ssr: false })
@@ -16,7 +17,7 @@ export default function Contacto() {
                     <picture>
                         <source srcSet='/assets/images-phone/contacto/Prototipos.webp' media="(max-width: 1024px)" />
                         <source srcSet='/assets/images/contacto/Prototipos.webp' />
-                        <img src='/assets/images/contacto/Prototipos.webp' className="object-cover w-full h-screen"  alt="carreraBanner" />
+                        <Image src='/assets/images/contacto/Prototipos.webp' fill className="object-cover w-full h-screen"  alt="carreraBanner" />
                     </picture>
                     <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
                         <div className="relative grid grid-cols-2 lg:gap-y-16 gap-y-5 lg:px-40 px-14 h-full">

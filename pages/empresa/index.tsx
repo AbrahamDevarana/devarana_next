@@ -13,6 +13,7 @@ import { Card } from "../../components/empresa/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import { SliderTestimonios } from "../../components/empresa/SliderTestimonios";
+import Image from 'next/image';
 
 const Flor1 = dynamic(() => import('../../components/svg/flor1'), { ssr: false })
 const Flor2 = dynamic(() => import('../../components/svg/flor2'), { ssr: false })
@@ -38,13 +39,10 @@ export default function Empresa() {
                     <span className="text-devarana-pink font-playfair"> nuestros clientes. </span>
                 </p>
 
-                {/*  PrimerEntrega si es escritorio  y otra si es responsivo */}
-
-                {/* <Image src={PrimerEntrega} className='object-cover w-full lg:px-24 px-4 py-20 z-10' priority quality={100} height={930} width={1920} placeholder="blur" alt="Primer Entrega"/> */}
                 <picture>
                     <source srcSet='/assets/images-phone/empresa/PrimerEntrega.webp' media="(max-width: 1024px)" />
                     <source srcSet='/assets/images/empresa/PrimerEntrega.webp' />
-                    <img src='/assets/images/empresa/PrimerEntrega.webp' className="object-cover w-full lg:px-24 px-4 py-20 z-10"  alt="Primer Entrega" />
+                    <Image src="/assets/image/empresa/PrimerEntrega.webp" className='object-cover w-full lg:px-24 px-4 py-20 z-10' alt="Primer Entrega" width={1920} height={1000} />
                 </picture>
                 
                 <div className='bg-devarana-hazelnut lg:h-[300px] h-[250px] relative -mt-48 -z-10 max-w-full'/>
@@ -56,11 +54,10 @@ export default function Empresa() {
             <div className="relative overflow-hidden pb-24">
                 <div className='grid grid-cols-2 gap-y-12 lg:mx-[245px] mx-10'>
                     <div className='col-span-2 lg:col-span-1 relative '>
-                        {/* <Image src={TorresReserva} className='object-cover w-full z-20 rounded-sm' height={1002} width={707} placeholder="blur" alt="TorresReserva"/> */}
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/TorresReserva.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/TorresReserva.webp' />
-                            <img src='/assets/images/empresa/TorresReserva.webp' className="object-cover w-full z-20 rounded-sm"  alt="TorresReserva" />
+                            <Image src="/assets/images/empresa/TorresReserva.webp" className="object-cover w-full z-20 rounded-sm" alt="TorresReserva" width={800} height={1000} />
                         </picture>
                         <div className='absolute -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                     </div>

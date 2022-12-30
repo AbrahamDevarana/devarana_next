@@ -5,6 +5,7 @@ import { VacanteModal } from "../components/vacantes/VacanteModal";
 import { useEffect, useState } from "react";
 import { Seo } from "../components/layout/Seo";
 import { VacanteProps } from "../interfaces";
+import Image from 'next/image';
 
 const Form = dynamic(() => import('../components/Form'), { ssr: false })
 const BannerRedes = dynamic(() => import('../components/layout/BannerRedes'), { ssr: false })
@@ -48,7 +49,7 @@ export default function Vacantes() {
                     <picture>
                         <source srcSet='/assets/images-phone/home/FotoSalonIngles.webp' media="(max-width: 1024px)" />
                         <source srcSet='/assets/images/home/FotoSalonIngles.webp' />
-                        <img src='/assets/images/home/FotoSalonIngles.webp' className="object-cover w-full h-screen"  alt="Foto Salon Ingles" />
+                        <Image src='/assets/images/home/FotoSalonIngles.webp' fill className="object-cover w-full h-screen"  alt="Foto Salon Ingles" />
                     </picture>
                     <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0'>
                         <div className="relative flex justify-center items-center h-full"> 

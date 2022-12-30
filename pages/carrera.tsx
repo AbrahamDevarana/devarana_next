@@ -3,6 +3,7 @@ import { Button } from '../components/Button'
 import { SliderTestimonios } from '../components/carrera/SliderTestimonios'
 import { SliderPortada } from '../components/carrera/SliderPortada'
 import { Seo } from '../components/layout/Seo'
+import Image from 'next/image'
 
 const Flor5 = dynamic(() => import('../components/svg/flor5'), { ssr: false })
 const FlorTres = dynamic(() => import('../components/svg/flor3'), { ssr: false })
@@ -21,7 +22,7 @@ export default function Carrera() {
                     <picture>
                         <source srcSet='/assets/images-phone/carrera/AvanceEstrategia.webp' media="(max-width: 1024px)" />
                         <source srcSet='/assets/images/carrera/AvanceEstrategia.webp' />
-                        <img src='/assets/images/carrera/AvanceEstrategia.webp' className="object-cover w-full h-screen"  alt="carreraBanner" />
+                        <Image src='/assets/images/carrera/AvanceEstrategia.webp' width={1920} height={800} className="object-cover w-full h-screen rel"  alt="carreraBanner" />
                     </picture>
                     <div className='bg-devarana-midnight bg-opacity-60 absolute w-full top-0 bottom-0 h-full' />
                     <div className='absolute w-10/12 max-w-full -translate-y-3/4 right-0'>
@@ -44,7 +45,7 @@ export default function Carrera() {
                                 <picture>
                                     <source srcSet='/assets/images-phone/carrera/Arquitectos.webp' media="(max-width: 1024px)" />
                                     <source srcSet='/assets/images/carrera/Arquitectos.webp' />
-                                    <img src='/assets/images/carrera/Arquitectos.webp' className="object-cover w-full"  alt="Arquitectos" />
+                                    <Image src='/assets/images/carrera/Arquitectos.webp' width={800} height={1200} className="object-cover w-full"  alt="Arquitectos" />
                                 </picture>
                                 <div className='absolute -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                             </div>
@@ -114,7 +115,7 @@ export default function Carrera() {
                             <picture>
                                 <source srcSet='/assets/images-phone/carrera/Colaboradores.webp' media="(max-width: 1024px)" />
                                 <source srcSet='/assets/images/carrera/Colaboradores.webp' />
-                                <img src='/assets/images/carrera/Colaboradores.webp' className="object-cover w-full"  alt="Colaboradores" />
+                                <Image src='/assets/images/carrera/Colaboradores.webp' width={700} height={1000} className="object-cover w-full"  alt="Colaboradores" />
                             </picture>
                             <div className='absolute lg:translate-x-5 -translate-x-[30px] -translate-y-[30px] top-0 w-full bottom-0 bg-devarana-hazelnut bg-opacity-70 -z-10 rounded-sm' />	
                         </div>

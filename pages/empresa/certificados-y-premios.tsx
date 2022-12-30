@@ -2,6 +2,7 @@
 import { Seo } from "../../components/layout/Seo";
 import dynamic from 'next/dynamic'
 import ServicioLegendarioSVG from "../../components/svg/servicioLegendario";
+import Image from "next/image";
 
 const Flor2 = dynamic(() => import('../../components/svg/flor2'), { ssr: false })
 const Flor5 = dynamic(() => import('../../components/svg/flor5'), { ssr: false })
@@ -35,7 +36,7 @@ export default function ResponsabilidadSocial() {
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/03-certificados-y-premios/GPTW.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/03-certificados-y-premios/GPTW.webp' />
-                            <img src='/assets/images/empresa/03-certificados-y-premios/GPTW.webp' className="object-cover w-full h-full"  alt="GPTW" />
+                            <Image src='/assets/images/empresa/03-certificados-y-premios/GPTW.webp' className="object-cover w-full h-full"  alt="GPTW" width={800} height={600}/>
                         </picture>
                     </div> 
                     <div className="order-2 lg:order-2 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
@@ -54,7 +55,7 @@ export default function ResponsabilidadSocial() {
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/03-certificados-y-premios/ESR.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/03-certificados-y-premios/ESR.webp' />
-                            <img src='/assets/images/empresa/03-certificados-y-premios/ESR.webp' className="object-cover w-full h-full"  alt="Brigadas de Seguridad" />
+                            <Image src='/assets/images/empresa/03-certificados-y-premios/ESR.webp' className="object-cover w-full h-full"  alt="ESR" width={800} height={600}/>
                         </picture>
                     </div>
                     <div className="order-5 lg:order-5 col-span-2 lg:col-span-1  relative">

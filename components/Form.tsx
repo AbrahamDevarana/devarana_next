@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from './Button'
+import Image from 'next/image'
 
 interface FormProps {
     backgroundType?: 'flores' | 'cuadros'
@@ -13,7 +14,7 @@ export default function Form({}){
         <div>
             <picture>
                 <source srcSet="/assets/images/global/Formulario.webp" type="image/webp" />
-                <img src="/assets/images/global/Formulario.png" alt="Formulario" className='absolute -z-10 top-0 left-0 right-0 bottom-0 w-full h-full object-cover' />
+                <Image src='/assets/images/global/Formulario.png' width={1920} height={600} alt="Formulario" className='absolute -z-10 top-0 left-0 right-0 bottom-0 w-full h-full object-cover' />
             </picture>
         </div>
         <div className='absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10' style={{background: "rgba(36, 42, 56, 0.7)"}}></div>

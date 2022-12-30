@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 import AniversarioSVG from "../../components/svg/aniversario";
 import { Seo } from "../../components/layout/Seo";
+import Image from 'next/image';
 
 const Flor3 = dynamic(() => import('../../components/svg/flor3'), { ssr: false })
 const Flor1 = dynamic(() => import('../../components/svg/flor1'), { ssr: false })
@@ -22,7 +23,7 @@ export default function GreatPlaceToWork() {
                 <p className="text-center max-w-screen-xl w-full px-10 mx-auto text-xs lg:text-3xl font-light text-devarana-graph">Para nosotros, construir una cultura de trabajo sólida, con base en la pasión, el compromiso, la excelencia y la innovación es clave en nuestro éxito profesional. Cada acción que hacemos nos distingue y nos lleva a ser diseñadores de lo extraordinario.</p>
 
                 <div className='absolute right-0 z-10 top-20'>
-                    <Flor3  className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg] scale-150 translate-x-28 translate-y-36 lg:block hidden'/>
+                    <Flor3 className='fill-devarana-hazelnut w-full opacity-50 -rotate-[25deg] scale-150 translate-x-28 translate-y-36 lg:block hidden'/>
                 </div>
                 
 
@@ -32,7 +33,7 @@ export default function GreatPlaceToWork() {
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/02-que-nos-convierte-en-gptw/EventoAmenidades.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/02-que-nos-convierte-en-gptw/EventoAmenidades.webp' />
-                            <img src='/assets/images/empresa/02-que-nos-convierte-en-gptw/EventoAmenidades.webp' className="object-cover w-full h-full"  alt="Evento Amenidades" />
+                            <Image src='/assets/images/empresa/02-que-nos-convierte-en-gptw/EventoAmenidades.webp' width={800} height={600} className="object-cover w-full h-full"  alt="Evento Amenidades" />
                         </picture>
                     </div> 
                     <div className="order-2 lg:order-2 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
@@ -51,7 +52,7 @@ export default function GreatPlaceToWork() {
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/02-que-nos-convierte-en-gptw/ViajeAniversario.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/02-que-nos-convierte-en-gptw/ViajeAniversario.webp' />
-                            <img src='/assets/images/empresa/02-que-nos-convierte-en-gptw/ViajeAniversario.webp' className="object-cover w-full h-full"  alt="Viaje Aniversario" />
+                            <Image src='/assets/images/empresa/02-que-nos-convierte-en-gptw/ViajeAniversario.webp' width={800} height={600} className="object-cover w-full h-full"  alt="Viaje Aniversario" />
                         </picture>
                     </div>
                     <div className="order-5 lg:order-5 col-span-2 lg:col-span-1  relative">
@@ -59,7 +60,7 @@ export default function GreatPlaceToWork() {
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/02-que-nos-convierte-en-gptw/AvancedeEstrategia.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/02-que-nos-convierte-en-gptw/AvancedeEstrategia.webp' />
-                            <img src='/assets/images/empresa/02-que-nos-convierte-en-gptw/AvancedeEstrategia.webp' className="object-cover w-full h-full"  alt="Avance de Estrategia" />
+                            <Image src='/assets/images/empresa/02-que-nos-convierte-en-gptw/AvancedeEstrategia.webp' width={800} height={600} className="object-cover w-full h-full"  alt="Avance de Estrategia" />
                         </picture>
                     </div>
                     <div className="order-6 lg:order-6 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">

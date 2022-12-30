@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import { Seo } from "../../components/layout/Seo";
+import Image from 'next/image';
 
 const Flor2 = dynamic(() => import('../../components/svg/flor2'), { ssr: false })
 const Flor5 = dynamic(() => import('../../components/svg/flor5'), { ssr: false })
@@ -33,7 +34,7 @@ export default function ResponsabilidadSocial() {
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/01-responsabilidad-social/Reforestacion.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/01-responsabilidad-social/Reforestacion.webp' />
-                            <img src='/assets/images/empresa/01-responsabilidad-social/Reforestacion.webp' className="object-cover w-full h-full"  alt="Reforestación" />
+                            <Image src='/assets/images/empresa/01-responsabilidad-social/Reforestacion.webp' className="object-cover w-full h-full"  alt="Reforestación" width={800} height={600}/>
                         </picture>
                     </div> 
                     <div className="order-2 lg:order-2 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
@@ -59,7 +60,7 @@ export default function ResponsabilidadSocial() {
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/01-responsabilidad-social/Brigadas.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/01-responsabilidad-social/Brigadas.webp' />
-                            <img src='/assets/images/empresa/01-responsabilidad-social/Brigadas.webp' className="object-cover w-full h-full"  alt="Brigadas de Seguridad" />
+                            <Image src='/assets/images/empresa/01-responsabilidad-social/Brigadas.webp' className="object-cover w-full h-full"  alt="Brigadas de Seguridad" width={800} height={600}/>
                         </picture>
                     </div>
                     <div className="order-5 lg:order-5 col-span-2 lg:col-span-1  relative">
@@ -67,7 +68,7 @@ export default function ResponsabilidadSocial() {
                         <picture>
                             <source srcSet='/assets/images-phone/empresa/01-responsabilidad-social/CursodeReptiles.webp' media="(max-width: 1024px)" />
                             <source srcSet='/assets/images/empresa/01-responsabilidad-social/CursodeReptiles.webp' />
-                            <img src='/assets/images/empresa/01-responsabilidad-social/CursodeReptiles.webp' className="object-cover w-full h-full"  alt="Curso de Reptiles" />
+                            <Image src='/assets/images/empresa/01-responsabilidad-social/CursodeReptiles.webp' className="object-cover w-full h-full"  alt="Curso de Reptiles" width={800} height={600}/>
                         </picture>
                     </div>
                     <div className="order-6 lg:order-6 col-span-2 lg:col-span-1 grid content-center lg:gap-y-10 gap-y-5">
